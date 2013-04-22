@@ -1,0 +1,46 @@
+###
+# ECLIPSE IDE project files
+##
+.project
+.cache
+.cache/*
+.settings
+.settings/*
+.sass-cache
+.sass-cache/*
+
+###
+# Large Directories
+###
+videos/
+client/
+captcha/
+
+###
+# Dreamweaver
+###
+_notes/
+
+###
+# system SWAP, TMP and BACKUP files
+###
+*~
+*.swp
+*.bak
+
+###
+# Mac OS X directory preferences
+###
+.DS_Store
+._*
+
+###
+# Fusebox
+###
+parsed/
+
+###
+# System
+###
+
+settings.ini
