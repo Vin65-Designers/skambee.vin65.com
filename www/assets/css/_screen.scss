@@ -1,0 +1,963 @@
+/* CSS Document */
+/* ====================================================================================================
+	Table of Content
+	
+	Theme Settings
+	
+	1. Typography - Copy into admin.css
+	2. User Tools
+	3. Header
+	4. Navigation
+		a. Navigation
+		b. Sub Navigation
+
+	5. Content
+		a. Homepage Styles
+		b. Page Styles
+
+	6. Blog Template
+	7. Print Template
+	8. Buttons
+	9. Footer
+	10. Vin65 Overrides
+		a. User Tools
+		b. Homepage Product Group
+		c. Checkout Overrides
+*/
+
+//   ===================================================================================================
+//      Theme Settings
+// =====================================================================================================
+
+
+//   ===================================================================================================
+//		Default Theme
+//   ===================================================================================================
+$backgroundColor: #fff; // Website Background Color
+$linkColor: #a6783e;
+
+$fontColor: #111; // General Font Color
+$fontFamily: sans-serif; // Default Font Family
+
+// Default Heading Font Family 
+$headingFontFamily: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+
+$headingFontColor: #976933; // Default Heading Font Color
+
+$navColor: #fff; //Font Color for main navigation
+$navColorHover: #000; //Font Color for main navigation
+$navBackgroundColorOne: #2a2924; //Color for top of gradient
+$navBackgroundColorTwo: #000; //Color for bottom of gradient
+$navBackgroundColorHoverOne: #c2984d; //Color for top of gradient
+$navBackgroundColorHoverTwo: #865d2d; //Color for bottom of gradient
+
+$buttonColor: #a6783e; // Default Color for Buttons
+$buttonFontColor: #fff; // Default Color for Button Font
+
+$altButtonColor: lighten($buttonColor, 10%); // Alt Color for Buttons
+$altButtonFontColor: #fff; // Alt Color for Buttons Font
+
+$buttonFontFamily: sans-serif; // Default Font Family for Buttons
+
+$homepageContentColor: #fff; // Homepage content background color
+$homepageContentBackgroundColor: #000; // Homepage content background color
+
+$footerBackground: #000; //Footer Background Color
+$footerColor: #666; //Footer Color
+$footerLink: #ccc; // Footer Link
+$footerLinkHover: #fff; // Footer Link Hover
+
+
+/*   ===================================================================================================
+     1. Typography - These get copied into the admin.css
+======================================================================================================== */
+html {
+    font-size: 100%;
+}
+
+body{
+	background-color: $backgroundColor;
+	color: $fontColor;
+	font-family: $fontFamily;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   	color: $headingFontColor;
+	font-family: $headingFontFamily;
+	font-weight: normal;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.25em;
+    line-height: 1;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.6875em;
+    line-height: 1.3333333333333333;
+    margin-bottom: 0.6666666666666666em;
+}
+
+h3 {
+    font-size: 1.125em;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+
+h4 {
+    font-size: 0.984375em;
+    line-height: 1.1428571428571428;
+    margin-bottom: 1.1428571428571428em;
+}
+
+h5 {
+    font-size: 0.84375em;
+    line-height: 1.3333333333333333;
+    margin-bottom: 1.3333333333333333em;
+}
+
+h6 {
+    font-size: 0.75em;
+    line-height: 1.5;
+    margin-bottom: 1.5em;
+}
+
+p, blockquote {
+    font-size: 0.75em;
+    margin: 0 0 1.5em;
+    line-height: 1.5;
+}
+
+dl, ol, ul {
+    font-size: 1em;
+    margin: 0 0 1.5em;
+    padding: 0;
+}
+
+dd, dt, li {
+    line-height: 1.5;
+    margin: 0;
+}
+
+a{
+	color: $linkColor;
+	text-decoration: none;
+	&:hover, &:focus, &:active{
+		text-decoration: underline;
+	}
+}
+
+img{
+	border:none;
+	height: auto !important;
+	max-width: 100%;
+}
+
+form {
+	margin-bottom: 1em;
+}
+
+legend {
+	color: $fontColor;
+}
+
+hr {
+	background-color: $fontColor;
+	border: 0;
+	color: #666;
+	height: 1px;
+}
+
+.wrapper {
+	max-width: 970px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+/*   ===================================================================================================
+     2. User Tools
+======================================================================================================== */
+
+.userToolsWrapper {
+	background: #000;
+	font-size: 0.75em;
+	height: 36px;
+	position: relative;
+	width: 100%;
+	z-index: 999;
+}
+
+/*   ===================================================================================================
+     3. Header
+======================================================================================================== */
+
+header{
+	background: url("../images/homepage-feature.jpg") center top no-repeat #303030;
+	height: 465px;
+	padding-top: 35px;
+	position: relative;
+	text-align: center;
+	width: 100%;
+	z-index: 100;
+}
+
+/*   ===================================================================================================
+     4. Navigation
+======================================================================================================== */
+
+/* ----- a. Main Menu ----- */
+nav {
+	height: 55px;
+	position: relative;
+	z-index: 101;
+
+	background: #2a2924; /* Old browsers */
+	background: -moz-linear-gradient(top, $navBackgroundColorOne 0%, $navBackgroundColorTwo 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$navBackgroundColorOne), color-stop(100%,$navBackgroundColorTwo)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, $navBackgroundColorOne 0%,$navBackgroundColorTwo 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, $navBackgroundColorOne 0%,$navBackgroundColorTwo 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, $navBackgroundColorOne 0%,$navBackgroundColorTwo 100%); /* IE10+ */
+	background: linear-gradient(to bottom, $navBackgroundColorOne 0%,$navBackgroundColorTwo 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$navBackgroundColorOne', endColorstr='$navBackgroundColorTwo',GradientType=0 ); /* IE6-9 */
+
+	ul {
+		height: 55px;
+		list-style: none;
+		margin: 0 auto;
+		position: relative;
+		max-width: 970px;
+	}
+
+	li {
+		float: left;
+		padding: 0;
+		position: relative;
+
+		a {
+			color: $navColor;
+			display: inline-block;
+			font-family: $headingFontFamily;
+			height: 55px;
+			line-height: 55px;
+			margin: 0;
+			padding: 0 40px;
+			position: relative;
+			text-decoration: none;
+
+			&:hover{
+				color: $navColorHover;
+				text-decoration: none;
+
+				background: #2a2924; /* Old browsers */
+				background: -moz-linear-gradient(top, $navBackgroundColorHoverOne 0%, $navBackgroundColorHoverTwo 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$navBackgroundColorHoverOne), color-stop(100%,$navBackgroundColorHoverTwo)); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top, $navBackgroundColorHoverOne 0%,$navBackgroundColorHoverTwo 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top, $navBackgroundColorHoverOne 0%,$navBackgroundColorHoverTwo 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(top, $navBackgroundColorHoverOne 0%,$navBackgroundColorHoverTwo 100%); /* IE10+ */
+				background: linear-gradient(to bottom, $navBackgroundColorHoverOne 0%,$navBackgroundColorHoverTwo 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$navBackgroundColorHoverOne', endColorstr='$navBackgroundColorHoverTwo',GradientType=0 ); /* IE6-9 */
+
+			}
+		}
+
+		// Drop Down
+		&:hover ul{
+			border: 1px solid #ccc;
+			display: block;
+			font-size: 12px;
+		}
+
+		ul{
+			display: none;
+			left: -10px;
+			position: absolute;
+			top: 32px;
+			width: 180px;
+		}
+
+		li{
+			display: block;
+			float: none;
+			margin: 0;
+			text-align: left;
+			width: 180px;
+
+			a{
+				background-color: #fff;
+				color: #666;
+				display: block;
+				float: none;
+				height: 28px;
+				line-height: 28px;
+				margin: 0;
+				padding: 0 0 0 10px;
+				text-align: left;
+				text-transform: none;
+				width: 170px;
+
+				&:hover{
+					color: #000;
+				}
+			}
+		}
+	}
+
+	.v65-pageAParent {
+		color: $navColorHover;
+		text-decoration: none;
+
+		background: #2a2924; /* Old browsers */
+		background: -moz-linear-gradient(top, $navBackgroundColorHoverOne 0%, $navBackgroundColorHoverTwo 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$navBackgroundColorHoverOne), color-stop(100%,$navBackgroundColorHoverTwo)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, $navBackgroundColorHoverOne 0%,$navBackgroundColorHoverTwo 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, $navBackgroundColorHoverOne 0%,$navBackgroundColorHoverTwo 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, $navBackgroundColorHoverOne 0%,$navBackgroundColorHoverTwo 100%); /* IE10+ */
+		background: linear-gradient(to bottom, $navBackgroundColorHoverOne 0%,$navBackgroundColorHoverTwo 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$navBackgroundColorHoverOne', endColorstr='$navBackgroundColorHoverTwo',GradientType=0 ); /* IE6-9 */	
+	}
+
+	.v65-home {
+		display: none;
+	}
+
+	.v65-selected {
+		color: $navColorHover;
+		text-decoration: none;
+
+		background: #2a2924; /* Old browsers */
+		background: -moz-linear-gradient(top, $navBackgroundColorHoverOne 0%, $navBackgroundColorHoverTwo 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$navBackgroundColorHoverOne), color-stop(100%,$navBackgroundColorHoverTwo)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, $navBackgroundColorHoverOne 0%,$navBackgroundColorHoverTwo 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, $navBackgroundColorHoverOne 0%,$navBackgroundColorHoverTwo 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, $navBackgroundColorHoverOne 0%,$navBackgroundColorHoverTwo 100%); /* IE10+ */
+		background: linear-gradient(to bottom, $navBackgroundColorHoverOne 0%,$navBackgroundColorHoverTwo 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$navBackgroundColorHoverOne', endColorstr='$navBackgroundColorHoverTwo',GradientType=0 ); /* IE6-9 */	
+	}
+}
+
+/* ----- b. Sub Menu ----- */
+.subMenu{
+	border-right: 1px solid #ccc;
+	float: left;
+	margin: 60px 40px 0 0;
+	padding-right: 20px;
+	width: 170px;
+
+	ul{
+		font-size: 11px;
+		list-style: none;
+		margin: 0 0 1em 10px;
+		padding: 0;
+		width: 160px;
+	}
+
+	li{
+		line-height: 2;
+
+		a{
+			&:hover{}
+		}
+
+		ul{
+			margin-left: 10px;
+			width: 160px;
+		}
+	}
+
+	.v65-pageAParent {
+		color: #000;
+	}
+
+	.v65-leftSelected{
+		color: #000;
+		font-weight: bold;
+	}
+
+}
+
+
+/*   ===================================================================================================
+     5. Content
+======================================================================================================== */
+
+/* ----- a. Homepage Styles ----- */
+.homepageContent {
+	background: $homepageContentBackgroundColor;
+	padding: 40px 0;
+}
+
+	.homepageImage {
+		float: left;
+		margin-right: 3%;
+		max-width: 285px;
+		width: 30%;
+	}	
+
+	.homepageText {
+		color: $homepageContentColor;
+		float: left;
+		width: 67%;
+	}
+
+.homepageContentItems {
+	padding: 40px 0;
+
+	article {
+		float: left;
+		margin: 0 1% 0 2%;
+		width: 30%;
+
+		.v65-productGroup-title, .v65-event-upcoming-title, .v65-podTitle {
+		    border-top: 1px solid lighten($headingFontColor, 40%);
+		    border-bottom: 1px solid lighten($headingFontColor, 40%);
+			font-family: $headingFontFamily;
+			font-size: 0.984375em;
+			font-weight: normal;
+		    line-height: 2.4em;
+		    margin-bottom: 1em;
+		    text-align: center;
+		    text-transform: uppercase;
+		}
+
+	}
+}
+
+/* ----- b. Page Styles ----- */
+
+.content{
+	padding: 30px;
+}
+
+.pageContent{
+	float: left;
+	width: 650px;
+}
+
+/*   ===================================================================================================
+     6. Blog Template
+======================================================================================================== */
+
+.blogContent{
+	float: left;
+	padding: 20px 25px 0 0;
+	width: 520px;
+}
+
+.blogRightWrapper {
+	float: right;
+	padding-top: 20px;
+	width: 325px;
+
+	ul{
+		list-style: none;
+		margin: 0 0 1em;
+		padding: 0;
+	}
+
+	li{
+		font-size: 11px;
+		margin: 0 0 0 10px;
+	}
+}
+
+	.blogFilterLeft {
+		float: left;
+		padding: 0 25px 0 0;
+		width: 150px;
+	}
+
+	.blogFilterRight {
+		float: left;
+		width: 150px;
+	}
+
+/*   ===================================================================================================
+     7. Print Template
+======================================================================================================== */
+
+.printBody {
+	background-color: #fff;
+	background-image: none;
+	margin: 0;
+	padding: 0;
+}
+
+	.printWrapper {
+		margin: 0 auto;
+		width: 700px;
+	}
+
+		.printHeader {
+			height: 150px;
+			width: 700px;
+		}
+
+		.printContent {
+			text-align: left;
+			width: 700px;
+		}
+
+/*   ===================================================================================================
+     8. Buttons
+======================================================================================================== */
+button {
+	&.defaultBtn,  &.modalBtn,  &.largeBtn{
+		background: $buttonColor;
+		border-radius: 0.385em;
+		text-align: center;
+		font-family: $buttonFontFamily;
+		min-width: 3em;
+		span{
+			background: $buttonColor;
+			color: $buttonFontColor;
+			border-radius: 0.385em;
+		}
+		&:hover{
+			background:lighten($buttonColor, 10%);
+			span{
+			}
+		}
+	}
+
+	&.altBtn, &.altModalBtn, &.altLargeBtn{
+		background:$altButtonColor;
+		border-radius: 0.385em;
+		color: $buttonFontColor;
+		font-family: $buttonFontFamily;
+		min-width: 3em;
+		span{
+			background:$altButtonColor;
+			color: $altButtonFontColor;
+			border-radius: 0.385em;
+		}
+		&:hover{
+			background: lighten($altButtonColor, 10%);
+			span{
+				background: lighten($altButtonColor, 10%);
+			}
+		}
+
+	}
+}
+
+a{
+	&.linkBtn, &.modalLinkBtn, &.largeLinkBtn, &.fullWidthBtn{
+		background:$buttonColor;
+		border-radius: 0.385em;
+		text-align: center;
+		font-family: $buttonFontFamily;
+		min-width: 3em;
+		span{
+			background:$buttonColor;
+			color: $buttonFontColor;
+			border-radius: 0.385em;
+		}
+		&:hover{
+			background:lighten($buttonColor, 10%);
+			text-decoration: none;
+
+			span{
+				background:lighten($buttonColor, 10%);
+			}
+		}
+	}
+
+	&.fullWidthBtn{
+		display: block;
+		font-size: 16px;
+		max-width: 100%;
+		text-align: center;
+		width: 100%;
+	}
+
+	&.linkAltBtn, &.modalLinkAltBtn, &.modalLinkAltBtn{
+		background:$altButtonColor;
+		border-radius: 0.385em; 
+		font-family: $buttonFontFamily;
+		min-width: 3em; 
+		span{
+			background:$altButtonColor;
+			border-radius: 0.385em; 
+			color: $altButtonFontColor;
+		}
+		&:hover{
+			background: lighten($altButtonColor, 10%);
+			span{
+				background: lighten($altButtonColor, 10%);
+			}
+		}
+	}
+
+	&.modalLinkBtn, &.modalLinkAltBtn, &.modalLinkAltBtn{
+		min-width: auto;
+	}
+}
+
+
+
+/*   ===================================================================================================
+     9. Footer
+======================================================================================================== */
+
+footer {
+	background: $footerBackground;
+	color: $footerColor;
+	padding: 40px 0;
+	width: 100%;
+}
+
+.footerSocial {
+	border-bottom: 1px solid $footerColor;
+	font-size: 0.75em;
+	margin-bottom: 2em;
+
+	a {
+		color: $footerLink;
+	}
+
+	#v65-subscribeWidget { 
+		float: right;
+	}
+}
+
+.footerNav {
+	margin-bottom: 2em;
+
+	.v65-podDescription {
+		border-right: 1px solid $footerColor;
+		float: left;
+		margin-right: 3%;
+		padding-right: 3%;
+		width: 15%;
+
+		p {
+			font-family: $headingFontFamily;
+			font-size: 1.125em;
+			font-style: italic;
+		    line-height: 1.4em;
+		    margin-bottom: 1em;
+		}
+	}
+
+	.megaNav {
+		border-right: 1px solid $footerLink;
+		float: left;
+		margin-right: 3%;
+		padding-right: 3%;
+		width: 58%;
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			float: left;
+			font-family: $headingFontFamily;
+			font-size: 1.125em;
+			font-style: italic;
+		    line-height: 1.4em;
+		    margin-bottom: 1em;
+		    margin-right: 1.6em;
+		    width: auto;
+
+		    a {
+		    	color: $footerLink;
+		    	display: block;
+		    	margin-bottom: 0.6em;
+		    }
+
+			li {
+				display: block;
+				float: none;
+				font-family: $fontFamily;
+				font-size: 0.7em;
+				font-style: normal;
+			    line-height: 1.3em;
+			    margin-bottom: 1em;
+			    width: 100%;
+
+			    a {
+					color: $footerColor;
+				}
+
+			}
+		}
+
+		.v65-home {
+			display: none;
+		}
+	}
+
+	.footerNav {
+		float: left;
+		font-size: 0.7em;
+		width: 14%;
+
+		ul {
+
+		}
+
+		li {
+			display: block;
+			margin-bottom: 1em;
+		}
+
+		a {
+			color: $footerColor;
+		}
+	}
+}
+
+.accolade {
+	font-size: 0.75em;
+	text-align: center;	
+
+	a {
+		color: $footerColor;
+	}
+}
+
+/*   ===================================================================================================
+     10. Vin65 Overrides
+======================================================================================================== */
+
+/* ----- a. User Tools ----- */
+
+#user-tools {
+	color: #fff;
+	width: 400px;
+
+	a {
+		color: #ccc;
+
+		&:hover{
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+
+}
+
+/* ----- b. Homepage Product Group ----- */
+
+.homepageProductGroup .v65-productGroup-products{
+	text-align: left;
+	width: 100%;
+}
+
+	.homepageProductGroup .v65-productGroup-title{
+		color: $headingFontColor;
+		font-family: $headingFontFamily;
+		font-size: 26px;
+		line-height: 1.2;
+		margin: 0.25em  0 0.5em;
+	}
+
+	.homepageProductGroup .v65-productGroup-teaser{
+		float: none;
+		margin: 0;
+		width: 100%;
+	}
+
+	.homepageProductGroup .v65-productGroup-product{
+		margin: 0 0 1em;
+		width: 100%;
+	}
+
+		.homepageProductGroup .v65-product-photo{
+			float: left;
+			width: auto;
+		}
+
+		.homepageProductGroup .v65-productGroup-product .v65-product-addToCart-priceWrapper{
+			display: inline;
+		}
+
+/* ----- c. Checkout Overrides ----- */
+
+#v65-fieldset-paymentMethod{
+	float:left;
+	width:400px;
+}
+
+form#v65-checkBilling .v65-additionalComments {
+	float:none;
+	margin-left:10px;
+	padding:15px 0 0;
+	width:390px;
+}
+
+#v65-signUpClubSummaryWrapper {
+	margin-bottom: 20px;
+}
+
+// d. Default SASS Product List
+.v65-product2Up{
+
+	.v65-product-title{
+		a{
+
+		}
+	}
+	.v65-product-photo{
+		a{
+			img{
+
+			}
+		}
+	}
+	.v65-product-teaser{
+		p{
+
+		}
+	}
+	.v65-product-drilldownLink{
+		a{
+
+		}
+	}
+	.v65-productreviewStats{
+
+	}
+	.v65-product-inventoryMessage{
+		.v65-product-inventoryMessage-inStock{
+
+		}
+	}
+	.v65-product-addToCart{
+		.v65-addToCart{
+			fieldset{
+				legend{}
+				.v65-product-addToCart-priceWrapper{
+					.v65-product-addToCart-price{
+
+					}
+					.v65-product-addToCart-unitDescription{
+
+					}
+					.v65-product-addToCart-productSKU{
+
+					}
+				}
+				.v65-product-addToCart-quantity{
+					input{
+
+					}
+				}
+				.v65-product-addToCart-button{
+					button{
+						span{
+
+						}
+					}
+				}
+			}
+		}
+		.v65-addToCartCase{
+
+		}
+	}
+	.v65-product-socialBar{
+
+	}
+}
+
+// e. Default SASS Product Drilldown
+.v65-productWrapper{
+	.v65-product-leftCol{
+		.v65-product-photo{
+			img{
+
+			}
+		}
+		.v65-productDrilldown-specs{
+			.v65-wine-specs{
+				.v65-wine-specs-title{
+
+				}
+				.v65-product-attribute{
+					.v65-product-attributeLabel{
+
+					}
+					.v65-product-attributeValue{
+
+					}
+				}
+			}
+		}
+	}
+	.v65-product-rightCol{
+		h1{
+
+		}
+		.v65-product-teaser{
+			p{
+
+			}
+		}
+		.v65-product-availability{
+			.v65-product-availability-inStock{
+
+			}
+		}
+		.v65-product-addToCart{
+
+			.v65-addToCart{
+
+				fieldset{
+					legend{}
+					.v65-product-addToCart-priceWrapper{
+						.v65-product-addToCart-price{
+
+						}
+						.v65-product-addToCart-unitDescription{
+						}
+						.v65-product-addToCart-productSKU{
+
+						}
+					}
+					.v65-product-addToCart-quantity{
+						input{
+
+						}
+					}
+					.v65-product-addToCart-button{
+						button{
+							span{
+
+							}
+						}
+					}
+				}
+			}
+			.v65-addToCartCase{
+
+			}
+		}
+		.v65-product-reviewStats{
+			a{
+
+			}
+		}
+		.v65-product-socialBar{
+
+		}
+		.v65-product-description{
+
+		}
+		.v65-product-reviews{
+			.v65-product-reviews-title{
+
+			}
+		}
+		.v65-ProductRating{
+
+		}
+	}
+}
+
+
