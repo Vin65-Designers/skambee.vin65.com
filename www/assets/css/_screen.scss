@@ -9,12 +9,11 @@
 	3. Header
 	4. Navigation
 		a. Navigation
-		b. Sub Navigation
-
+		b. Link to Footer Navigation
+		c. Sub Navigation
 	5. Content
 		a. Homepage Styles
 		b. Page Styles
-
 	6. Blog Template
 	7. Print Template
 	8. Buttons
@@ -22,19 +21,112 @@
 	10. Vin65 Overrides
 		a. User Tools
 		b. Homepage Product Group
-		c. Checkout Overrides
 */
 
 //   ===================================================================================================
-//      Theme Settings
+//   Theme Settings
 // =====================================================================================================
 
 
 //   ===================================================================================================
-//		Default Theme
+//	 Default Theme
 //   ===================================================================================================
-$backgroundColor: #fff; // Website Background Color
-$linkColor: #a6783e;
+//$backgroundColor: #000; // Website Background Color
+//$linkColor: #a6783e;
+
+//$fontColor: #111; // General Font Color
+//$fontFamily: sans-serif; // Default Font Family
+
+// Default Heading Font Family 
+//$headingFontFamily: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+
+//$headingColor: #976933; // Default Heading Font Color
+//$headingAltColor: #000; // Default Heading Font Color
+
+//$userToolsBackgroundColor: #000; //Background Color for usertools
+//$userToolsColor: #fff; //Font Color for usertools
+//$userToolsLinkColor: #ccc; //Font Color for usertools
+//$userToolsHoverColor: #fff; //Font Color for usertools
+
+//$navColor: #fff; //Font Color for main navigation
+//$navColorHover: #000; //Font Color for main navigation
+//$navBackgroundColorOne: #2a2924; //Color for top of gradient
+//$navBackgroundColorTwo: #000; //Color for bottom of gradient
+//$navBackgroundColorHoverOne: #c2984d; //Color for top of gradient
+//$navBackgroundColorHoverTwo: #865d2d; //Color for bottom of gradient
+
+//$subNavColor: #000; //Font Color for sub navigation
+//$subNavColorHover: #a6783e; //Font Color for sub navigation
+
+//$buttonColor: #a6783e; // Default Color for Buttons
+//$buttonFontColor: #fff; // Default Color for Button Font
+
+//$altButtonColor: lighten($buttonColor, 20%); // Alt Color for Buttons
+//$altButtonFontColor: #fff; // Alt Color for Buttons Font
+
+//$buttonFontFamily: sans-serif; // Default Font Family for Buttons
+
+//$homepageContentColor: #fff; // Homepage content background color
+
+//$contentBackgroundColor: #fff; //Content background color
+
+//$footerBackground: #000; //Footer Background Color
+//$footerColor: #666; //Footer Color
+//$footerLink: #ccc; // Footer Link
+//$footerLinkHover: #fff; // Footer Link Hover
+
+//   ===================================================================================================
+//	 Red Theme
+//   ===================================================================================================
+//$backgroundColor: #000; // Website Background Color
+//$linkColor: #993333;
+
+//$fontColor: #111; // General Font Color
+//$fontFamily: sans-serif; // Default Font Family
+
+// Default Heading Font Family 
+//$headingFontFamily: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+
+//$headingColor: #993333; // Default Heading Font Color
+//$headingAltColor: #000; // Default Heading Font Color
+
+//$userToolsBackgroundColor: #000; //Background Color for usertools
+//$userToolsColor: #fff; //Font Color for usertools
+//$userToolsLinkColor: #ccc; //Font Color for usertools
+//$userToolsHoverColor: #fff; //Font Color for usertools
+
+//$navColor: #fff; //Font Color for main navigation
+//$navColorHover: #fff; //Font Color for main navigation
+//$navBackgroundColorOne: #2a2924; //Color for top of gradient
+//$navBackgroundColorTwo: #000; //Color for bottom of gradient
+//$navBackgroundColorHoverOne: #b25252; //Color for top of gradient
+//$navBackgroundColorHoverTwo: #993333; //Color for bottom of gradient
+
+//$subNavColor: #000; //Font Color for sub navigation
+//$subNavColorHover: #993333; //Font Color for sub navigation
+
+//$buttonColor: #993333; // Default Color for Buttons
+//$buttonFontColor: #fff; // Default Color for Button Font
+
+//$altButtonColor: lighten($buttonColor, 20%); // Alt Color for Buttons
+//$altButtonFontColor: #fff; // Alt Color for Buttons Font
+
+//$buttonFontFamily: sans-serif; // Default Font Family for Buttons
+
+//$homepageContentColor: #fff; // Homepage content background color
+
+//$contentBackgroundColor: #fff; //Content background color
+
+//$footerBackground: #000; //Footer Background Color
+//$footerColor: #666; //Footer Color
+//$footerLink: #ccc; // Footer Link
+//$footerLinkHover: #fff; // Footer Link Hover
+
+//   ===================================================================================================
+//	 Green Theme
+//   ===================================================================================================
+$backgroundColor: #000; // Website Background Color
+$linkColor: #51642d;
 
 $fontColor: #111; // General Font Color
 $fontFamily: sans-serif; // Default Font Family
@@ -42,37 +134,63 @@ $fontFamily: sans-serif; // Default Font Family
 // Default Heading Font Family 
 $headingFontFamily: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 
-$headingFontColor: #976933; // Default Heading Font Color
+$headingColor: #51642d; // Default Heading Font Color
+$headingAltColor: #000; // Default Heading Font Color
+
+$userToolsBackgroundColor: #000; //Background Color for usertools
+$userToolsColor: #fff; //Font Color for usertools
+$userToolsLinkColor: #ccc; //Font Color for usertools
+$userToolsHoverColor: #fff; //Font Color for usertools
 
 $navColor: #fff; //Font Color for main navigation
-$navColorHover: #000; //Font Color for main navigation
+$navColorHover: #fff; //Font Color for main navigation
 $navBackgroundColorOne: #2a2924; //Color for top of gradient
-$navBackgroundColorTwo: #000; //Color for bottom of gradient
-$navBackgroundColorHoverOne: #c2984d; //Color for top of gradient
-$navBackgroundColorHoverTwo: #865d2d; //Color for bottom of gradient
+$navBackgroundColorTwo: #000000; //Color for bottom of gradient
+$navBackgroundColorHoverOne: #56652c; //Color for top of gradient
+$navBackgroundColorHoverTwo: #39451d; //Color for bottom of gradient
 
-$buttonColor: #a6783e; // Default Color for Buttons
+@mixin ieGradient {
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56652c', endColorstr='#39451d',GradientType=0 ); /* IE6-9 */
+}
+
+$subNavColor: #000; //Font Color for sub navigation
+$subNavColorHover: #51642d; //Font Color for sub navigation
+
+$buttonColor: #51642d; // Default Color for Buttons
 $buttonFontColor: #fff; // Default Color for Button Font
 
-$altButtonColor: lighten($buttonColor, 10%); // Alt Color for Buttons
+$altButtonColor: lighten($buttonColor, 20%); // Alt Color for Buttons
 $altButtonFontColor: #fff; // Alt Color for Buttons Font
 
 $buttonFontFamily: sans-serif; // Default Font Family for Buttons
 
 $homepageContentColor: #fff; // Homepage content background color
-$homepageContentBackgroundColor: #000; // Homepage content background color
+
+$contentBackgroundColor: #fff; //Content background color
 
 $footerBackground: #000; //Footer Background Color
 $footerColor: #666; //Footer Color
 $footerLink: #ccc; // Footer Link
 $footerLinkHover: #fff; // Footer Link Hover
 
+@mixin gradient {
+	background: $navBackgroundColorOne; /* Old browsers */
+	background: -moz-linear-gradient(top, $navBackgroundColorOne 0%, $navBackgroundColorTwo 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$navBackgroundColorOne), color-stop(100%,$navBackgroundColorTwo)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, $navBackgroundColorOne 0%,$navBackgroundColorTwo 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, $navBackgroundColorOne 0%,$navBackgroundColorTwo 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, $navBackgroundColorOne 0%,$navBackgroundColorTwo 100%); /* IE10+ */
+	background: linear-gradient(to bottom, $navBackgroundColorOne 0%,$navBackgroundColorTwo 100%); /* W3C */
+	@include ieGradient;
+}
+
+
 
 /*   ===================================================================================================
      1. Typography - These get copied into the admin.css
 ======================================================================================================== */
 html {
-    font-size: 100%;
+    font-size: 75%;
 }
 
 body{
@@ -82,58 +200,75 @@ body{
 }
 
 h1, h2, h3, h4, h5, h6 {
-   	color: $headingFontColor;
+   	color: $headingColor;
 	font-family: $headingFontFamily;
+	font-style: italic;
 	font-weight: normal;
     margin: 0;
 }
 
 h1 {
-    font-size: 2.25em;
-    line-height: 1;
-    margin-bottom: 0.5em;
+    font-size: 3em;  // 3 * 12 = 36px
+    line-height: 1; // 1 * 36 = 36px
+    margin-bottom: 0.5em; // 0.5 * 36 = 18px
 }
 
 h2 {
-    font-size: 1.6875em;
-    line-height: 1.3333333333333333;
-    margin-bottom: 0.6666666666666666em;
+    font-size: 2.25em; // 2.25 * 12 = 27px
+    line-height: 1.3333333333333333; // 1.33 * 27px = 36px
+    margin-bottom: 0.6666666666666666em; // 0.66 * 27px = 18px
 }
 
 h3 {
-    font-size: 1.125em;
-    line-height: 1;
-    margin-bottom: 1em;
+    font-size: 1.5em; // 1.5 * 12 = 18px
+    line-height: 1; // 1 * 18 = 18px
+    margin-bottom: 1em; // 1 * 18 = 18px
 }
 
 h4 {
-    font-size: 0.984375em;
-    line-height: 1.1428571428571428;
-    margin-bottom: 1.1428571428571428em;
+    font-size: 1.3125em; // 1.3125 * 12 = 15.75px
+    line-height: 1.1428571428571428; // 1.14 * 15.75 = 18px
+    margin-bottom: 1.1428571428571428em; // 1.14 * 15.75 = 18px
 }
 
 h5 {
-    font-size: 0.84375em;
-    line-height: 1.3333333333333333;
-    margin-bottom: 1.3333333333333333em;
+    font-size: 1.125em; // 1.125 * 12 = 13.5px
+    line-height: 1.3333333333333333; // 1.3333 * 13.5 = 18px
+    margin-bottom: 1.3333333333333333em; // 1.3333 * 13.5 = 18px
 }
 
 h6 {
-    font-size: 0.75em;
-    line-height: 1.5;
-    margin-bottom: 1.5em;
+    font-size: 1em; // 1 * 12 = 12px
+    line-height: 1.5; // 1.5 * 12 = 18px
+    margin-bottom: 1.5em; // 1.5 * 12 = 18px
+}
+
+.v65-title { 
+    font-size: 2em; // 2 * 12 = 24px
+    line-height: 1; // 1 * 24 = 24px
+    margin-bottom: 0.5em; // 0.5 * 24 = 12px
+   	color: $headingColor;
+	font-family: $headingFontFamily;
+	font-style: italic;
+	font-weight: normal;
+}
+
+.v65-subtitle { //36px
+    font-size: 1.5em; //18px
+    line-height: 1; //18px
+    margin-bottom: 1em; //18px
+   	color: $headingColor;
+	font-family: $headingFontFamily;
+	font-weight: normal;
 }
 
 p, blockquote {
-    font-size: 0.75em;
     margin: 0 0 1.5em;
     line-height: 1.5;
 }
 
 dl, ol, ul {
-    font-size: 1em;
     margin: 0 0 1.5em;
-    padding: 0;
 }
 
 dd, dt, li {
@@ -166,7 +301,7 @@ legend {
 hr {
 	background-color: $fontColor;
 	border: 0;
-	color: #666;
+	color: $fontColor;
 	height: 1px;
 }
 
@@ -174,6 +309,36 @@ hr {
 	max-width: 970px;
 	margin: 0 auto;
 	width: 100%;
+
+	@media screen and (max-width : 970px) {
+		padding: 0 2%;
+		width: 96%;
+	}
+}
+
+.backtotop {
+	display: none;
+
+	@media screen and (max-width : 680px) {
+		position: fixed;
+		bottom: 1em;
+		right: 1em;
+		z-index: 900;
+
+		a {
+			color: #fff;
+			background: #333;
+			border: 1px solid #ccc;
+			border-radius: 50%;
+			display: block;
+			line-height: 5em;
+			height: 5em;
+			width: 5em;
+			text-align: center;
+			text-decoration: none;
+		}
+	}
+	
 }
 
 /*   ===================================================================================================
@@ -181,26 +346,56 @@ hr {
 ======================================================================================================== */
 
 .userToolsWrapper {
-	background: #000;
-	font-size: 0.75em;
-	height: 36px;
+	background: $userToolsBackgroundColor;
+	height: 3em;
 	position: relative;
 	width: 100%;
 	z-index: 999;
+
+	@media screen and (max-width : 580px) {
+		height: 4em; 
+		line-height: 4em;
+	}
+
 }
 
 /*   ===================================================================================================
      3. Header
 ======================================================================================================== */
 
-header{
-	background: url("../images/homepage-feature.jpg") center top no-repeat #303030;
+header {
+	background: url("../images/homepage-feature.jpg") center top no-repeat $backgroundColor;
 	height: 465px;
 	padding-top: 35px;
 	position: relative;
 	text-align: center;
 	width: 100%;
 	z-index: 100;
+
+	@media screen and (max-width : 580px) {
+		height: 180px;
+		padding-top: 10px;
+
+		img { 
+			max-height: 90%; 
+		}
+	}
+}
+
+.pageHeader {
+	background: url("../images/page-feature.jpg") center top no-repeat $backgroundColor;
+	height: 185px;
+	padding-top: 15px;
+
+	@media screen and (max-width : 580px) {
+		height: 100px;
+		padding-top: 10px;
+
+		img { 
+			max-height: 90%; 
+		}
+	}
+
 }
 
 /*   ===================================================================================================
@@ -209,29 +404,33 @@ header{
 
 /* ----- a. Main Menu ----- */
 nav {
-	height: 55px;
+	height: 5em;
 	position: relative;
 	z-index: 101;
 
-	background: #2a2924; /* Old browsers */
-	background: -moz-linear-gradient(top, $navBackgroundColorOne 0%, $navBackgroundColorTwo 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$navBackgroundColorOne), color-stop(100%,$navBackgroundColorTwo)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, $navBackgroundColorOne 0%,$navBackgroundColorTwo 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, $navBackgroundColorOne 0%,$navBackgroundColorTwo 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, $navBackgroundColorOne 0%,$navBackgroundColorTwo 100%); /* IE10+ */
-	background: linear-gradient(to bottom, $navBackgroundColorOne 0%,$navBackgroundColorTwo 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$navBackgroundColorOne', endColorstr='$navBackgroundColorTwo',GradientType=0 ); /* IE6-9 */
+	@include gradient;
+
+	@media screen and (max-width : 580px) {
+		height: auto;
+	}
 
 	ul {
-		height: 55px;
+		height: 5em;
 		list-style: none;
 		margin: 0 auto;
+		padding: 0;
 		position: relative;
 		max-width: 970px;
+		text-align: center;
+
+		@media screen and (max-width : 580px) {
+			height: auto;
+		}
 	}
 
 	li {
-		float: left;
+		display: inline-block;
+		margin-left: -4px;
 		padding: 0;
 		position: relative;
 
@@ -239,10 +438,11 @@ nav {
 			color: $navColor;
 			display: inline-block;
 			font-family: $headingFontFamily;
-			height: 55px;
-			line-height: 55px;
+			font-size: 1.333333333333333333em;
+			height: 3.75em;
+			line-height: 3.75em;
 			margin: 0;
-			padding: 0 40px;
+			padding: 0 35px;
 			position: relative;
 			text-decoration: none;
 
@@ -250,30 +450,43 @@ nav {
 				color: $navColorHover;
 				text-decoration: none;
 
-				background: #2a2924; /* Old browsers */
-				background: -moz-linear-gradient(top, $navBackgroundColorHoverOne 0%, $navBackgroundColorHoverTwo 100%); /* FF3.6+ */
-				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$navBackgroundColorHoverOne), color-stop(100%,$navBackgroundColorHoverTwo)); /* Chrome,Safari4+ */
-				background: -webkit-linear-gradient(top, $navBackgroundColorHoverOne 0%,$navBackgroundColorHoverTwo 100%); /* Chrome10+,Safari5.1+ */
-				background: -o-linear-gradient(top, $navBackgroundColorHoverOne 0%,$navBackgroundColorHoverTwo 100%); /* Opera 11.10+ */
-				background: -ms-linear-gradient(top, $navBackgroundColorHoverOne 0%,$navBackgroundColorHoverTwo 100%); /* IE10+ */
-				background: linear-gradient(to bottom, $navBackgroundColorHoverOne 0%,$navBackgroundColorHoverTwo 100%); /* W3C */
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$navBackgroundColorHoverOne', endColorstr='$navBackgroundColorHoverTwo',GradientType=0 ); /* IE6-9 */
-
+				@include gradient;
 			}
+
+			@media screen and (max-width : 680px) {
+				padding: 0 25px;
+			}
+
+			@media screen and (max-width : 580px) {
+				height: auto;
+				line-height: 1.6em;
+				padding: 12px;
+			}
+		}
+
+		.hover{
+			color: $navColorHover;
+			text-decoration: none;
+
+			@include gradient;
 		}
 
 		// Drop Down
 		&:hover ul{
-			border: 1px solid #ccc;
+			background: $navBackgroundColorOne;
 			display: block;
-			font-size: 12px;
+
+			@media screen and (max-width : 580px) {
+				display: none;
+			}
+
 		}
 
 		ul{
 			display: none;
-			left: -10px;
+			left: 0px;
 			position: absolute;
-			top: 32px;
+			top: 5em;
 			width: 180px;
 		}
 
@@ -282,23 +495,23 @@ nav {
 			float: none;
 			margin: 0;
 			text-align: left;
-			width: 180px;
+			width: 230px;
 
 			a{
-				background-color: #fff;
-				color: #666;
+				background: $navBackgroundColorHoverTwo;
+				color: $navColor;
 				display: block;
 				float: none;
-				height: 28px;
-				line-height: 28px;
+				font-size: 1.16666666667em;
 				margin: 0;
-				padding: 0 0 0 10px;
+				padding: 0 40px;
 				text-align: left;
 				text-transform: none;
-				width: 170px;
+				width: 150px;
 
 				&:hover{
-					color: #000;
+					background: lighten($navBackgroundColorOne, 5%);
+					color: $navColor;
 				}
 			}
 		}
@@ -308,70 +521,117 @@ nav {
 		color: $navColorHover;
 		text-decoration: none;
 
-		background: #2a2924; /* Old browsers */
-		background: -moz-linear-gradient(top, $navBackgroundColorHoverOne 0%, $navBackgroundColorHoverTwo 100%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$navBackgroundColorHoverOne), color-stop(100%,$navBackgroundColorHoverTwo)); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(top, $navBackgroundColorHoverOne 0%,$navBackgroundColorHoverTwo 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(top, $navBackgroundColorHoverOne 0%,$navBackgroundColorHoverTwo 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(top, $navBackgroundColorHoverOne 0%,$navBackgroundColorHoverTwo 100%); /* IE10+ */
-		background: linear-gradient(to bottom, $navBackgroundColorHoverOne 0%,$navBackgroundColorHoverTwo 100%); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$navBackgroundColorHoverOne', endColorstr='$navBackgroundColorHoverTwo',GradientType=0 ); /* IE6-9 */	
+		@include gradient;	
 	}
 
 	.v65-home {
-		display: none;
+		@media screen and (max-width : 835px) {
+			display: none;
+		}
 	}
 
 	.v65-selected {
 		color: $navColorHover;
 		text-decoration: none;
 
-		background: #2a2924; /* Old browsers */
-		background: -moz-linear-gradient(top, $navBackgroundColorHoverOne 0%, $navBackgroundColorHoverTwo 100%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$navBackgroundColorHoverOne), color-stop(100%,$navBackgroundColorHoverTwo)); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(top, $navBackgroundColorHoverOne 0%,$navBackgroundColorHoverTwo 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(top, $navBackgroundColorHoverOne 0%,$navBackgroundColorHoverTwo 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(top, $navBackgroundColorHoverOne 0%,$navBackgroundColorHoverTwo 100%); /* IE10+ */
-		background: linear-gradient(to bottom, $navBackgroundColorHoverOne 0%,$navBackgroundColorHoverTwo 100%); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$navBackgroundColorHoverOne', endColorstr='$navBackgroundColorHoverTwo',GradientType=0 ); /* IE6-9 */	
+		@include gradient;	
 	}
 }
 
-/* ----- b. Sub Menu ----- */
-.subMenu{
-	border-right: 1px solid #ccc;
-	float: left;
-	margin: 60px 40px 0 0;
-	padding-right: 20px;
-	width: 170px;
+/* ----- b. Link to Footer Navigation ----- */
+.footerMenuLink {
+	display: none;
+	
+	@media screen and (max-width : 580px) {
+		bottom: 0;
+		color: $navColor;
+		display: block;
+		font-size: 1em;
+		height: 4em;
+		line-height: 4em;
+		padding: 0 15px;
+		position: absolute;
+		right: 0;
+		z-index: 100;
+
+		i {
+			font-size: 1.5em;
+		}
+	}
+
+}
+
+/* ----- c. Sub Menu ----- */
+.subMenu {
+	margin: 0 3% 0 0;
+	padding: 1em 3% 0 0;
+	width: 19%;
+
+	@media screen and (max-width : 580px) {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	h4 {
+		color: $headingAltColor;
+		font-style: normal;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+
+		@media screen and (max-width : 580px) {
+			display: none;
+		}
+
+	}
 
 	ul{
-		font-size: 11px;
+		border-top: 1px solid $buttonColor;
+		border-right: 1px solid $buttonColor;
 		list-style: none;
-		margin: 0 0 1em 10px;
-		padding: 0;
-		width: 160px;
+		margin: 0 0 1em;
+		padding: 1em 0 8em 0;
+
+		@media screen and (max-width : 580px) {
+			border: 0;
+			padding: 0;
+		}
 	}
 
 	li{
-		line-height: 2;
+		line-height: 2em;
 
-		a{
-			&:hover{}
+		@media screen and (max-width : 580px) {
+			border-bottom: 1px solid $subNavColor;
+			height: 4em;
+			line-height: 4em;
+			text-align: center;
+		}
+
+		a {
+			color: $subNavColor;
+
+			@media screen and (max-width : 580px) {
+				display: block;
+			}
+			
+			&:hover{
+				 color: $subNavColorHover;
+				 text-decoration: none;
+			}
 		}
 
 		ul{
-			margin-left: 10px;
-			width: 160px;
+			margin-left: 1em;
 		}
 	}
 
 	.v65-pageAParent {
-		color: #000;
+		color: $subNavColorHover;
 	}
 
 	.v65-leftSelected{
-		color: #000;
+		color: $subNavColorHover;
 		font-weight: bold;
 	}
 
@@ -384,24 +644,45 @@ nav {
 
 /* ----- a. Homepage Styles ----- */
 .homepageContent {
-	background: $homepageContentBackgroundColor;
 	padding: 40px 0;
+
+	@media screen and (max-width : 970px) {
+		padding: 20px 0;
+	}
+
 }
 
 	.homepageImage {
 		float: left;
+		margin-bottom: 2em;
 		margin-right: 3%;
 		max-width: 285px;
 		width: 30%;
+
+		@media screen and (max-width : 580px) {
+			float: none;
+			margin-right: 0;
+			max-width: 480px;
+			text-align: center;
+			width: 100%;
+		}
 	}	
 
 	.homepageText {
 		color: $homepageContentColor;
 		float: left;
 		width: 67%;
+
+		@media screen and (max-width : 580px) {
+			float: none;
+			margin: 0;
+			width: 100%;
+		}
+
 	}
 
 .homepageContentItems {
+	background: $contentBackgroundColor;
 	padding: 40px 0;
 
 	article {
@@ -409,11 +690,19 @@ nav {
 		margin: 0 1% 0 2%;
 		width: 30%;
 
+		@media screen and (max-width : 580px) {
+			float: none;
+			margin: 0 0 2em 0;
+			width: 100%;
+		}
+
 		.v65-productGroup-title, .v65-event-upcoming-title, .v65-podTitle {
-		    border-top: 1px solid lighten($headingFontColor, 40%);
-		    border-bottom: 1px solid lighten($headingFontColor, 40%);
+		    border-top: 1px solid lighten($headingColor, 40%);
+		    border-bottom: 1px solid lighten($headingColor, 40%);
+			color: $headingAltColor;
 			font-family: $headingFontFamily;
-			font-size: 0.984375em;
+			font-size: 1.166666666667em;
+			font-style: normal;
 			font-weight: normal;
 		    line-height: 2.4em;
 		    margin-bottom: 1em;
@@ -422,18 +711,125 @@ nav {
 		}
 
 	}
+
+	.v65-event-upcoming-event {
+		border-bottom: 1px solid lighten($headingColor, 40%);
+		margin-bottom: 1.5em;
+		padding-bottom: 1.5em;
+		text-align: left;
+	}
+
+		.v65-event-upcoming-event-date {
+		}
+
+		.v65-event-upcoming-event-time {
+			display: block;
+			margin-bottom: 0.5em;
+		}
+
+		.v65-event-upcoming-event-title {
+			display: block;
+			font-family: $headingFontFamily;
+			font-style: italic;
+		}
+
+
+	.v65-productGroup-products {
+		margin-bottom: 2em;
+		text-align: left;
+	}
+
+		.productPhoto {
+			float: left;
+			margin: 0 2% 0 0;
+			position: relative;
+			text-align: center;
+			width: 25%;
+		}
+
+		.productDescription {
+			float: left;
+			width: 73%;
+		}
+
+		.v65-product-title {
+			font-style: italic;
+		}
+
+		.v65-productGroup-teaser {
+			margin-bottom: 1em;
+			width: 100%;
+		}
+
+		.v65-productGroup-product {
+			clear: both;
+			float: none;
+			margin: 0 0 2em 0;
+			width: 100%;
+		}
+
+		.v65-product-reviewStats {
+			display: none;
+		}
 }
 
 /* ----- b. Page Styles ----- */
 
-.content{
-	padding: 30px;
+.pageContent {
+	background: $contentBackgroundColor;
+	padding: 40px 0;
+
+	@media screen and (max-width : 970px) {
+		padding: 20px 0;
+	}
+
 }
 
-.pageContent{
-	float: left;
-	width: 650px;
+.pageText {
+	float: right;
+	width: 75%;
+
+	@media screen and (max-width : 580px) {
+		float: none;
+		margin: 0 0 2em 0;
+		width: 100%;
+	}
+
 }
+
+.pageWideText {
+	margin: 0 auto;
+	width: 80%;
+
+	@media screen and (max-width : 835px) {
+		float: none;
+		margin: 0 0 2em 0;
+		width: 100%;
+	}
+
+}
+
+.colWrapper {
+	width: 100%;
+}
+
+	.colWrapper:before,.colWrapper:after { content:""; display:table; }
+	.colWrapper:after { clear:both; }
+
+	.col2 {
+		float: left;
+		margin-right: 5%;
+		width: 45%;
+
+		@media screen and (max-width : 520px) {
+			float: none;
+			margin: 0 0 2em 0;
+			width: 100%;
+		}
+
+	}
+	
+
 
 /*   ===================================================================================================
      6. Blog Template
@@ -441,14 +837,22 @@ nav {
 
 .blogContent{
 	float: left;
-	padding: 20px 25px 0 0;
-	width: 520px;
+	padding: 20px 4% 0 0;
+	width: 56%;
+
+	@media screen and (max-width : 580px) {
+		float: none;
+		margin: 0 0 2em 0;
+		padding: 0;
+		width: 96%;
+	}
+
 }
 
 .blogRightWrapper {
 	float: right;
-	padding-top: 20px;
-	width: 325px;
+	padding: 20px 0 0 0;
+	width: 40%;
 
 	ul{
 		list-style: none;
@@ -460,17 +864,25 @@ nav {
 		font-size: 11px;
 		margin: 0 0 0 10px;
 	}
+
+	@media screen and (max-width : 580px) {
+		float: none;
+		margin: 0 0 2em 0;
+		padding: 0;
+		width: 100%;
+	}
+
 }
 
 	.blogFilterLeft {
 		float: left;
-		padding: 0 25px 0 0;
-		width: 150px;
+		padding-right: 4%;
+		width: 48%;
 	}
 
 	.blogFilterRight {
 		float: left;
-		width: 150px;
+		width: 48%;
 	}
 
 /*   ===================================================================================================
@@ -506,9 +918,7 @@ button {
 	&.defaultBtn,  &.modalBtn,  &.largeBtn{
 		background: $buttonColor;
 		border-radius: 0.385em;
-		text-align: center;
 		font-family: $buttonFontFamily;
-		min-width: 3em;
 		span{
 			background: $buttonColor;
 			color: $buttonFontColor;
@@ -523,10 +933,8 @@ button {
 
 	&.altBtn, &.altModalBtn, &.altLargeBtn{
 		background:$altButtonColor;
-		border-radius: 0.385em;
 		color: $buttonFontColor;
 		font-family: $buttonFontFamily;
-		min-width: 3em;
 		span{
 			background:$altButtonColor;
 			color: $altButtonFontColor;
@@ -546,9 +954,7 @@ a{
 	&.linkBtn, &.modalLinkBtn, &.largeLinkBtn, &.fullWidthBtn{
 		background:$buttonColor;
 		border-radius: 0.385em;
-		text-align: center;
 		font-family: $buttonFontFamily;
-		min-width: 3em;
 		span{
 			background:$buttonColor;
 			color: $buttonFontColor;
@@ -576,7 +982,6 @@ a{
 		background:$altButtonColor;
 		border-radius: 0.385em; 
 		font-family: $buttonFontFamily;
-		min-width: 3em; 
 		span{
 			background:$altButtonColor;
 			border-radius: 0.385em; 
@@ -595,6 +1000,21 @@ a{
 	}
 }
 
+.v65-quickView-close {
+
+	a {
+		border-radius: 0.385em; 
+		background: lighten($altButtonColor, 10%);
+
+		&:hover{
+			background: lighten($altButtonColor, 10%);
+			
+		}
+		
+	}
+
+}
+
 
 
 /*   ===================================================================================================
@@ -604,49 +1024,169 @@ a{
 footer {
 	background: $footerBackground;
 	color: $footerColor;
-	padding: 40px 0;
+	padding: 20px 0;
 	width: 100%;
+
+	@media screen and (max-width : 970px) {
+		padding: 40px 0;
+	}
 }
 
 .footerSocial {
 	border-bottom: 1px solid $footerColor;
-	font-size: 0.75em;
+	height: 5em;
+	line-height: 5em;
 	margin-bottom: 2em;
 
 	a {
 		color: $footerLink;
 	}
 
-	#v65-subscribeWidget { 
-		float: right;
+	@media screen and (max-width : 580px) {
+			
+		.icon-facebook-squared, .icon-twitter {
+			font-size: 2em;
+			line-height: 2em;
+			height: 2em;
+		}
+			
 	}
+
+	.callUs {
+		display: none;
+
+		@media screen and (max-width : 580px) {
+			display: block;
+			line-height: 5em;
+			height: 5em;
+		}
+		
+	}
+
+	@media screen and (max-width : 970px) {
+		float: none;
+		height: auto;
+		line-height: normal;
+		margin-bottom: 0;
+		padding-bottom: 2em;
+		text-align: center;
+	}
+
+	.subscribe { 
+		color: $footerLink;
+		font-family: $headingFontFamily;
+		font-style: italic;
+		float: right;
+
+		@media screen and (max-width : 970px) {
+			float: none;
+			width: 100%;
+		}
+
+		#v65-subscribeWidget {
+			display: inline-block;
+			position: relative;
+
+			span.error {
+				display: block;
+				left: 10px;
+				position: absolute;
+				top: -30px;
+
+				@media screen and (max-width : 970px) {
+					top: -20px;
+				}
+
+				@media screen and (max-width : 680px) {
+					position: relative;
+					left: 0;
+					margin-bottom: 1em;
+					top: 0;
+				}
+
+			}
+
+		}
+
+		input {
+			width: 150px !important;
+			background: $footerColor;
+			border: 0;
+			color: $footerLink;
+			font-family: sans-serif;
+			letter-spacing: 1px;
+			margin-left: 1em;
+			padding: 0 10px;
+			text-transform: uppercase;
+		}
+
+		.intro {
+			font-size: 1.3125em;
+
+			@media screen and (max-width : 520px) {
+				display: block;
+				margin-bottom: 0.6em;
+			}
+		}
+
+	}
+
+	.copyright {
+		display: inline-block;
+		font-size: 0.83333333333em;
+		margin-left: 1em;
+
+		@media screen and (max-width : 580px) {
+			display: block;
+			line-height: 4em;
+			height: 4em;
+			margin: 0;
+		}
+	}
+
 }
 
-.footerNav {
+.footerNavWrapper {
 	margin-bottom: 2em;
 
 	.v65-podDescription {
 		border-right: 1px solid $footerColor;
 		float: left;
-		margin-right: 3%;
-		padding-right: 3%;
+		margin-right: 2%;
+		padding-right: 2%;
 		width: 15%;
+
+		@media screen and (max-width : 970px) {
+			border: 0;
+			width: 23%;
+		}
 
 		p {
 			font-family: $headingFontFamily;
-			font-size: 1.125em;
+			font-size: 1.5em;
 			font-style: italic;
 		    line-height: 1.4em;
 		    margin-bottom: 1em;
 		}
+
+		@media screen and (max-width : 520px) {
+			border-right: 0;
+			float: none;
+			margin-right: 0;
+			padding-right: 0;
+			text-align: center;
+			width: 100%;
+		}
+
 	}
 
 	.megaNav {
-		border-right: 1px solid $footerLink;
 		float: left;
-		margin-right: 3%;
-		padding-right: 3%;
-		width: 58%;
+		width: 62%;
+
+		@media screen and (max-width : 970px) {
+			width: 72%;
+		}
 
 		ul {
 			list-style: none;
@@ -657,24 +1197,25 @@ footer {
 		li {
 			float: left;
 			font-family: $headingFontFamily;
-			font-size: 1.125em;
+			font-size: 1.3em;
 			font-style: italic;
 		    line-height: 1.4em;
 		    margin-bottom: 1em;
-		    margin-right: 1.6em;
-		    width: auto;
+		    margin-right: 2%;
+		    width: 18%;
 
 		    a {
 		    	color: $footerLink;
 		    	display: block;
 		    	margin-bottom: 0.6em;
+
 		    }
 
 			li {
 				display: block;
 				float: none;
 				font-family: $fontFamily;
-				font-size: 0.7em;
+				font-size: 0.6111111111em;
 				font-style: normal;
 			    line-height: 1.3em;
 			    margin-bottom: 1em;
@@ -690,35 +1231,114 @@ footer {
 		.v65-home {
 			display: none;
 		}
+
+		@media screen and (max-width : 520px) {
+			display: none;
+		}
+
 	}
 
 	.footerNav {
-		float: left;
-		font-size: 0.7em;
+		border-left: 1px solid $footerColor;
+		float: right;
+		margin-left: 2%;
+		padding-left: 2%;
 		width: 14%;
 
 		ul {
+			margin: 0;
+			padding: 0;
+
+			@media screen and (max-width : 970px) {
+				text-align: center;
+				border-bottom: 1px solid $footerColor;
+				height: 4em;
+				line-height: 4em;
+				margin-bottom: 2em;
+			}
+
+			@media screen and (max-width : 520px) {
+				height: auto;
+				line-height: auto;
+			}
 
 		}
 
 		li {
 			display: block;
+			font-size: 0.9166666666667em;
 			margin-bottom: 1em;
+
+			@media screen and (max-width : 970px) {
+				display: inline-block;
+				margin: 0 2em;
+			}
+
+			@media screen and (max-width : 520px) {
+				display: block;
+				text-align: center;
+				font-size: 1em;
+				height: 3em;
+				line-height: 3em;
+				margin: 0;
+				width: 100%;
+			}
+
 		}
 
 		a {
 			color: $footerColor;
+
+			@media screen and (max-width : 520px) {
+				display: block;
+				height: 3em;
+				line-height: 3em;
+			}
 		}
+
+		@media screen and (max-width : 970px) {
+			border-left: 0;
+			float: none;
+			margin-bottom: 2em;
+			margin-left: 0;
+			padding-left: 0;
+			width: 100%;
+		}
+
+		
+
 	}
 }
 
 .accolade {
-	font-size: 0.75em;
 	text-align: center;	
 
 	a {
 		color: $footerColor;
 	}
+}
+
+/* ----- Checkout footer items ----- */
+.footerSocialCheckout {
+	border-bottom: 0 solid $footerColor;
+	margin: 0;
+
+	.copyright {
+		margin: 0;
+	}
+}
+
+.footerNavWrapperCheckout {
+	margin: 0;
+
+	.v65-podDescription {
+		border-right: 0 solid $footerColor;
+	}
+
+}
+
+.accoladeCheckout {
+	text-align: center;	
 }
 
 /*   ===================================================================================================
@@ -728,14 +1348,14 @@ footer {
 /* ----- a. User Tools ----- */
 
 #user-tools {
-	color: #fff;
-	width: 400px;
+	color: $userToolsColor;
+	position: relative;
 
 	a {
-		color: #ccc;
+		color: $userToolsLinkColor;
 
 		&:hover{
-			color: #fff;
+			color: $userToolsHoverColor;
 			text-decoration: none;
 		}
 	}
@@ -750,9 +1370,9 @@ footer {
 }
 
 	.homepageProductGroup .v65-productGroup-title{
-		color: $headingFontColor;
+		color: $headingColor;
 		font-family: $headingFontFamily;
-		font-size: 26px;
+		font-size: 2em;
 		line-height: 1.2;
 		margin: 0.25em  0 0.5em;
 	}
@@ -776,188 +1396,3 @@ footer {
 		.homepageProductGroup .v65-productGroup-product .v65-product-addToCart-priceWrapper{
 			display: inline;
 		}
-
-/* ----- c. Checkout Overrides ----- */
-
-#v65-fieldset-paymentMethod{
-	float:left;
-	width:400px;
-}
-
-form#v65-checkBilling .v65-additionalComments {
-	float:none;
-	margin-left:10px;
-	padding:15px 0 0;
-	width:390px;
-}
-
-#v65-signUpClubSummaryWrapper {
-	margin-bottom: 20px;
-}
-
-// d. Default SASS Product List
-.v65-product2Up{
-
-	.v65-product-title{
-		a{
-
-		}
-	}
-	.v65-product-photo{
-		a{
-			img{
-
-			}
-		}
-	}
-	.v65-product-teaser{
-		p{
-
-		}
-	}
-	.v65-product-drilldownLink{
-		a{
-
-		}
-	}
-	.v65-productreviewStats{
-
-	}
-	.v65-product-inventoryMessage{
-		.v65-product-inventoryMessage-inStock{
-
-		}
-	}
-	.v65-product-addToCart{
-		.v65-addToCart{
-			fieldset{
-				legend{}
-				.v65-product-addToCart-priceWrapper{
-					.v65-product-addToCart-price{
-
-					}
-					.v65-product-addToCart-unitDescription{
-
-					}
-					.v65-product-addToCart-productSKU{
-
-					}
-				}
-				.v65-product-addToCart-quantity{
-					input{
-
-					}
-				}
-				.v65-product-addToCart-button{
-					button{
-						span{
-
-						}
-					}
-				}
-			}
-		}
-		.v65-addToCartCase{
-
-		}
-	}
-	.v65-product-socialBar{
-
-	}
-}
-
-// e. Default SASS Product Drilldown
-.v65-productWrapper{
-	.v65-product-leftCol{
-		.v65-product-photo{
-			img{
-
-			}
-		}
-		.v65-productDrilldown-specs{
-			.v65-wine-specs{
-				.v65-wine-specs-title{
-
-				}
-				.v65-product-attribute{
-					.v65-product-attributeLabel{
-
-					}
-					.v65-product-attributeValue{
-
-					}
-				}
-			}
-		}
-	}
-	.v65-product-rightCol{
-		h1{
-
-		}
-		.v65-product-teaser{
-			p{
-
-			}
-		}
-		.v65-product-availability{
-			.v65-product-availability-inStock{
-
-			}
-		}
-		.v65-product-addToCart{
-
-			.v65-addToCart{
-
-				fieldset{
-					legend{}
-					.v65-product-addToCart-priceWrapper{
-						.v65-product-addToCart-price{
-
-						}
-						.v65-product-addToCart-unitDescription{
-						}
-						.v65-product-addToCart-productSKU{
-
-						}
-					}
-					.v65-product-addToCart-quantity{
-						input{
-
-						}
-					}
-					.v65-product-addToCart-button{
-						button{
-							span{
-
-							}
-						}
-					}
-				}
-			}
-			.v65-addToCartCase{
-
-			}
-		}
-		.v65-product-reviewStats{
-			a{
-
-			}
-		}
-		.v65-product-socialBar{
-
-		}
-		.v65-product-description{
-
-		}
-		.v65-product-reviews{
-			.v65-product-reviews-title{
-
-			}
-		}
-		.v65-ProductRating{
-
-		}
-	}
-}
-
-

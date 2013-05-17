@@ -6,6 +6,8 @@
 
 	<v65:metaTags></v65:metaTags>
 
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
 	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
 
@@ -14,13 +16,19 @@
 	<!--//Vin65 QuickLaunch//-->
 
 	<v65:css files="/assets/css/screen.min.css"></v65:css>
+	
+	<!--[if lt IE 9]>
+		<script src="/assets/js/html5shiv.js"></script>
+		<script src="/assets/js/html5shiv-printshiv.js"></script>
+		<script src="/assets/js/respond.min.js"></script>
+	<![endif]-->
 
 </head>
 <body>
 
 	<section class="userToolsWrapper">
 
-		<div class="wrapper">
+		<div class="wrapper v65-group">
 
 			<div id="user-tools">
 				<v65:modalCart></v65:modalCart>
@@ -82,16 +90,21 @@
 		<div class="wrapper">
 			
 			<div class="footerSocial v65-group">
-				<v65:subscribe contactType="Newsletter"></v65:subscribe>
-				<a href="http://www.facebook.com"><img src="/assets/images/ico-facebook.png"></a>
-				<a href="http://www.twitter.com"><img src="/assets/images/ico-twitter.png"></a>
-				<v65:copyright></v65:copyright>
+				<div class="subscribe">
+					<span class="intro">Sign up for our mailing list</span>
+					<v65:subscribe contactType="Newsletter"></v65:subscribe>
+				</div>
+				<a href="http://www.facebook.com"><i class="icon-facebook-squared"></i></a>
+				<a href="http://www.twitter.com"><i class="icon-twitter"></i></a>
+				<span class="copyright"><v65:copyright></v65:copyright></span>
+				<span class="callUs"><a href="tel:1-800-888-8888"><i class="icon-phone-1"></i>Call Us 1-800-888-8888</a></span>
 			</div>
 
-			<div class="footerNav v65-group">
-				<v65:pods location="Footer Pod" type="description"></v65:pods>
-				<div class="megaNav"><v65:layoutHeaderNav depth="2"></v65:layoutHeaderNav></div>
+			<div class="footerNavWrapper v65-group">
 				<div class="footerNav"><v65:layoutFooterNav></v65:layoutFooterNav></div>
+				<v65:pods location="Footer Pod" type="description"></v65:pods>
+				<a name="footerNav"></a>
+				<div class="megaNav v65-group"><v65:layoutHeaderNav depth="2"></v65:layoutHeaderNav></div>		
 			</div>
 
 			<p class="accolade"><v65:vin65Accolade></v65:vin65Accolade></p>

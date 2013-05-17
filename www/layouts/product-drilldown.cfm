@@ -2,22 +2,14 @@
 
 <div class="v65-productWrapper v65-group">
 
-     <div class="v65-product-leftCol">
+     <div class="v65-product-photo-wrapper">
 
           <cf_product_photo showPhoto="1">
 
           <cf_product_photos>
 
-          <div class="v65-productDrilldown-specs">
-
-               <cf_wine_specs>
-
-               <cf_product_media>
-
-         </div>
-
      </div>
-
+     
      <div class="v65-product-rightCol">
 
           <h1><cf_product_title></h1>
@@ -37,10 +29,30 @@
           <cf_product_addToCart>
 
           <cf_product_reviewStats>
-
+          
+     </div>
+     
+     <div class="v65-product-rightCol">
+     
           <cf_product_socialBar>
-
+          
           <cf_product_description>
+
+      </div>
+      
+      <div class="v65-product-leftCol">
+     
+          <div class="v65-productDrilldown-specs">
+
+               <cf_wine_specs>
+
+               <cf_product_media>
+
+         </div>
+   
+     </div>
+
+     <div class="v65-product-rightCol">
 
           <cf_wine_profile>
 

@@ -57,23 +57,22 @@
 	18. Related Products
 	19. Product Sets
 	20. Product Quick View
-	21. Product Store Drilldown
-	22. Product Drilldown 
-	23. Cart
+	21. Product Drilldown 
+	22. Cart
 		a. Cart Header
 		b. Cart Table
-	24. Checkout
-	25. Billing & Shipping
+	23. Checkout
+	24. Billing & Shipping
 		a. Mini Cart Summary
 		b. Main Form
 		c. Review Screen
 		d. Print Receipt
-	26. Club
+	25. Club
 		a. Club List Component
 		b. Main Form 
 		c. Sign Up Screen
 		d. Review Screen
-	27. Member Area
+	26. Member Area
 		a. Login Form
 		b. Main Form
 		c. Club List
@@ -81,26 +80,48 @@
 		e. Member Orders Drilldown
 		f. Member Allocations
 		g. Member Allocations History
-	28. Modal PopUp Layout
-	29. Form Builder
-	30. Misc
+	27. Modal PopUp Layout
+	28. Form Builder
+	29. Misc
 */
 
 //   ===================================================================================================
-//      A. Responsive Breakpoints
+//   A. Responsive Breakpoints
 // =====================================================================================================
 
-//$break-max-mobile: "and (max-width : 480px)";
-//$break-mobile: "and (min-width : 320px) and (max-width : 480px)";
-//$break-max-tablet: "and (max-width : 767px)";
-//$break-min-tablet: "and (min-width : 768px)";
-//$break-tablet: "screen and (min-width : 768px) and (max-width : 1023px)";
-//$break-max-desktop: "and (max-width : 1023px)";
-//$break-min-desktop: "and (min-width : 1024px)";
+//$break-max-mobile: "and (max-width : 580px)";
+//$break-max-tablet: "and (max-width : 835px)";
 
-/*   ===================================================================================================                                                                
-    1. Basic Typography // do not touch these styles in the responsive base
+/* Breakpoints */
+/* Mobile 580px, resolutions 320 x 480 px, 320 x 580 px, 360 x 580 px */
+/* 7" Tablet 640px, resolution 640 x 1024 px */
+/* iPad 760px, resolution 760 x 1024 px */
+
+/*  ===================================================================================================                                                                
+	1. Basic Typography // do not touch these styles in the responsive base
 ======================================================================================================== */
+
+	.v65-title {
+		font-size: 1.5em; //18px
+		line-height: 1; //18px
+		margin-bottom: 1em; //18px
+	}
+
+	.v65-subtitle {
+		font-size: 1.5em; //18px
+		line-height: 1; //18px
+		margin-bottom: 0.5em; //18px
+	}
+
+	.v65-product-tab {
+
+		.v65-title {
+			font-size: 1.5em; //18px
+			line-height: 1; //18px
+			margin-bottom: 0.5em; //18px
+		}
+		
+	}
 
 	/* Misc classes
 	-------------------------------------------------------------- */
@@ -161,47 +182,57 @@
 	/* removing the floats on mobile */
 
 	img.v65-featureRight { 
-		padding: 0;
-		margin: 0 0 1em 0; 
+		border: 1px solid #ccc; 
+		float: right; 
+		padding: 3px; 
+		margin: 0 0 1em 1em;
 
-		@media screen and (min-width: 481px){
-			float: right;
-			border: 1px solid #ccc; 
-			padding: 3px;  
-			margin: 0 0 1em 1em;	
+		@media screen and (max-width: 580px){
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box; 
+			float: none;
+			margin: 0 0 1em 0; 
+			width: 100% !important;	
 		}
 
 	}
 
 	img.v65-right { 
-		padding: 0; 	
-		margin: 0 0 1em 0; 
+		float: right; 
+		margin: 0 0 1em 1em; 
 
-		@media screen and (min-width: 481px){
-			float: right; 
-			margin: 0 0 1em 1em; 
+		@media screen and (max-width: 580px){
+			float: none;
+			margin: 0 0 1em 0; 
+			width: 100% !important;	
 		}
+
 	}
 
 	img.v65-featureLeft {		
-		padding: 0;
-		margin: 0 0 1em 0;
+		float: left;
+		border: 1px solid #ccc;
+		padding: 3px;
+		margin: 0 1em 1em 0; 
 
-		@media screen and (min-width: 481px){
-			float: left;
-			border: 1px solid #ccc;
-			padding: 3px;
-			margin: 0 1em 1em 0; 
+		@media screen and (max-width: 580px){
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box; float: none;
+			margin: 0 0 1em 0; 
+			width: 100% !important;	 
 		}
 	}
 
 	img.v65-left {
-		padding: 0;
-		margin: 0 0 1em 0; 
+		float: right; 
+		margin: 0 1em 1em 0; 
 
-		@media screen and (min-width: 481px){
-			float: left;
-			margin: 0 1em 1em 0;
+		@media screen and (max-width: 580px){
+			float: none;
+			margin: 0 0 1em 0; 
+			width: 100% !important;	
 		}
 	}
 
@@ -211,7 +242,19 @@
 	}
 
 
-	/*Pull Quotes
+	@media screen and (max-width: 580px) {
+
+		img { 
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box; float: none;
+			max-width: 100% !important; 
+			height: auto; 
+		}
+	}
+
+
+	/* Pull Quotes
 	-------------------------------------------------------------- */
 
 	.v65-quoteRight { width: 33%; border: 1px solid #ccc; background-color: #eee; color: #555; font: italic 1.17em/1.5em Georgia, "Times New Roman", Times, serif; float: right; padding: 0.65em; margin: 0 0 1em 1em; }
@@ -231,52 +274,66 @@
 	tfoot       	{ font-style: italic; }
 	caption     	{ background: #eee; }
 
-	/* Responsive Global Styles for Inputs
+
+	/* Global Styles for Inputs
 	-------------------------------------------------------------- */
 
-	@media screen and (max-width: 767px)  { 
+	input[type='text'], input[type='password'], input[type='tel'], input[type='email'] {
+		border: 1px solid #ccc;
+		height: 2.5em;
+		line-height: 2.5em;
+		min-width: 3em;
+		padding: 0 0.5em; 
 
-		input{
-			height: 36px;
-			min-width: 36px;
-
-			&[type=checkbox]{
-				height: 22px;
-				min-width: 22px;
-			}
+		@media screen and (max-width: 580px)  { 
+			height: 4em;
+			line-height: 4em;
+			min-width: 3em;
 		}
 	}
 
-	@media screen and (max-width: 767px) { 
+	textarea {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box; 
+	}
+
+	input[type="radio"] { 
+		vertical-align: text-bottom; 
+	}
+
+	input[type="checkbox"] { 
+		vertical-align: bottom;
+	}
+
+	label, input[type=button], input[type=submit], button { 
+		cursor: pointer; 
+	}
+
+	@media screen and (max-width: 580px)  { 
 
 		select{
-			height: 36px;
-			min-width: 36px;
+			height: 4em;
+			min-width: 3em;
 		}
+
 	}
 
-	@media screen and (max-width: 480px) {
-
-		/* adjust this to the width of the content wrapper minus padding */
-		img{ 
-			max-width:100%; 
-			height:auto; 
-		}
-	}
-
-
-/*   ===================================================================================================                                                                
-    2. Top Menu 
+/*  ===================================================================================================                                                                
+	2. Top Menu 
 ======================================================================================================== */
 
 	.v65-home {
+
 	}
+
 	.v65-selected {
+
 	}
 
 
-/*   ===================================================================================================                                                                
-    3. Pagination
+/*  ===================================================================================================                                                                
+	3. Pagination
 ======================================================================================================== */
 
 /* a. Product Pagination
@@ -287,140 +344,114 @@
 	line-height: 3em;
 	margin: 0 0 1.5em;
 	width: 100%;
-	@media screen and (max-width : 767px) {
+
+	@media screen and (max-width : 580px) {
 		display:none;
 	}
+
 }
 
 .v65-pagingBottom {
-	border-bottom: 0;
-	border-top: 1px solid #999; 
+	border: 0;
+	border-top: 1px solid #ccc;
 	clear: both;
 	margin: 1.5em 0;
-	@media screen and (max-width : 767px) {
+
+	@media screen and (max-width : 580px) {
 		display:block;
 	}
+
 }
+
+.v65-product-sortBy {
+	float: left;
+	margin-top: 0.6em;
+	width: 33%;
+
+	@media screen and (max-width : 580px) {
+		float: none;
+		width: 100%;
+	}
+}
+
 /* b. Product & Blog Pagination
 -------------------------------------------------------------- */
 
-.v65-product-pagination {float:right; }
+.v65-product-pagination {
+	float: right; 
+}
 
 .v65-product-pagination, .v65-Paging {
 	text-align: right; 
-	width: 50%; 
-	@media screen and (max-width : 767px) {
-		width:100%;
+	width: 60%; 
+
+	@media screen and (max-width : 580px) {
+		width: 100%;
 	}
 	
-	ul{
+	ul {
 		list-style: none outside none;
 		margin: 0;
-		padding: 0;
+		padding: 0.5em 0;
 		text-align: right;
-		@media screen and (min-width : 768px) {
-			margin: 10px 0;
+		
+		@media screen and (max-width : 580px) {
+			margin: 0;
 		}
+
 	}
 
-	li{
-		display: inline; 
-		padding-left: 2px;
+	li {
+		color: #666;
+		display: inline-block; 
+		margin: 0 0.2em;
 
 		a {
+			color: #666;
+			display: block;
+			border-radius: .2em;
+			background-color: #eee;
+			height: 2.5em;
+			line-height: 2.5em;
+			text-align: center;
 			text-decoration: none;
-			
-			@media screen and (max-width : 767px) {
-				background-color: #ccc;
-				display: inline-block;
-				padding:0 12px;
-				border-radius: 5px;
-				margin:5px 0;
-			}
+			width: 2.5em;
 
-			&:hover{
-				text-decoration: underline; 	
+			&:hover {
+				background: #ccc;
+				color: #000;	
 			}	
 		}
-	
-		&.border {
-			&:first-child {
-				@media screen and (max-width : 767px) {
-					margin:5px 2px;
-					padding:7px 16px;
-				}
-			}
-		} 
 
 		&.border{
-			border-right: 1px solid #000; 
-			padding: 0 5px;
-			
-			@media screen and (max-width : 767px) {
-				background-color: #909090;
-				border:0;
-				display: inline-block;
-				border-radius: 5px;
-				margin:5px 0 5px 2px;
-
-
-			}
-
-			a { 
-				@media screen and (max-width : 767px) {
-					background:none;
-				}	
-			}	
+			padding: 0 0.5em;
 		}	
 	}
 }
 
 
-/*   ===================================================================================================                                                                
-    3. Pagination Blog - Delete once blog is set.
+/*  ===================================================================================================                                                                
+	3. Pagination Blog - Delete once blog is set.
 ======================================================================================================== */
 
-.v65-Paging { 
-	border-bottom: 1px solid #999;
-	line-height: 3em;
-	margin: 0 0 1.5em;
-	width: 100%;
-	ul {
-		list-style: none outside none;
-		margin: 0;
-		padding: 0;
-		text-align: right;
-	}
-	li {
-		display: inline; 
-		padding-left: 5px;
-
-		a { 
-			text-decoration: none;
-			
-			&:hover { 
-				text-decoration: underline; 
-			}	
-		}
-	}
-}			
 
 #v65-PagingTop {
-	@media screen and (max-width : 767px) {
+	
+	@media screen and (max-width : 580px) {
 		display:none;
-		}
-	}		
+	}
+
+}		
 
 #v65-PagingBottom { 
-	border-bottom: 0;
-	border-top: 1px solid #999; 
+	border: 0;
 	clear: both;
 	margin: 1.5em 0;
 	}
 
 
-/*   ===================================================================================================                                                                
-    4. Blog
+/*  ===================================================================================================                                                                
+	4. Blog
 ======================================================================================================== */
 
 /* a. Blog Right Custom Tags
@@ -445,8 +476,6 @@
 	font-weight: bold; 
 }
 
-.v65-recentEntriesComments {}
-
 
 /* b. Blog List Content
 -------------------------------------------------------------- */
@@ -466,25 +495,28 @@
 }
 
 	.v65-avatar {
-		display: none;
-	 	@media screen and (min-width : 768px) {
-	 		display: block;
-	 		position: absolute; 
-			top:0; 
-			left: 0; 
-			width: 48px; 
-			height: 48px; 
-			margin: 0; 
-			padding: 0; 	
+
+		display: block;
+		position: absolute; 
+		top:0; 
+		left: 0; 
+		width: 48px; 
+		height: 48px; 
+		margin: 0; 
+		padding: 0;
+
+		@media screen and (max-width : 580px) {
+			 display: none;	
 		}
 
 		img{ 
-			display: none;
-			@media screen and (min-width : 768px) {
 			display: block;
 			border: 1px solid #999; 
 			padding: 2px; 
 			background-color: #fff; 
+
+			@media screen and (max-width : 580px) {
+				display: none;
 			}
 		}
 	}
@@ -493,18 +525,18 @@
 	position: relative;
 	margin-left: 64px;
 	padding-bottom: 1.5em;
-	@media screen and (max-width : 767px) {
+	
+	@media screen and (max-width : 580px) {
 		margin:0;
 	}
+
 }
 
 	.v65-blogPostDate {
 		font-size: 0.85em;
 		margin-bottom: 0.5em;
 		color: #666666;
-		@media screen and (max-width : 480px){
-			font-size:1.3em;
-		}
+
 	}
 
 	.v65-blogFooter {
@@ -517,9 +549,9 @@
 	.v65-blogFooterDate{
 		float: left;
 		padding-right: 1em;
-		@media screen and (max-width : 480px){
-			height:22px;
-			font-size:1.3em;
+		@media screen and (max-width : 580px){
+			height: 22px;
+			font-size: 1.3em;
 		}
 	}
 
@@ -527,16 +559,18 @@
 		float: left;
 		padding-right: 1em;
 
-		@media screen and (max-width : 480px){
-			display:none;
+		@media screen and (max-width : 580px){
+			display: none;
 		}
 	}
 
 	.v65-blogFooterComments{ 
-		float: left; padding-right: 1em;
-		@media screen and (max-width : 480px){
-			height:22px;
-			font-size:1.3em;
+		float: left; 
+		padding-right: 1em;
+
+		@media screen and (max-width : 580px){
+			height: 22px;
+			font-size: 1.3em;
 		}
 	}	
 	
@@ -544,8 +578,9 @@
 		float: left;
 	}
 
-/*   ===================================================================================================                                                                
-    5. Recipe
+
+/*  ===================================================================================================                                                                
+	5. Recipes
 ======================================================================================================== */
 
 /* a. Recipe List 
@@ -553,12 +588,15 @@
 .v65-recipe {
 	border-bottom: 1px solid #ccc;
 	margin-bottom: 1em;
+	min-height: 125px;
 	padding: 0 0 1em 0;
+	position: relative;
 	}
 
 	.v65-recipe-photo {
-		float: left;
-		padding: 0 1em 1em 0;
+		left: 0;
+		position: absolute;
+		top: 0;
 		width: 125px;
 		
 		img {
@@ -567,17 +605,14 @@
 	}
 
 	.v65-recipe-info { 
-		float: left;
-		padding: 0 0 1em 0;
-		width: 490px;
+		margin-left: 140px;
 	}
 
 		.v65-recipe-title {
-			font-size: 16px;
 		}
 
 		.v65-recipe-date {
-			font-size: 0.8;
+			font-size: 0.8em;
 			font-style: italic;
 			color: #666;
 			margin-bottom: 0.5em;
@@ -589,35 +624,28 @@
 /* b. Recipe Drilldown
 -------------------------------------------------------------- */
 .v65-recipe-drilldown-left {
-	float: left;
-	width: 385px;
-	margin-right: 20px;
+
 }
 
-	.v65-recipe-drilldown-subtitle {
-		font-size: 1.6em;
-		margin-bottom: 0.4em;
-	}
-
-	.v65-recipe-drilldown-description {
-
-	}
-
-	.v65-recipe-drilldown-ingredients {
-
-	}
-	
-	.v65-recipe-drilldown-directions {
-
-	}
-
 .v65-recipe-drilldown-right {
-	float: left;
+	float: right;
+	margin-left: 2em;
+	text-align: center;
 	width: 225px;
+
+	@media screen and (max-width : 580px) {
+		float: none;
+		margin: 0 auto 2em auto;
+		width: 80%;
+	}
 }
 
 	.v65-recipe-drilldown-photo {
 		margin-bottom: 1em;
+
+		img {
+			max-width: 100%;
+		}
 	}
 
 	.v65-recipe-drilldown-attributes {
@@ -638,6 +666,7 @@
 
 			.v65-recipe-attributeValue {
 				float: left;
+				text-align: left;
 				width: 50%;
 			}
 
@@ -664,12 +693,11 @@
 		}
 
 		.v65-product-title { 
-			font-size: 1.3em;
-			font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+			
 		}
 
 		.v65-product-subtitle { 
-			font-size: 1.1em;
+			
 		}
 
 		/* Product Add To Cart */
@@ -689,8 +717,8 @@
 		}	
 	}	
 
-/*   ===================================================================================================                                                                
-    6. Comments
+/*  ===================================================================================================                                                                
+	6. Comments
 ======================================================================================================== */
 
 .v65-commentWrapper { 
@@ -704,9 +732,11 @@
 		position: relative; 
 		margin: 0 0 0 64px; 
 		padding: 0;
-		@media screen and (max-width : 480px){
-			margin:0;
+		
+		@media screen and (max-width : 680px) {
+			margin: 0 0 2em;
 		} 
+
 	}
 	.v65-commentDate {
 		font-size: 0.85em;
@@ -725,6 +755,11 @@
 
 		form { 
 			width: 80%; 
+
+			@media screen and (max-width : 680px) {
+				width: 100%;
+			} 
+
 		}
 
 		#Comments { 
@@ -733,8 +768,8 @@
 		} 
 	}
 
-/*   ===================================================================================================                                                                
-    7. Components
+/*  ===================================================================================================                                                                
+	7. Components
 ======================================================================================================== */
 
 	/* a. Calendar
@@ -751,11 +786,11 @@
 		.v65-calendarList-Event {
 			padding-left: 12px; 
 			margin-bottom: 12px;
-				@media screen and (max-width : 767px) {
-				padding:0;
+				
+				@media screen and (max-width : 580px) {
+					padding:0;
 				}
-			zoom:1; /* For IE 6/7 (trigger hasLayout) */ 
-			/*This is here until the class group is removed and replace with v65-group* in the template */
+
 			&:before{
 				content:""; 
 				display:table;
@@ -765,16 +800,28 @@
 				display:table;
 				clear:both; 
 			}
-		}
+
 			.v65-calendarList-Title{ 
-				font-weight: bold; 
+				
 			}
+
+			.v65-title {
+				line-height: 1.5em;
+			}
+
 			.v65-calendarList-Time{ 
 				font-style: italic; 
+
+				@media screen and (max-width : 580px) {
+					display: block;
+				}
 			}
+
 			.v65-calendarList-Description{ 
 				margin: 8px 0; 
 			}
+
+		}
 	
 		/*Block View*/
 		// Calendar needs to be reworked responsively in Base3
@@ -835,9 +882,11 @@
 		.v65-CalendarToDay { 
 			background-color: #ccc;	
 		}
+
 		.v65-CalendarOffMonthDays {
 			background-color: #eee;
 		}
+
 			.v65-CalendarEvent {
 				clear: both;
 				padding: 0px 0px 8px 0px;
@@ -847,11 +896,48 @@
 				/*color: #000;*/ 
 				}
 			}
+
 		#v65-CalendarEventTable {
+			margin-bottom: 1em;
 
 			td { 
 				padding: 2px 10px 2px 2px; 
 			}	
+		}
+
+		@media screen and (max-width : 580px) {
+
+			.v65-CalendarDay {
+				margin-bottom: 4px;
+			}
+
+			.v65-CalendarEvent a{
+				background-color: #666;
+				border-radius: 0.25em;
+				color: #666;
+				display: block;
+				height: 2em;
+				overflow: hidden;
+				padding: 0;
+				width: 2em;
+			}
+
+			.tastingroomEvent a {
+				background-color: #ff9900;
+				color: #ff9900;
+			}
+
+			.clubmemberEvent a {
+				background-color: #339933;
+				color: #339933;
+			}
+
+			.vineyardEvent a {
+				background-color: #336699;
+				color: #336699;
+			}
+
+
 		}
 
 	/* b. Calendar Widgets
@@ -862,10 +948,11 @@
 		text-align: center;
 	}
 		.v65-event-date {
+
 		}
+
 		.v65-event-title {
-			font-weight: bold;
-			margin-bottom: 1em;
+			
 		}
 		
 		.v65-event-events {
@@ -957,8 +1044,7 @@
 		text-align: center;
 	}
 	.v65-event-upcoming-title {
-		font-size: 1.2em;
-		font-weight: bold;
+
 	}
 		.v65-event-upcoming-event {
 			margin-bottom: 1em;
@@ -1006,19 +1092,20 @@
 		line-height: 1.8em;
 
 		li{
-			line-height: 44px;
-			font-size: 1.3em;
-			font-weight: bold;
-			@media screen and (min-width : 768px) {
-				line-height: inherit;
-				line-height: 2.5em;
-				font-size: 1.167em;
-				border:none;
+			line-height: inherit;
+			line-height: 2.5em;
+			font-size: 1.167em;
+			border: none;
+			
+			@media screen and (max-width : 580px) {
+				line-height: 44px;
+				font-size: 1.3em;
+				font-weight: bold;
 			}
 
-			a{
-				@media screen and (max-width : 480px){
-					display:block;
+			a {
+				@media screen and (max-width : 580px){
+					display: block;
 				}
 			}
 
@@ -1029,16 +1116,17 @@
 
 				li{ 
 					font-size: 0.858em; 
-					@media screen and (max-width : 480px){
+
+					@media screen and (max-width : 580px){
 						border-bottom:1px solid #CCC;
 					}
+
 					ul{
 						list-style: none;	
 						li{ 
 							font-weight: normal; 
 							font-size: 0.917em;
-							@media screen and (max-width : 480px){
-							}
+							
 						}
 					}
 				}
@@ -1053,115 +1141,86 @@
 		overflow: hidden;
 		margin: 0 0 1.4em;
 		padding: 0 0 1em;
-		@media screen and (min-width : 768px) {
-				position: relative; 
-			}
-
-		.defaultBtn{
-			@media screen and (max-width : 767px) {
-				width:100%;
-			}
-		}
-		input, select{
-			@media screen and (max-width : 767px) {
-				width:100%;
-			}
-		}
+		position: relative; 
 
 		input[type="text"]{
-			@media screen and (max-width : 767px) {
+			@media screen and (max-width : 580px) {
 				margin-bottom: 10px;
 			}
 		}
+
 	}
 		
-		#v65-businessLocatorSelectByCity {
-			overflow: hidden;
-			@media screen and (min-width : 768px) {
-			width: 200px; 	
-			}
-		}
-		#v65-businessLocatorCategory {
-			@media screen and (min-width : 768px) {width: 150px;}
-		}
-		#v65-businessLocatorCountryCode {
-			@media screen and (min-width : 768px) {width: 150px;}
-		}
-		#v65-businessLocatorStateCode {
-			@media screen and (min-width : 768px) {width: 150px;}
-		}
-		#v65-businessLocatorCity {
-			@media screen and (min-width : 768px) {width: 150px;}
-		}
-		#v65-businessLocatorSelectByZipCode {
-			overflow: hidden;
-			@media screen and (min-width : 768px) {
-			width: 200px; 	
-			}
-		}
-		#v65-businessLocatorCategoryBottom {
-			@media screen and (min-width : 768px) {width: 150px;}
-		}
-		#v65-businessLocatorZipCode {
-			@media screen and (min-width : 768px) {width: 60px;}
-		}
-		#v65-businessLocatorRadius {
-			@media screen and (min-width : 768px) {width: 80px;}
-		}
-		#v65-BusinessList {
-			margin:0;
-			@media screen and (min-width : 768px) {
-				position: relative;
-				margin: 0 400px 0 0;
-				padding: 0;
-			}
+	#v65-businessLocatorSelectByCity { 
+		width: 33%;
 
-			// JAMES - Watching the might ducks lately?
+		@media screen and (max-width : 680px) {
+			width: 100%;
+		}
 
-			ol {	// JAMES - this isn't necessary
+	}
+		#v65-businessLocatorCategory { width: 100%; }
+		#v65-businessLocatorCountryCode { width: 100%; }
+		#v65-businessLocatorStateCode { width: 100%; }
+		#v65-businessLocatorCity { width: 100%; }
 
-				li {
-					// margin: 0 0 12px 0; // JAMES - this should be ems and compacted
-					margin: 0 0 1em;
-					@media screen and (max-width : 767px) {
-						border-top:1px solid #CCC;
-						padding-top:8px;
+	#v65-businessLocatorSelectByZipCode { 
+		overflow: hidden; 
+		width: 33%;
 
-						
-					}	
+		@media screen and (max-width : 680px) {
+			width: 100%;
+		}
 
-					&:last-child{
-						@media screen and (max-width : 767px) {
-							border-bottom:1px solid #CCC;
-							padding-bottom:8px;
-						}	
-					}
-				}	
+	}
+		#v65-businessLocatorCategoryBottom { width: 100%; }
+		#v65-businessLocatorZipCode { width: 60px; }
+		#v65-businessLocatorRadius { width: 80px; }
+
+	#v65-BusinessList {
+		position: relative;
+		margin: 0 400px 0 0;
+		padding: 0;
+
+
+		@media screen and (max-width : 680px) {
+			margin: 0;
+		}
+
+		li {
+			margin: 0 0 1em;
+			
+			@media screen and (max-width : 580px) {
+				border-top: 1px solid #CCC;
+				padding-top: 8px;
 			}	
-		}
+
+			&:last-child{
+				@media screen and (max-width : 580px) {
+					border-bottom: 1px solid #CCC;
+					padding-bottom: 8px;
+				}	
+			}
+
+		}		
+	}
 		
-		#v65-map_canvas {
+	#v65-map_canvas {
+		width: 60%;
+		height: 300px;
+		top: 0;
+		right: 0;
+		margin: 0;
+		position: absolute;
+		padding: 0;
+		background-color:#eee;
+		border: 1px solid #ccc;
+		
+		@media screen and (max-width : 680px) {
 			position: relative;
 			width: 100%;
-			height: 300px;
-			top: 0;
-			right: 0;
-			margin: 0;
-			padding: 0;
-			background-color:#eee;
-			border: 1px solid #ccc;
-			@media screen and (min-width : 768px) {
-				position: absolute;
-				width: 390px;
-				height: 300px;
-				top: 0;
-				right: 0;
-				margin: 0;
-				padding: 0;
-				background-color:#eee;
-			border: 1px solid #ccc;
-			}
 		}
+	}
 	
 	/* f. Table of Contents
 	-------------------------------------------------------------- */
@@ -1273,113 +1332,112 @@
 		}
 	}
 						
-/*   ===================================================================================================                                                                
-    8. Login Links
+/*  ===================================================================================================                                                                
+	8. Login Links
 ======================================================================================================== */
 
 #user-tools {
-	// JAMES - These should be moved into the template instead. You are now making design decisions I need to over ride
-	// background: #000;
-	// border-bottom: 1px solid #6A6A6A; 
-	line-height: 44px;
-	height:44px;
+	float: right;
+	height: 3em; 
+	line-height: 3em;
+	width: 400px;
 	z-index: 200;
 
-	@media screen and (min-width : 768px) {
-		// JAMES - Why can't this flow normally?
-		// position: absolute;
-		// top:0;
-		// right:0;
-		// JAMES - these aren't required once you remove the lines above
-		// background:none;
-		// border-bottom:none;
-		height: 3em; // JAMES - We should be using ems, correct?
-		line-height: 3em;
-		float: right;
-		font-size: .917em;
-		width: 400px;
+	@media screen and (max-width : 580px) {
+		height: 4em; 
+		line-height: 4em;
+		float: none;
+		padding: 0 10px;
+		width: 100%;
+
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box; 
 	}
 
 	a { 
-		color: #fff;
+		color: #000;
 
-		@media screen and (min-width : 768px) {
-			color: #000;	
+		@media screen and (max-width : 580px) {
+			color: #fff;	
 		}
+
 	}	
 
 }
 
 	.v65-yourAccount, .v65-editProfile {
-		float: left;
-		position: relative;
-		width:32%;
-		z-index: 400;
-		text-align: center;
 		border-right: 1px solid #666;
-		height:44px;
-		line-height: 44px;
-		margin-right: 1%;
-		padding-right: 1%;
+		display: inline;
+		text-align: right;
+		height: 1em;
+		line-height: 1em;
+		margin-top: 12px;
+		margin-right: 10px;
+		padding-right: 10px; 
+		width: 179px;
 
-		@media screen and (max-width : 480px){
-			width:32%;
-		} 
-		
-		@media screen and (min-width : 768px) {
-			text-align: right;
-			width: 179px;
-			height:1em;/*12px*/
-			line-height: 1em;/*12px*/
-			margin-top: 12px;
-			margin-right: 10px;
-			padding-right: 10px; 
+		@media screen and (max-width : 580px) {
+			float: left;
+			height: 4em;
+			line-height: 4em;
+			margin: 0;
+			padding: 0;
+			position: relative;
+			text-align: left;
+			width: 33%;
+			z-index: 400;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box; 
 		}
 
 		a { 
-			color: #fff;
-			display:block;
+			color: #000;
+			display: inline;
 
-			@media screen and (min-width : 768px) {
-				color: #000;
-				display: inline;	
+			@media screen and (max-width : 580px) {
+				color: #fff;
+				display: block;	
 			}
 		}
 	}
 			
 	.v65-login, .v65-logout {
-		float: left;
-		position: relative;
-		width:32%;
-		z-index: 400;
-		text-align: center;
-		border-right: 1px solid #666;
-		line-height: 44px;
-		margin:0; 
+		display: inline;
+		line-height: 12px;
+		margin-top: 12px;
+		width: 50px;
 	
-		@media screen and (max-width : 480px){
-			width:20%;
+		@media screen and (max-width : 580px) {
+			border-right: 1px solid #666;
+			float: left;
+			height: 4em;
+			line-height: 4em;
+			margin-top: 0;
+			position: relative;
+			text-align: center;
+			width: 20%;
+			z-index: 400;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box; 
 		} 
-	
-		@media screen and (min-width : 768px) {
-			border-right: none;
-			line-height: 12px;
-			margin-top: 12px;
-			width: 50px;
-		}
 
 		a { 
-			display:block;
+			color: #000;
+			display: inline;	
 		
-			@media screen and (min-width : 768px) {
-				display: inline;	
+			@media screen and (max-width : 580px) {
+				color: #fff;
+				display: block;
 			}  
 		}
 
 	}
 
-/*   ===================================================================================================                                                                
-    9. Modal Cart
+/*  ===================================================================================================                                                                
+	9. Modal Cart
 ======================================================================================================== */
 
 /* a. Modal Cart
@@ -1387,69 +1445,51 @@
 #v65-modalCart { 
 	position: absolute;
 	top: 0;
-	right: 2%;
-	width: 96%;
-	z-index: 300; 
-	text-align:right;
-	@media screen and (min-width : 768px) { 
-		right: 0;
-		width: auto;
-	}
+	right: 0;
+	text-align: right;
+	padding-right: 10px;
+	width: 55%;
+	z-index: 300;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; 
 
-	a {
-		@media screen and (max-width : 480px) {
-			display:block;
-			width:100%;
-		}
-	}	 
-}
-
-#v65-modalCartDropdown { 
-	position: absolute;
-	top: 44px;
-	background-color: #FFF; 
-	color: #000; 
-	display: none; 
-	right: 0; 
-	text-align: left; 
-	width: 100%; 
-	line-height: normal;
-	
-	@media screen and (min-width : 768px) {
-		top: 32px;
-		width: 282px;
+	@media screen and (max-width : 580px) {
+		width: 100%; 
 	} 
 }
 
-	#v65-modalCartBody { 
-		background-color: #FFF; 
-		border: 1px solid #333; 
-		border-bottom: 5px solid #333;
-		color: #000; 
-		font-size: 1em; 
-		padding: 10px; 
+#v65-modalCartDropdown { 
+	background-color: #fff; 
+	border: 1px solid #ccc;
+	color: #000; 
+	display: none; 
+	line-height: normal;
+	position: absolute;
+	right: 0; 
+	text-align: left; 
+	top: 3em;
+	width: 282px;
+	
+	@media screen and (max-width : 580px) {
+		top: 4em;
+		width: 100%; 
+	} 
 
-		p{ 
-			color: #000; 
-		}	
-
-		a{ 
-			color: #000;
-			width:auto;
-			display:inline-block;
-			font-size: 1em;
-			@media screen and (max-width : 480px){
-				display:block;
-				width:100%;
-				&.modalLinkBtn{
-					margin-top: 8px;
-				}
-			}
-				
-			&:hover{ 
-				color: #000; 
-			}
+	.modalLinkAltBtn, .modalLinkBtn {
+		@media screen and (max-width : 580px) {
+			display: block;
+			margin-bottom: 1em;
+			text-align: center;
+			width: 100%;
 		}
+	}
+}
+
+	#v65-modalCartBody { 
+		background-color: #fff; 
+		color: #000; 
+		padding: 10px; 	
 	}
 		
 	
@@ -1487,9 +1527,8 @@
 }	
 	
 	#v65-modalCartTableSubtotal {
-			td {
-			background-color:
-			#f9f7f3;
+		td {
+			background-color: #f9f7f3;
 			font-size: 0.917em;
 			font-weight: bold;
 			vertical-align: top;
@@ -1499,8 +1538,9 @@
 	#v65-modalCartFooter {
 		display: none;
 	}
+
 /*   ===================================================================================================                                                                
-     10. Product Global Styles
+	 10. Product Global Styles
 ======================================================================================================== */
 
 .v65-product-photoWrapper { 
@@ -1519,28 +1559,19 @@
 }
 	
 .v65-product-title {
-	font-size: 2em;
-	line-height: 1em;
-	margin-bottom: 0.3em;
-	font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;	
-
-		@media screen and (max-width : 480px){
-			font-size: 20px;
-		}
 
 }
 	
 .v65-product-subtitle {
-	font-size: 1.5em;
-	line-height: 1em;
-	margin-bottom: 0.5em;
+	
 }
 	
 .v65-product-teaser {
-	margin-bottom: 1em;
+	//margin-bottom: 1em;
 }
 	
 .v65-product-drilldownLink {
+	display: none;
 	margin-bottom: 1em;
 }
 	
@@ -1571,13 +1602,6 @@
 .v65-product-addToCart {
 	margin-bottom: 1em;
 
-	@media screen and (max-width : 480px){
-				border-top:1px solid #ccc;
-				border-bottom:1px solid #ccc;
-				padding:10px 0;
-				clear:both;		
-			}
-
 	form {
 		margin-bottom: 0.5em;
 		padding: 0;
@@ -1596,21 +1620,24 @@
 		
 	.v65-product-addToCart-priceWrapper {  
 		display: inline;
-		margin-right: 10px;
-		@media screen and (max-width : 480px){
-			float:left;
-			clear:both;
-			margin-bottom:10px;
-			width:100%;
+		margin-right: 1em;
+
+		@media screen and (max-width : 970px){
+			display: block;
+			margin-bottom: 0.5em;
 		}
+
 	}
 	
 		.v65-product-addToCart-price{
 			display: inline;
-			@media screen and (max-width : 480px){
-				font-size:1.5em;
-				font-weight:bold;
+			font-size: 1.333333333333em;
+			
+			@media screen and (max-width : 580px){
+				font-size: 1.5em;
+				font-weight: bold;
 			}
+
 		}
 			
 			.v65-product-addToCart-originalPrice {
@@ -1627,6 +1654,12 @@
 		
 		.v65-product-addToCart-unitDescription{
 			display: inline;
+			bottom: 1ex;
+			font-size: 0.75em;
+			height: 0;
+			line-height: 1;
+			vertical-align: baseline;
+			position: relative;
 		}
 
 		.v65-product-addToCart-productSKU {
@@ -1639,24 +1672,14 @@
 			
 	.v65-product-addToCart-quantity{
 		display: inline;
-
-		input{
-			@media screen and (max-width : 480px){
-				height:44px;
-				padding:0 6px;
-			}
-		}
 	}
 			
 	.v65-product-addToCart-button{
 		display: inline;
 
-		& button.defaultBtn {
-			@media screen and (max-width : 480px){
-				font-size:1.2em;
-				width:70%;
-				height:44px;
-				float:right;
+		@media screen and (max-width : 580px){
+			button {
+				width: 50%;
 			}
 		}
 	}
@@ -1746,10 +1769,11 @@
 
 
 	.v65-socialMediaBar-Email { 
-		background: url(../images/store/email_16.png) center left no-repeat;
+		background: url(http://assetss3.vin65.com/images/store/email_16.png) center left no-repeat;
 		float: left; 
 		font-size: 11px;  
-		height:22px; 
+		height: 22px; 
+		line-height: 22px;
 		margin: 0;
 		padding-left: 22px; 
 	}
@@ -1820,79 +1844,87 @@
 	margin-bottom: 1em;
 
 	.v65-professionalReview {  
+		background: #333;
+		border-radius: 0.33333em;
 		color: #fff;
 		float: left;
-		font-size: 11px;
-		font-weight: bold;
-		height: 18px;
-		line-height: 18px;
-		margin-right: 5px;
+		font-size: 0.917em;
+		height: 1.75em;
+		line-height: 1.75em;
+		margin-bottom: 0.5em;
+		margin-right: 0.5em;
+		padding: 0 0.4em;
 	}
 
 	.v65-product-attributeLabel { 
-		display: none; 
+		display: inline; 
+		font-weight: normal;
+		color: #ccc;
 	}
 
-	.v65-product-attributeValue {}
+	.v65-product-attributeValue {
+		display: inline;
+		font-weight: normal;
+	}
 
 	.cgProReview { 
-		background: url(/assets/images/store/ico-CG.png);
-		padding-left: 29px;
-		width: 20px;
+		//background: url(http://assetss3.vin65.com/images/store/ico-CG.png);
+		//padding-left: 29px;
+		//width: 20px;
 	}
 		
 	.jhProReview { 
-		background: url(/assets/images/store/ico-JH.png);
-		padding-left: 28px;
-		width: 18px;
+		//background: url(http://assetss3.vin65.com/images/store/ico-JH.png);
+		//padding-left: 28px;
+		//width: 18px;
 	}
 		
 	.rpProReview { 
-		background: url(/assets/images/store/ico-RP.png);
-		padding-left: 28px;
-		width: 19px;
+		//background: url(http://assetss3.vin65.com/images/store/ico-RP.png);
+		//padding-left: 28px;
+		//width: 19px;
 	}
 		
 	.stProReview { 
-		background: url(/assets/images/store/ico-ST.png);
-		padding-left: 29px;
-		width: 18px;
+		//background: url(http://assetss3.vin65.com/images/store/ico-ST.png);
+		//padding-left: 29px;
+		//width: 18px;
 	}
 	
 	.waProReview { 
-		background: url(/assets/images/store/ico-WA.png);
-		padding-left: 32px;
-		width: 19px;
+		//background: url(http://assetss3.vin65.com/images/store/ico-WA.png);
+		//padding-left: 32px;
+		//width: 19px;
 	}
 		
 	.wandsProReview { 
-		background: url(/assets/images/store/ico-WandS.png);
-		padding-left: 38px;
-		width: 20px;
+		//background: url(http://assetss3.vin65.com/images/store/ico-WandS.png);
+		//padding-left: 38px;
+		//width: 20px;
 	}
 		
 	.wbProReview { 
-		background: url(/assets/images/store/ico-WB.png);
-		padding-left: 32px;
-		width: 19px;
+		//background: url(http://assetss3.vin65.com/images/store/ico-WB.png);
+		//padding-left: 32px;
+		//width: 19px;
 	}	
 		
 	.weProReview {  
-		background: url(/assets/images/store/ico-WE.png);
-		padding-left: 30px;
-		width: 20px;
+		//background: url(http://assetss3.vin65.com/images/store/ico-WE.png);
+		//padding-left: 30px;
+		//width: 20px;
 	}
 		
 	.wnProReview { 
-		background: url(/assets/images/store/ico-WN.png);
-		padding-left: 32px;
-		width: 19px;
+		//background: url(http://assetss3.vin65.com/images/store/ico-WN.png);
+		//padding-left: 32px;
+		//width: 19px;
 	}
 		
 	.wsProReview {  
-		background: url(/assets/images/store/ico-WS.png);
-		padding-left: 31px;
-		width: 19px;
+		//background: url(http://assetss3.vin65.com/images/store/ico-WS.png);
+		//padding-left: 31px;
+		//width: 19px;
 	}
 }
 		
@@ -1906,11 +1938,11 @@
 	}
 
 	.v65-product-title { 
-		font-size: 1.3em;
+
 	}
 		
 	.v65-product-subtitle { 
-		font-size: 1.1em;
+		
 	}
 		
 	/* Product Add To Cart */
@@ -1933,8 +1965,7 @@
 
 
 	.v65-product-relatedProducts-title {
-		font-size: 2em;
-		margin-bottom: 1em;
+		
 	}
 		
 	.v65-product-relatedProducts-product {
@@ -1943,17 +1974,19 @@
 		text-align: center;
 		width: 25%;
 
-		@media screen and (max-width : 767px) {
+		@media screen and (max-width : 835px) {
 			width: 50%;
 		}
 
-		@media screen and (max-width : 480px){
+		@media screen and (max-width : 580px){
 			width: 100%;
 		}
 	}
 }
 		
 
+/* i. Product Tabs
+-------------------------------------------------------------- */
 /* i. Product Tabs
 -------------------------------------------------------------- */
 .v65-productTabsWrapper {}
@@ -1965,7 +1998,7 @@
 		padding: 0;
 		border-bottom: 1px solid #ccc;
 
-		@media screen and (max-width : 767px) {
+		@media screen and (max-width : 767px){
 			height:45px;
 		}
 
@@ -1981,7 +2014,7 @@
 				display: inline-block;
 				padding: 0 15px;
 
-				@media screen and (max-width : 767px) {
+				@media screen and (max-width : 767px){
 					height: 44px;
 					line-height: 44px;
 					padding: 0 10px;
@@ -2029,10 +2062,6 @@
 			border-bottom: 0;
 		}
 
-		.v65-productDrilldown-specs {
-			float: right;
-			width: 40%;
-		}
 	}
 		
 		.v65-product-tab-active {
@@ -2040,11 +2069,10 @@
 			border-top: 0;
 			display: block;
 			min-height:150px;
-			/*max-height: 250px;
-			overflow: auto;*/
 			padding:15px;
 			position: relative;
-		}			
+		}
+
 
 /* j. Product - Price
 -------------------------------------------------------------- */
@@ -2076,8 +2104,8 @@
 	}
 
 
-/*   ===================================================================================================                                                                
-11. Product List 1 Up
+/*  ===================================================================================================                                                                
+	11. Product List 1 Up
 ======================================================================================================== */
 
 .v65-product1Up { 
@@ -2099,14 +2127,20 @@
 }
 
 	
-/*   ===================================================================================================                                                                
-     12. Product List 2 Up
+/*  ===================================================================================================                                                                
+	12. Product List 2 Up
 ======================================================================================================== */
 
 .v65-product2Up {  
 	float: left;
 	width: 48%;
 	margin: 0 4% 1.5em 0;
+
+	@media screen and (max-width : 580px){
+		float: none;
+		margin: 0 0 2em 0;
+		width: 100%;
+	}
 
 	 .v65-product-photo { 
 		position: relative;
@@ -2117,14 +2151,14 @@
 	.v65-product-infoWrapper {}
 
 	.v65-addToCartCase {
-		@media screen and (max-width : 480px){
-			display:none;
+		@media screen and (max-width : 580px){
+			display: none;
 		}
 	}
 }
 	
-/*   ===================================================================================================                                                                
-     13. Product List 3 Up
+/*  ===================================================================================================                                                                
+	13. Product List 3 Up
 ======================================================================================================== */
 
 .v65-product3Up {  
@@ -2136,9 +2170,9 @@
 		width:47%;
 	}
 
-	@media screen and (max-width:480px){
+	@media screen and (max-width:580px){
 		width:100%;
-		margin:0;
+		margin-right: 0;
 	}
 	
 	.v65-product-photo img { 
@@ -2150,11 +2184,11 @@
 	}
 		
 		.v65-product-title { 
-			font-size: 1.5em;
+			
 		}
 			
 		.v65-product-subtitle { 
-			font-size: 1.2em;
+			
 		}
 			
 		/* Product Add To Cart */
@@ -2177,18 +2211,14 @@
 }
 		
 
-/*   ===================================================================================================                                                                
-     14. Product List 5 Up
+/*  ===================================================================================================                                                                
+	14. Product List 5 Up
 ======================================================================================================== */
 
 .v65-product5Up {
 	float: left;
 	margin: 0 2% 1.5em 0;
-	width: 18%;
-
-	@media screen and (max-width:840px){
-		width:23%;
-	}
+	width: 23%;
 
 	@media screen and (max-width:720px){
 		width:31%;
@@ -2198,9 +2228,9 @@
 		width:47%;
 	}
 
-	@media screen and (max-width:480px){
+	@media screen and (max-width:580px){
 		width:100%;
-		margin:0;
+		margin-bottom: 1.5em;
 	}
 
 	.v65-product-photo img { 
@@ -2212,11 +2242,11 @@
 	}
 		
 		.v65-product-title { 
-			font-size: 1.4em;
+			
 		}
 			
 		.v65-product-subtitle { 
-			font-size: 1.1em;
+			
 		}
 			
 		/* Product Add To Cart */
@@ -2238,19 +2268,13 @@
 		}
 }
 				
-/*   ===================================================================================================                                                                
-     15.Product List
+/*  ===================================================================================================                                                                
+	15.Product List
 ======================================================================================================== */
 
 .v65-productList { 
 	padding: 0 0 1em;
 	width: 100%;  
-	
-	/*Customize .v65-product-addToCart */
-	.v65-product-addToCart {
-		margin-bottom: 0;
-		margin-top: 5px;
-	}
 	
 	/*Table */
 	table{}
@@ -2264,7 +2288,7 @@
 			text-align: left;
 
 			&:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6){
-				@media screen and (max-width : 767px) {
+				@media screen and (max-width : 835px) {
 					display:none;
 				}
 			} 
@@ -2275,14 +2299,8 @@
 			padding: 0 5px;
 			vertical-align: middle;
 
-			@media screen and (max-width : 480px){
+			@media screen and (max-width : 580px){
 				padding:0;
-			} 
-
-			&:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6){
-				@media screen and (max-width : 767px) {
-					display:none;
-				}
 			} 
 
 			a { 
@@ -2311,25 +2329,35 @@
 		}
 
 	.v65-product-addToCart {
-		border:none;
+		border: none;
+		margin-bottom: 0;
+		margin-top: 5px;
+
+		@media screen and (max-width : 520px){
+
+			button {
+				width: auto;
+			}
+
+		}
 
 		.v65-product-addToCart-quantity{
 			
-			input{
-
-				@media screen and (max-width : 480px){
-					height:40px;
-					padding:0;
-					margin-right:3px;
+			@media screen and (max-width : 520px){
+				
+				input {
+					margin-right: 3px;
 				}
+
 			}
+
 		}
 	}	
 }
 
 
-/*   ===================================================================================================                                                                
-     16. Product List Store 1 Up
+/*  ===================================================================================================                                                                
+	16. Product List Store 1 Up
 ======================================================================================================== */	
 
 .v65-product1UpStore {
@@ -2360,11 +2388,11 @@
 	}
 
 	.v65-product-title { 
-		font-size: 1.2em;
+		
 	}
 
 	.v65-product-subtitle { 
-		font-size: 1em;
+		
 	}
 
 	.v65-product-sku { 
@@ -2426,8 +2454,8 @@
 		}
 	}
 		
-/*   ===================================================================================================                                                                
-     17. Product Groups
+/*  ===================================================================================================                                                                
+	17. Product Groups
 ======================================================================================================== */
 
 .v65-productGroup {
@@ -2435,19 +2463,19 @@
 }
 	
 	.v65-productGroup-title {
-		font-size: 2em;
-		line-height: 1.2;
-		margin-bottom: 0.4em;
+		
 	}
 	
 	.v65-productGroup-teaser {
-		float: left;
-		margin-right: 2%;
-		width: 18%;
+		width: 80%;
+		margin-bottom: 1em;
+
+		@media screen and (max-width:835px){
+			width: 100%;
+		}
 	}
 		
 	.v65-productGroup-products {
-		float: left;
 		text-align: center;
 		width: 100%;
 	}
@@ -2466,20 +2494,16 @@
 				width: 48%;
 			}
 
-			@media screen and (max-width : 480px){
+			@media screen and (max-width : 580px){
 				width: 100%;
 			}
 
 			.v65-product-title {
-				font-size: 1.3em;
-				line-height: 1.2;
-				margin-bottom: 0.2em;
+				
 			}
 
 			.v65-product-subtitle {
-				font-size: 1.1em;
-				line-height: 1.2;
-				margin-bottom: 0.2em;
+				
 			}
 
 			/* Product Add To Cart */
@@ -2488,17 +2512,14 @@
 				margin-bottom: 5px;
 			}
 
-			.v65-product-addToCart-quantity input {
-				}
-
 			.v65-product-reviewStats{
 				height: inherit;
 			}
 
 		}
 
-/*   ===================================================================================================                                                                
-    18. Related Products
+/*  ===================================================================================================                                                                
+	18. Related Products
 ======================================================================================================== */
 
 .v65-suggestedProducts {
@@ -2528,15 +2549,11 @@
 
 
 			.v65-product-title {
-				font-size: 1.3em;
-				line-height: 1.2;
-				margin-bottom: 0.2em;
+				
 				}
 
 			.v65-product-subtitle {
-				font-size: 1.1em;
-				line-height: 1.2;
-				margin-bottom: 0.2em;
+				
 				}
 
 			/* Product Add To Cart */
@@ -2547,8 +2564,8 @@
 		}
 
 		
-/*   ===================================================================================================                                                                
-     19. Product Sets
+/*  ===================================================================================================                                                                
+	19. Product Sets
 ======================================================================================================== */
 
 .v65-productSet-header {
@@ -2561,7 +2578,6 @@
 
 	.v65-productSet-title {
 		float: left;
-		font-size: 20px;
 	}
 
 		.v65-productSet-priceSummary {
@@ -2594,12 +2610,11 @@
 		}
 
 		.v65-product-title {
-			font-size: 1.5em;
+			
 		}
 
 		.v65-product-subtitle {
-			font-size: 1.2em;
-			margin-bottom: 1em;
+			
 		}
 
 		.v65-product-priceWrapper {  
@@ -2629,8 +2644,8 @@
 	text-align: right;
 }
 
-/*   ===================================================================================================                                                                
-     20. Product Quick View
+/*  ===================================================================================================                                                                
+	20. Product Quick View
 ======================================================================================================== */
  
 .v65-product-quickView {
@@ -2648,46 +2663,108 @@
 	min-width: 70px;
 	text-align: center;
 	cursor: pointer;
+
+	@media screen and (max-width : 520px) {
+		top: 0;
+		left: 0;
+		font-size: 0;
+		border: 0;
+		width: 0;
+	}
 } 
  
 .v65-quickView {
+	display: none;
+	position: absolute;
 	background: none repeat scroll 0 0 #fff;
 	border: 4px solid #666;
 	border-radius: 10px 10px 10px 10px;
 	box-shadow: 0 0 10px 3px #ccc;
 	display: none;
-	left: 50%;
-	margin: -250px 0 0 -380px;
 	padding: 16px;
-	position: fixed;
-	top: 50%;
-	width: 800px;
+	margin:0;
 	z-index: 1000;
+	top:6%;
+	left:2%;
+	width: 88%;
+	margin:0;
 
-		.v65-product-drilldownLink { 
-			bottom: 0;
-			left: 10px;
-			position: absolute;
+	/*@media screen and (min-width:650px){
+		
+	}
+
+	@media screen and (min-width:700px){
+		width: 90%;
+	}
+
+	@media screen and (min-width:800px){
+		width: 92%;
+	}
+
+	@media screen and (min-width:880px){
+		position: fixed;
+		left: 50%;
+		top: 50%;
+		width: 800px;
+		margin: -250px 0 0 -420px;
+	}
+
+	@media screen and (min-width:1000px){
+		margin: -250px 0 0 -380px;
+	}*/
+
+
+	.v65-product-drilldownLink { 
+		bottom: 0;
+		left: 10px;
+		position: absolute;
+	}
+
+	.v65-product-photoWrapper {
+		float: left;
+		margin-right: 15px;
+		width: 200px;
+
+		@media screen and (max-width:880px){
+			width: 25%;
+			margin-right: 1%;
 		}
 
-		.v65-product-photoWrapper {
-			float: left;
-			margin-right: 15px;
-			width:200px;
+		.v65-product-photos-photo { 
+			float: left; 
+			text-align: center; 
+			margin: 0 0 1.5em;
+			padding: 0 0 1.5em;
+			width: 50%;
+
+			@media screen and (max-width : 1023px) {
+				width: 33%;
+				padding:0;
+
+				img { 
+					max-width: 100%; 
+				}
+			} 
 		}
+	}
 
 		.v65-product-tab-active {
 			max-height: 250px;
 			overflow: auto;
 		}
 
-		.v65-wine-specs {
-			width: 300px;
+		.v65-product-tabRightcol {
+			float: right;
+			width: 50%;
 		}
 
-		.v65-wine-specs-title {
-			text-align: left;
-		}
+			.v65-wine-specs {
+				width: 100%;
+			}
+
+			.v65-wine-specs-title {
+				text-align: center;
+			}
 
 		/* Product Media */
 		.v65-product-media {  
@@ -2747,6 +2824,10 @@
 			float:left;
 			width:585px;
 
+			@media screen and (max-width: 880px){
+				width:72%;
+			}
+
 			.v65-product-title{
 				font-size: 2em;
 				line-height: 1.2;
@@ -2759,131 +2840,29 @@
 			}
 		}		
 	
-/*   ===================================================================================================                                                                
-     21. Product Store Drilldown
-======================================================================================================== */	
 
-	.v65-productStoreWrapper	 {}
-		
-		.v65-productStoreWrapper-Top {
-
-			.v65-product-leftCol {
-				float: left;
-				width: 15%;
-
-				.v65-product-photos { 
-					margin: 0 0 1em; 
-					@media screen and (max-width:550px){
-						display:none;
-					}
-
-					.v65-product-photos-photo { 
-						float: left; 
-						text-align: center; 
-						margin: 0 0 1.5em;
-						padding: 0 0 1.5em;
-						width: 50%;
-
-						@media screen and (min-width : 768px) {
-							width: 33%;
-							padding:0;
-
-							img { 
-								max-width: 100%; 
-							}
-						} 
-					}
-				}
-			}
-				
-			.v65-product-rightCol {
-				float: left;
-				width: 80%;
-				margin-left:2%;
-			}
-				
-				.v65-product-infoWrapper {
-					float: left;
-					margin-top: 0.5em;
-					width: 50%;
-				}
-					
-					.v65-product-sku { 
-						display: inline;
-						margin-right: 5px;
-						font-size: 0.9em;
-					}
-						
-					.v65-product-brand { 
-						display: inline;
-						margin-right: 5px;
-						font-size: 0.9em;
-					}
-					
-					.v65-wine-region { 
-						display: inline;
-						margin-right: 5px;
-						font-size: 0.9em;
-					}
-						
-					.v65-wine-appellation { 
-						display: inline;
-						margin-right: 5px;
-						font-size: 0.9em;
-					}
-						
-					.v65-wine-type { 
-						display: inline;
-						margin-right: 5px;
-						font-size: 0.9em;
-					}
-						
-					.v65-wine-varietal { 
-						display: inline;
-						margin-right: 5px;
-						font-size: 0.9em;
-					}
-							
-				.v65-product-commerceWrapper {
-					float: left;
-					margin-top: 0.5em;
-					width: 50%;
-
-					@media screen and (max-width:550px){
-						width:100%;
-					}
-				}
-		}
-				
-		.v65-productStoreTabsWrapper {
-
-		}
-
-/*   ===================================================================================================                                                                
-     22. Product Drilldown
+/*  ===================================================================================================                                                                
+	21. Product Drilldown
 ======================================================================================================== */
 
-	 /*---responsive product wrappers-----
-	 -----requires custom .htm layout-----
-	 ------------------------------------*/
-
 .v65-productWrapper {
-	border-bottom: 1px solid #ccc;
 	margin-bottom: 1.5em;
 	padding-bottom: 1em;
-		@media screen and (max-width : 767px) { 
-			padding:1.5em;
 
-	}	
+	@media screen and (max-width : 835px) { 
+		padding:1.5em;
+
+	}
 		
 	/*Product Left Photos*/
 	.v65-product-photo-wrapper{
 		float:left;
 		width:32.5%;
 		margin-right:5%;
-			@media screen and (max-width : 767px) { 
-				width:30%; 
-			}
+			
+		@media screen and (max-width : 835px) { 
+			width:30%; 
+		}
 			
 		/*Product Left - Image*/
 		.v65-product-photo{ 
@@ -2895,7 +2874,8 @@
 
 		.v65-product-photos { 
 			margin: 0 0 1em; 
-			@media screen and (max-width : 480px){
+			
+			@media screen and (max-width : 580px){
 				display:none;
 			}
 		
@@ -2912,84 +2892,87 @@
 			float: left; 
 			text-align: center; 
 			margin: 0 0 1.5em;
-			padding: 0 0 1.5em;
-			width: 50%;
-				@media screen and (min-width : 768px) {
-					width: 33%;
-					padding:0;
+			width: 33%;
+			padding: 0;
 
-				img { 
-					max-width: 100%; 
-				}
+			img { 
+				max-width: 100%; 
+			}
+
+			@media screen and (max-width : 768px) {
+				width: 50%;
+				padding: 0 0 1.5em;
 			} 
-		}
-	}
-			/*Product Left Column Specs*/
 
+		}
+
+	}
+
+	/*Product Left Column Specs*/
 	.v65-product-leftCol{
 		float: left;
 		width: 32.5%;
 		margin-right: 5%;
-			@media screen and (max-width : 767px) { 
+			
+		@media screen and (max-width : 835px) { 
 			float: none; 
-			width:100%; 
-	}
+			width: 100%; 
+		}
 
 		.v65-productDrilldown-specs{
 			padding: 0 0 1em;
-
-			.v65-wine-specs{
-
-					@media screen and (max-width : 767px) { 
-						border-bottom:1px solid #CCC; 
-					}
-
-				.v65-wine-specs-title{
-					font-size: 1.8em;
-					margin: 0 0 1em;
-					text-align: center;
-					font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;	
-						@media screen and (max-width : 767px) { 
-							text-align:left; 
-						}
-
-				}
-				.v65-product-attribute{
-					.v65-product-attributeLabel{ 
-						@media screen and (max-width : 767px) { 
-							width:auto; 
-						}
-
-					}
-					.v65-product-attributeValue{ 
-						@media screen and (max-width : 767px) { 
-							width:auto;
-						}
-
-					}	
-				}
-			}
 		}
+
+		.v65-wine-specs{
+
+			@media screen and (max-width : 835px) { 
+				border-bottom: 1px solid #CCC; 
+			}
+
+		}
+
+		.v65-wine-specs-title {
+			text-align: center;
+			
+			@media screen and (max-width : 835px) { 
+				text-align: left; 
+			}
+
+		}
+
+		.v65-product-attribute{
+			
+			.v65-product-attributeLabel { 
+				
+				@media screen and (max-width : 835px) { 
+					width: auto; 
+				}
+
+			}
+
+			.v65-product-attributeValue{ 
+				
+				@media screen and (max-width : 835px) { 
+					width: auto;
+				}
+
+			}	
+
+		}
+
 	}
 
 	.v65-wine-profile {
-
-		.v65-wine-profile-title{
-			font-size: 1.8em;
-			margin: 0 0 1em;
-			font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;	
-		}
+		margin-bottom: 2em;
 	}
 
-		.v65-product-rightCol{
+	/*Product Right Column Specs*/
+	.v65-product-rightCol {
 		float: right;
 		width: 62.5%;
-			@media screen and (max-width : 767px) {
-			float: none; width:100%; 
-		}
 		
-		h1{
-			margin-bottom: 0;
+		@media screen and (max-width : 835px) {
+			float: none; width:100%; 
 		}
 
 		.v65-product-shipDate {
@@ -2998,73 +2981,48 @@
 
 		.v65-product-teaser{
 			margin-bottom: 2em;
-			p{
-
-			}
 		}
+
 		.v65-product-availability{
-			@media screen and (max-width : 480px){
+			
+			@media screen and (max-width : 580px){
 				display:none;
 				clear:both;
 				border-top:1px solid #ccc;
 				padding-top:.5em;
 			}
-			.v65-product-availability-inStock{
 
-			}
 		}
-		.v65-product-addToCart{
+
+	}
+
+	.v65-product-addToCart {
 			
+		.v65-addToCart{
 
-			.v65-addToCart{
+			@media screen and (max-width : 580px){
+				margin-bottom: 1em;
+				border-top: 1px solid #ccc;
+				border-bottom: 1px solid #ccc;
+				padding: 10px 0;
+				clear: both;
+			}
 
-				@media screen and (max-width : 480px){
-					clear:both;
+			fieldset{
+					
+				.v65-product-addToCart-priceWrapper {
+
+					@media screen and (max-width : 580px){
+						float:left;
+
+						width:100%;
+						margin-bottom:10px;
+					}
+					
 				}
 
-				fieldset{
-					legend{}
-					.v65-product-addToCart-priceWrapper{
-
-						
-
-						@media screen and (max-width : 480px){
-							float:left;
-
-							width:100%;
-							margin-bottom:10px;
-						}
-						.v65-product-addToCart-price{
-
-						}
-						.v65-product-addToCart-unitDescription{
-						}
-						.v65-product-addToCart-productSKU{
-
-						}
-					}
-					.v65-product-addToCart-quantity{
-						input{
-
-						}
-					}
-					.v65-product-addToCart-button{
-						button{
-							span{
-
-							}
-						}
-					}
-				}
 			}
-			.v65-addToCartCase{
-				
-			}
-		}
-		.v65-product-reviewStats{
-			a{
 
-			}
 		}
 
 		/* Product Media */
@@ -3077,6 +3035,7 @@
 				clear: both; 
 				visibility: hidden; 
 			}
+
 		}
 					
 		.v65-product-media-thumbnail { 
@@ -3088,110 +3047,80 @@
 						
 		.v65-product-media-title { 
 			float: left;
-			font-size: 0.917em;
-			line-height: 26px; 
 			width: 50%;  
 		}
 
 		.v65-product-socialBar{ 
 			
-			@media screen and (max-width : 767px) {
-			 	clear:both; 
-			 	border-top:1px solid #ccc; 
-			 	padding-top: 2em;}
+			@media screen and (max-width : 835px) {
+				clear:both; 
+				border-top:1px solid #ccc; 
+				padding-top: 2em;
+			}
 
 		}
-		.v65-product-description{
+
+		.v65-product-description {
 			padding-bottom: 1em;
 			margin-bottom: 1.5em;
 			border-bottom: 1px solid #ccc;
-				@media screen and (max-width : 767px) {
+				
+			@media screen and (max-width : 835px) {
 				padding-bottom:1em; 
 				margin-bottom:1.5em; 
 				border-bottom: 1px 
 				solid #ccc;
 			}
-		}
-
-		.v65-product-description-title {
-			font-size: 2em;
-			margin-bottom: 1em;
-		}
-
-		.v65-product-reviews{
-			.v65-product-reviews-title{
-
-			}
-		}
-		.v65-ProductRating{
-
 
 		}
-	}			
-							
-			/*Product Right - Product Reviews*/
-			.v65-product-reviews {
-				
-				}
-				
-				.v65-product-reviews-title {
-					font-size: 2em;
-					margin-bottom: 1em;
-					}
-					
-				.v65-product-review-wrapper {
-					border-bottom: 1px solid #ccc;
-					margin-bottom: 2em;
-					position: relative;
-					}
-					
-					.v65-product-review-avatar {  
-						position: absolute;
-						left: 0;
-						top: 0;
-						}
-					
-					.v65-product-review-comment-wrapper {  
-						float: left;
-						margin-left: 58px;
-						width: 100%;
-						@media screen and (max-width : 767px) {
-							float:right;
-							margin-left:28%;
-							width:72%;
-						}
-						}
-						
-						.v65-product-review-reviewerName {
-							font-size: 1.4em;
-							margin-bottom: 0.5em;
-							}
-							
-						.v65-product-review-date {
-							float: left;
-							font-size: 0.9em;
-							font-style: italic; 
-							height: 16px;
-							line-height: 16px;	
-							}
-							
-						.v65-product-review-comment {
-							clear: both;
-							padding: 0.5em 0 0 0;
-							}
-							
-				.v65-ProductRating {
-					
-					}
 
-				#captchaText {
-					margin-bottom:10px;
-				}
 	}
 
+}
+
+/*Product Right - Product Reviews*/	
+.v65-product-review-wrapper {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 2em;
+	position: relative;
+}
 	
-/*   ===================================================================================================                                                                
-     23. Cart
+	.v65-product-review-avatar {  
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	
+	.v65-product-review-comment-wrapper {  
+		float: left;
+		margin-left: 58px;
+	}
+		
+		.v65-product-review-reviewerName {
+			font-size: 1.4em;
+			margin-bottom: 0.5em;
+		}
+			
+		.v65-product-review-date {
+			float: left;
+			font-size: 0.9em;
+			font-style: italic; 
+			height: 16px;
+			line-height: 16px;	
+		}
+			
+		.v65-product-review-comment {
+			clear: both;
+			padding: 0.5em 0 0 0;
+		}
+
+#captchaText {
+	margin-bottom:10px;
+}
+
+	
+/*  ===================================================================================================                                                                
+	 22. Cart
 ======================================================================================================== */
 
 #v65-cartHelp { 
@@ -3218,9 +3147,10 @@
 		form { 
 			padding: 0; 
 			margin: 0; 
+			width: 250px;
 
-			@media screen and (min-width : 768px) {
-				width: 250px;
+			@media screen and (max-width : 768px) {
+				width: 100%;
 			}
 		}
 
@@ -3257,23 +3187,26 @@
 
 		#v65-couponSummaryTotal{
 			td {
-				 font-weight: bold;
-				 background-color: #f8f1de;
-				 border-top: 1px solid #ccc;
-				 border-bottom: 1px solid #ccc;
-				 text-align: left;
+				font-weight: bold;
+				background-color: #f8f1de;
+				border-top: 1px solid #ccc;
+				border-bottom: 1px solid #ccc;
+				text-align: left;
 			}
 		} 	
 		
 .v65-cartCheckOutButtons { 
 	float: right;
+
 	@media screen and (max-width : 620px) {
 		width: 100%;
 	}
 
 	a {
 		@media screen and (max-width : 620px){
-			margin:5px 0;
+			margin: 5px 0;
+			text-align: center;
+			width: 100%;
 		}	
 	}
 }
@@ -3281,133 +3214,145 @@
 /* b. Cart Table
 -------------------------------------------------------------- */
 #v65-cartTable {
-        width: 100%;
-        margin: 0 0 1em;
-        padding: 0;
- 
-        th {
-                font-weight: bold;
-                background-color: #f9f7f3;
-                border-top: 1px solid #ccc;
-                padding: 0.5em 0.667em;
-        }
- 
-        td {
-                padding: 0.5em 0.667em;
-        }
- 
-        .v65-cartShippingItem {
-                background-color: #e2dfd7;
-                text-align: right;
-        }
-       
-        .v65-cartShippingItemError {
-                background-color: #f96361;
-                text-align: right;
-        }
- 
-        .v65-cartShipping td {
-                background-color: #f9f7f3;
-                border-top: 0;
-        }
- 
-        .v65-cartItemImage{
-                min-width: 44px;
-        }
- 
-        .center, .v65-cartSubtotal-1, .v65-cartTax-1,
-        .v65-cartTotal-1, th.center + th.right, .v65-cartItem .center + .right,
-        .v65-cartSubtotal-3, .v65-cartTax-3, .v65-cartTotal-3{
-                display: none;
-        }
- 
-        @media screen and (min-width : 455px) {
-                th.center + th.right, .v65-cartItem .center + .right,
-                .v65-cartSubtotal-3, .v65-cartTax-3, .v65-cartTotal-3{
-                        display: table-cell;
-                }
-        }
- 
-        @media screen and (min-width : 545px) {
-                .center, .v65-cartSubtotal-1, .v65-cartTax-1, .v65-cartTotal-1{
-                        display: table-cell;
-                }
-        }
+	width: 100%;
+	margin: 0 0 1em;
+	padding: 0;
+
+	th {
+		font-weight: bold;
+		background-color: #f9f7f3;
+		border-top: 1px solid #ccc;
+		padding: 0.5em 0.667em;
+	}
+
+	td {
+		padding: 0.3em;
+	}
+
+	.v65-cartShippingItem {
+			background-color: #e2dfd7;
+			text-align: right;
+	}
+   
+	.v65-cartShippingItemError {
+			background-color: #f96361;
+			text-align: right;
+	}
+
+	.v65-cartShipping td {
+			background-color: #f9f7f3;
+			border-top: 0;
+	}
+
+	.v65-cartItemImage{
+			min-width: 44px;
+	}
+
+	th.v65-cartItemAmount, .v65-cartItemImage, .v65-cartItemAvailability, .cartItemImage, .v65-cartItemInStock,
+	.v65-cartSubtotal-3, .v65-cartSubtotal-4, .v65-cartTax-3, .v65-cartTax-4, .v65-cartTotal-3, .v65-cartTotal-4{
+			display: none;
+	}
+
+	.right{
+		@media screen and (max-width : 454px){
+			display: table-cell;
+		}
+	}
+
+	@media screen and (min-width : 455px) {
+			
+		.right, th.v65-cartItemAmount,.v65-cartItemImage, .v65-cartItemImage, .v65-cartSubtotal-3, .v65-cartTax-3, .v65-cartTotal-3{
+			display: table-cell;
+		}
+	}
+
+	@media screen and (min-width : 545px) {
+		.v65-cartItemAvailability, .v65-cartItemInStock,
+		.v65-cartSubtotal-3, .v65-cartSubtotal-4, .v65-cartTax-3, .v65-cartTax-4, .v65-cartTotal-3, .v65-cartTotal-4{
+			display: table-cell;
+		}
+	}
 }
-               
-        .v65-cartItem{
-                td {
-                        border-top: 1px solid #ccc;
-                }
+			   
+	.v65-cartItem{
+			td {
+					border-top: 1px solid #ccc;
+			}
+
+			form {
+					width: 80px;
+					margin: 0 auto;
+			}
+
+			fieldset{
+					padding: 0;
+					margin: 0;
+					border: 0;
+			}
+	 }
  
-                form {
-                        width: 80px;
-                        margin: 0 auto;
-                }
+	.v65-cartItemAmount {
+			text-align: center;
+			overflow: hidden;
+
+		.v65-qtyField {
+				text-align: center;
+				margin: 0 0 0.333em;
+				width: 2em;
+		}
+
+		button {
+				margin: 0;
+		}
+	}
+
+	.v65-cartItemImage {
+		width: 60px;
+		text-align: center;
+	}
+   
+	.v65-cartItemDescription {
+		line-height: 1.6em;
+	}
+
+	a.v65-cartRemoveButton {
+		margin-top: 0.5em;
+
+		@media screen and (max-width : 580px) {
+			height: 2em !important;
+			line-height: 2em !important;
+		} 
+		
+	}                      
+					   
+		#v65-cartSubtotal{
+			td{
+				background-color: #f9f7f3;
+				font-weight: bold;
+				border-top: 1px solid #ccc;
+			}
+		}              
+					   
+		.v65-cartTax {
+			td{
+				background-color: #f9f7f3;
+				font-weight: normal;
+				border-top: 0;
+			}
+		}
  
-                fieldset{
-                        padding: 0;
-                        margin: 0;
-                        border: 0;
-                }
-         }
- 
-                .v65-cartItemAmount {
-                        text-align: center;
-                        overflow: hidden;
-                       
-                        .v65-qtyField {
-                                text-align: center;
-                                margin: 0 0 0.333em;
-                                width: 2em;
-                        }
-                       
-                        button {
-                                margin: 0;
-                        }
-                }
- 
-                .v65-cartItemImage {
-                        width: 60px;
-                        text-align: center;
-                }
-               
-                .v65-cartItemDescription {
-                        line-height: 1.6em;
-                }
- 
-                .v65-cartRemoveButton {
-                        margin-top: 0.5em;
-                }                      
-                       
-        #v65-cartSubtotal{
-                td {
-                        background-color: #f9f7f3;
-                        font-weight: bold;
-                        border-top: 1px solid #ccc;
-                }
-        }              
-                       
-        .v65-cartTax {
-                td {
-                        background-color: #f9f7f3;
-                        font-weight: normal;
-                        border-top: 0;
-                }
-        }
- 
-        #v65-cartTotal {
-                td {   
-                        background-color: #f8f1de;
-                        font-weight: bold;
-                        border-top: 0;
-                        border-bottom: 1px solid #ccc;
-                }
-        }
-       
-                #v65-cartStateCode {
-                        width: 50px;
-                } /*state drop down select box*/
+		#v65-cartTotal {
+			td{
+				background-color: #f8f1de;
+				font-weight: bold;
+				border-top: 0;
+				border-bottom: 1px solid #ccc;
+			}
+		}
+	   
+		#v65-cartStateCode {
+				width: 50px;
+		} /*state drop down select box*/
 
 	#v65-cartPaymentOptions { 
 		float: left; 
@@ -3419,8 +3364,8 @@
 		}
 	}
 
-/*   ===================================================================================================                                                                
-     24. Checkout
+/*  ===================================================================================================                                                                
+	23. Checkout
 ======================================================================================================== */
 
 #v65-checkoutStepWrapper { 
@@ -3457,26 +3402,6 @@
 
 			form{
 				width: 100%;
-			}
-
-			textarea{
-				width: 99% !important;
-			}
-
-			input, select{
-				height: 44px;
-				min-width: 44px;
-			}
-
-			button.modalBtn{
-				font-size: 12px;
-				height: 44px;
-				width: auto;
-				min-width: 44px;
-			}
-
-			select{
-				width: 99.9%;
 			}
 		} 
 	}
@@ -3532,8 +3457,8 @@
 	}
 
 
-/*   ===================================================================================================                                                                
-     25. Billing & Shipping
+/*  ===================================================================================================                                                                
+	24. Billing & Shipping
 ======================================================================================================== */	
 
 /* a. Mini Cart Summary
@@ -3673,10 +3598,7 @@
 /* b. Main Form
 -------------------------------------------------------------- */	
 #v65-checkoutFormWrapper{
-	width: 100%;
-	@media screen and (min-width : 320px) and (max-width : 480px) {
-		width: 98%;	
-	}
+	width: 98%;	
 
 	form { 
 		width: 100%; 
@@ -3686,14 +3608,12 @@
 
 	
 	#v65-checkBilling{
-		@media screen and (min-width : 768px) {
+		width:400px;
+
+		@media screen and (max-width : 768px) {
 			width:60%;
 		}
-		@media screen and (min-width : 1024px) {
-			width:400px;
-		}
 
-		fieldset{}
 	}
 
 	#v65-checkBilling select[name="BillBirthDay"], #v65-checkBilling select[name="BillBirthYear"],
@@ -3711,10 +3631,9 @@
 	}
 
 	#v65-fieldset-wholesalerInfo, #v65-fieldset-billingInfo, 
-	#v65-fieldset-shippingInfo, #v65-fieldset-shippingOptions, 
-	#v65-fieldset-paymentMethod, #v65-fieldset-sourceCode, 
-	#v65-fieldset-usernamePassword{
-		width: 400px;
+	#v65-fieldset-shippingInfo, #v65-fieldset-paymentMethod, 
+	#v65-fieldset-sourceCode, #v65-fieldset-usernamePassword{
+		width: 360px;
 
 		@media screen and (max-width:950px) {
 			float: left;
@@ -3724,10 +3643,6 @@
 		@media screen and (max-width:725px) {
 			margin: 0 0 1em;
 			width: 99%;
-
-			input{
-				width: 99% !important;
-			}
 		}
 	}
 	
@@ -3746,10 +3661,10 @@
 		}
 
 		.v65-additionalComments { 
-				@media screen and (max-width:950px) {
-					width:95%;
-					clear:both;
-				}
+			@media screen and (max-width:950px) {
+				width:95%;
+				clear:both;
+			}
 		}
 
 		select{
@@ -3869,30 +3784,21 @@
 		}
 	}
 
-	#v65-checkBilling select[name="BillStateCode"]{
-		@media screen and (max-width : 725px) {
-			width: 99.9% !important;
-		}
-	}
-
-	#v65-checkBilling select[name="CardExpiryMo"]{
-		@media screen and (max-width : 725px) {
-			width: 49% !important;
-		}
-	}
-
-	#v65-checkBilling select[name="CardExpiryYr"]{
-		@media screen and (max-width : 725px) {
-			float: right;
-			width: 49% !important;
-		}
-	}
-
 	form#v65-checkBilling .v65-additionalComments{
 		@media screen and (max-width : 725px) {
 			margin-left: 0;
 			padding: 15px 5px 0;
 			width: auto;
+		}
+	}
+
+	#v65-shippingOptions {
+		input {
+			float: left;
+			margin-right: 0.5em;
+		}
+		label {
+			float: left;
 		}
 	}
 
@@ -3950,7 +3856,7 @@
 	margin: 0 auto;
 	width: 700px;
 
-	@media screen and (max-width : 767px) {
+	@media screen and (max-width : 767px){
 		width: 90%;
 		padding: 5%;
 	}
@@ -3965,7 +3871,7 @@
 		height: 150px;
 		width: 700px;
 
-		@media screen and (max-width : 767px) {
+		@media screen and (max-width : 767px){
 			width: 100%;
 			height: auto;
 
@@ -3980,26 +3886,26 @@
 		text-align: left;
 		width: 700px;
 
-		@media screen and (max-width : 767px) {
+		@media screen and (max-width : 767px){
 			width: 100%;
 
 		}
 
-		#v65-cartTable{
-			
-			td{
-				@media screen and (max-width : 480px){
-					padding:6px 4px;
-				}
+		#v65-cartTable {
+
+			.center{ 
+				display: block; 
 			}
 
-			.center{display:block;}
+			.v65-cartSubtotal-3, .v65-cartTax-3, .v65-cartTotal-3 { 
+				display: table-cell; 
+			}
 		} 
 	}	
 	
 	
-/*   ===================================================================================================                                                                
-     26. Club
+/*  ===================================================================================================                                                                
+	25. Club
 ======================================================================================================== */	
 
 /* a. Club List Component
@@ -4041,11 +3947,10 @@
 		width: 100%; 
 	}
 
-	fieldset {}	
 }	
 	
 	#v65-fieldset-clubOptions { 
-		width: 400px; 
+		width: 360px; 
 	}  
 	
 	#v65-clubCreditCard {} 
@@ -4137,24 +4042,21 @@
 /* c. Sign Up Screen
 -------------------------------------------------------------- */	
 #v65-signUpClubSummaryWrapper {
-	margin: 0 0 1em;
-	width: 90%;
-	padding: 5%;
 	background-color: #f7f7f7;
 	border: 1px solid #eeeeee;
 	overflow: hidden;
-	clear:both;
+	padding: 10px;
+	position: absolute;
+	right: 1px;
+	top: 9px;
+	width: 40%;
 
-	@media screen and (min-width:725px) {
-		width: 42%;
-		position: absolute;
-		top: 9px;
-		right: 1px;
-		padding: 10px;
-	}
-
-	@media screen and (min-width : 1024px) {	
-		width: 350px;
+	@media screen and (max-width:725px) {
+		margin: 0 0 2em;
+		width: 90%;
+		padding: 5%;
+		position: relative;
+		clear:both;
 	}
 
 }
@@ -4270,9 +4172,8 @@ fieldset#v65-fieldset-choices .v65-clubChoices {
 		}
 	}
 
-
-/*   ===================================================================================================                                                                
-     27. Member Area
+/*  ===================================================================================================                                                                
+	26. Member Area
 ======================================================================================================== */		
 
 	/* a. Login Form
@@ -4294,167 +4195,107 @@ fieldset#v65-fieldset-choices .v65-clubChoices {
 			overflow: hidden;
 			padding: 2px 5px 5px 5px;
 		}
-	} 
-		
 
-		#v65-loginForm input[type="checkbox"] {
-			float: left;
-			margin: 0.3em 0.3em 0 0.3em;
-		}
+	} 
+
+	@media screen and (max-width : 580px) {
+		#v65-loginForm input[type="text"] {
+			width: 95% !important;
+		} 
+
+		#v65-loginForm input[type="password"] {
+			width: 95% !important;
+		} 
+
+		#v65-loginForm button {
+			width: 100%;
+		} 
+	}
+
+	#v65-loginForm input[type="checkbox"] {
+		float: left;
+		margin: 0.3em 0.3em 0 0.3em;
+	}
 
 	/* b. Main Form
 	-------------------------------------------------------------- */		
-#v65-memberFormWrapper {
+	#v65-memberFormWrapper {
 
-	form { 
-		text-align: left; 
-		// width: 400px;
-		width:400px;
-		@media screen and (max-width : 480px){
-			width:100%;
-		} 
-	}
-	
-	legend { 
-		font-size: 1.4em; 
-		letter-spacing: 1px; 
-	}
+		form { 
+			text-align: left; 
+			width: 400px;
 
-	fieldset{ 
-		// width: 400px; 
-		border: 1px solid #ccc;
-		@media screen and (min-width : 768px) {
-			width:400px;
-		}  
-	}
-	
-	div{ 
-		margin: 0 0 4px 0; 
-		overflow: hidden; 
-		padding: 2px 5px 5px 5px; 
-	}
-	
-	.v65-additionalComments { 
-		float: right; 
-		// width: 380px; 
-	}
-	
-	/* Member SignUp Form Elements */
-	select{
-		&[name="BirthDay"], &[name="BirthYear"],
-		&[name="BirthMonth"]{
-			width: 32%;
-		}
-
-		&[name="BirthDay"]{
-			margin: 0 1%;
-		}
-
-		&[name="CardExpiryMo"]{
-			width: 49%;
-		}
-
-		&[name="CardExpiryYr"]{
-			margin-left: 1%;
-			width: 48%;
-		}
-
-		@media screen and (min-width : 768px) {
-			&[name=BirthMonth] {
-				width:80px;
-
-				@media screen and (max-width : 480px){
-					width:32%;
-				} 
-			} 
-
-			&[name=BirthDay], &[name=BirthYear] {
-				width:60px;
-
-				@media screen and (max-width : 480px){
-					width:32%;
-				} 
-			} 
-
-			&[name=StateCode] { 
-				width: 180px; 
+			@media screen and (max-width : 580px){
+				width: 100%;
 			}
-			
-			&[name=CardExpiryMo] { 
-				width: 120px; 
+		}
+		
+		legend { 
+			font-size: 1.4em; 
+			letter-spacing: 1px;
+		}
+
+		fieldset{ 
+			border: 1px solid #ccc;
+
+			@media screen and (max-width : 580px){
+				border: 0;
 			}
-			
-			&[name=CardExpiryYr] { 
+		}
+		
+		div{ 
+			margin: 0 0 4px 0; 
+			overflow: hidden; 
+			padding: 2px 5px 5px 5px; 
+		}
+		
+		.v65-additionalComments { 
+			float: right; 
+		}
+		
+		/* Member SignUp Form Elements */
+		select{
+			&[name="BirthMonth"]{ 
+				width: 60px;
+			}
+
+			&[name="BirthDay"], &[name="BirthYear"] {
+				width: 80px;
+			}
+
+			&[name="BirthDay"]{
+				margin: 0 1%;
+			}
+
+			&[name="CardExpiryMo"]{
+				width: 120px;
+			}
+
+			&[name="CardExpiryYr"]{
+				margin-left: 1%;
 				width: 80px;
 			}
 		}
-	}
 
-	input{
-		@media screen and (max-width : 480px){
-			width: 98%;
-			margin:0;
-			padding:0;
+		input{
 
-			&[type=checkbox] {
-				float: left;
-				width: 22px;
-				margin: 0.3em 0.3em 0 0.3em; 
-				@media screen and (max-width : 480px){
-					float: left; 
-					margin: 0.3em 0.3em 0 0.3em;
-				} 
+			&[name=Address], &[name=captchaText] { 
+				margin-bottom: 0.667em;
 			}
+
 		}
 
-		&[name=Address], &[name=captchaText] { 
-			margin-bottom: 0.667em;
+		input[type=checkbox] {
+			float: left;
+			margin: 0 0.3em 0 0.3em;
 		}
-		
-		@media screen and (min-width : 768px) {
-			&[name=FirstName], &[name=LastName], &[name=Company], 
-			&[name=City], &[name=MainPhone], &[name=Email], 
-			&[name=Username], &[name=Password], &[name=confirmPassword] { 
-				width: 175px; 
-			}
 
-			&[name=Address] { 
-				width: 250px; 
-				margin-bottom: 8px; 
-			}
-			
-			&[name=Address2] { 
-				width: 250px; 
-			}
-
-			&[name=ZipCode] { 
-				width: 100px; 
-			}
-			
-			&[type=checkbox] { 
-				float: left; 
-				margin: 0.3em 0.3em 0 0.3em; 
-			}
-		}
 	}
 
-	label{
-		@media screen and (max-width : 480px){
-			height:22px;
-			line-height: 22px;
-			margin: 0.3em 0.3em 0 0.3em;
-		}
-	}
-
-	button.defaultBtn{
-		@media screen and (max-width : 480px){
-			width: 100%;
-		}		
-	}
-}
 
 /* c. Club List
-	-------------------------------------------------------------- */
+-------------------------------------------------------------- */
+
 .v65-memberClubDescription { 
 	padding-left: 20px; 
 }
@@ -4471,18 +4312,18 @@ fieldset#v65-fieldset-choices .v65-clubChoices {
 		padding: 3px; 
 		border-bottom: 1px solid #bbb; 
 
-		@media screen and (max-width : 480px){
+		@media screen and (max-width : 580px){
 			font-size: 0.8em;
 			padding: 0;   
 		}
 	}
 
-	td{ 
+	td { 
 		font-size: 0.95em; 
 		padding: 3px; 
 		border-bottom: 1px solid #bbb;
 
-		a{ 
+		a { 
 			color: #000; 
 			text-decoration: none;
 
@@ -4493,7 +4334,7 @@ fieldset#v65-fieldset-choices .v65-clubChoices {
 		}
 	}
 
-	tr{
+	tr {
 		&:hover { 
 			background-color: #FFC; 
 		}
@@ -4513,7 +4354,7 @@ fieldset#v65-fieldset-choices .v65-clubChoices {
 	#v65-memberOrders {
 	margin-bottom: 1em; 
 
-	th{ 
+	th { 
 		background-color:#ccc; 
 		color:#333; 
 		font-weight: bold;
@@ -4522,31 +4363,31 @@ fieldset#v65-fieldset-choices .v65-clubChoices {
 		border-bottom: 1px solid #bbb;
 
 		&:nth-child(1), &:nth-child(4), &:nth-child(5), &:nth-child(6){
-			@media screen and (max-width : 480px){
+			@media screen and (max-width : 580px){
 				display: none;
 			}
 		}
 	}
 	
-	td{
+	td {
 		font-size: 0.95em; 
 		padding: 2px 0; 
 		border-bottom: 1px solid #bbb;
 
 		&:nth-child(1), &:nth-child(4), &:nth-child(5), &:nth-child(6){
-			@media screen and (max-width : 480px){
+			@media screen and (max-width : 580px){
 				display: none;
 			} 
 		}
 
-		&:nth-child(2){
-			@media screen and (max-width : 480px){
+		&:nth-child(2) {
+			@media screen and (max-width : 580px){
 				width:21%;
 			} 
 		}
 
-		&:nth-child(8){
-			@media screen and (max-width : 480px){
+		&:nth-child(8) {
+			@media screen and (max-width : 580px){
 				width:50%;
 
 				a{
@@ -4557,7 +4398,7 @@ fieldset#v65-fieldset-choices .v65-clubChoices {
 			} 
 		}  
 
-		a{ 
+		a { 
 			color: #000; 
 			text-decoration: none; 
 
@@ -4567,15 +4408,15 @@ fieldset#v65-fieldset-choices .v65-clubChoices {
 		}
 	}
 
-	tr{
-		&:hover{ 
+	tr {
+		&:hover { 
 			background-color: #FFC; 
 		}
 
-		.alt{ 
+		.alt { 
 			background-color: #efefef; 
 
-			&:hover{	
+			&:hover {	
 				background-color: #FFC; 
 			}
 		}
@@ -4624,25 +4465,38 @@ fieldset#v65-fieldset-choices .v65-clubChoices {
 	}
 
 	.v65-memberAllocationImage { 
-		text-align: center;
-		overflow: hidden;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 120px;
 
-		@media screen and (min-width : 768px) {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 120px;
+		@media screen and (max-width : 680px) {
+			text-align: center;
+			overflow: hidden;
+			position: relative;
+			width: 100%;
 		}
 	}
 
 	.v65-memberAllocationTeaser { 
-		width:100%;
-		@media screen and (min-width : 768px) {
-			position: relative;
-			margin: 0 0 0 140px;
-			padding: 0;
-			width:inherit;
+		position: relative;
+		margin: 0 0 0 140px;
+		padding: 0;
+		width:inherit;
+
+		@media screen and (max-width : 680px) {
+			margin: 0;
+			width:100%;
+
+			h3 { 
+				text-align: center;
+				
+				.v65-storeAllocationSKU {
+					display: block;
+				}
+			}
 		}
+
 	}
 	
 	.v65-storeAllocationSKU { 
@@ -4653,12 +4507,12 @@ fieldset#v65-fieldset-choices .v65-clubChoices {
 	.v65-memberAllocationTable { 
 		float: right;
 		border: 1px solid #ccc;
-		margin: 0 0 1.5em;
+		margin: 0 0 1.5em 2em;
 		padding: 4px;
 		font-size: 10px;
 		width: 250px;
 
-		@media screen and (max-width : 480px){
+		@media screen and (max-width : 680px) {
 			width:100%;
 		}
 
@@ -4701,8 +4555,6 @@ fieldset#v65-fieldset-choices .v65-clubChoices {
 }
 	
 	.v65-memberAllcoationHistoryTitle { 
-		font-size: 1.6em; 
-		margin: 0 0 0.2em; 
 		color: #333; 
 	}
 	
@@ -4763,120 +4615,127 @@ fieldset#v65-fieldset-choices .v65-clubChoices {
 		}
 	}
 	
-/*   ===================================================================================================                                                                
-     28. Modal PopUp Layout
+/*  ===================================================================================================                                                                
+	27. Modal PopUp Layout
 ======================================================================================================== */	
 
-#v65-modalContainer {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
+#v65-modalContainer { 
+	position: fixed; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+	z-index: 10000; 
+	text-align: left; 
+}
+	
+#v65-modalViel { 
+	background-color: #fff; 
 	height: 100%;
-	z-index: 10000;
-	text-align: left;
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	opacity:0.75; 
+	filter: alpha(opacity=75); 
+	-moz-opacity: 0.75; 
+	width: 100%; 
+	z-index: 102; 
 
-	@media screen and (max-width : 767px) {
-		position:absolute;
-	} 
-}
+	@media screen and (max-width : 580px) {
+		height: 1000%;
+		opacity: 1; 
+		filter: alpha(opacity=100); 
+		-moz-opacity: 1; 
+	}
+}	
 
-#v65-modalViel {
-	background-color:#fff;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 1000%;
-	z-index: 102;
 
-	@media screen and (min-width : 768px) {
-		opacity:0.75;
-		filter: alpha(opacity=75);
-		-moz-opacity: 0.75;
-	}  
-}
+	#v65-modalContentWrapper { 
+		border: 1px solid #666; 
+		background-color: #ffffff; 
+		position: relative; 
+		left: 50%; top: 20%; 
+		margin: 0 0 0 -237px; 
+		width: 474px; 
+		z-index: 103; 
 
-#v65-modalContentWrapper {
-	border: 1px solid #666;
-	background-color: #ffffff;
-	position: relative;
-	left: 50%;
-	top: 20%;
-	margin: 0 0 0 -237px;
-	width: 474px;
-	z-index: 103;
+		@media screen and (max-width : 580px) {
+			border: 0;
+			position: absolute;
+			left: 0;
+			margin: 0;
+			top: 0;
+			width: 100%;
+		}
+	}
 
-	@media screen and (max-width : 767px) {
-		left: 0;
-		top: 0;
-		width: 100%;
-		margin: 0;
-	} 
-}
+	#v65-modalContentWrapperLarge { 
+		border: 1px solid #666; 
+		background-color: #ffffff; 
+		position: relative; 
+		left: 50%; 
+		top: 20%; 
+		margin: 0 0 0 -437px; 
+		width: 874px; 
+		z-index: 103; 
+	}
+		
+		#v65-modalContentHeader { 
+			background-color: #777;
+			height: 27px; 
+			overflow: hidden; 
+			text-align: right; 
+			padding: 6px 10px 0 0; 
+			margin: 0; 
 
-#v65-modalContentWrapperLarge {
-	border: 1px solid #666;
-	background-color: #fff;
-	position: relative;
-	left: 50%;
-	top: 20%;
-	margin: 0 0 0 -437px;
-	width: 874px;
-	z-index: 103; 
-}
-	
-	#v65-modalContentHeader {
-		background-color: #777;
-		/*width: 464px;*/	
-		overflow: hidden;
-		text-align: right;
-		padding:10px;
+			@media screen and (max-width : 580px) {
+				height: 4em; 
+				text-align: left; 
+				padding: 0.5em 1em;
 
-		margin: 0;
-			@media screen and (min-width : 768px) {
-				height: 27px;
-				padding: 6px 10px 0 0; 
+				a.modalLinkBtn {
+					width: 100%;
+				} 
 			}
-	}
+		}
+		
+		#v65-modalContent { 
+			padding: 15px; 
+			margin: 0; 
 
-	#v65-modalContent {
-		padding: 15px;
-		margin: 0px;
-			
-		.defaultBtn{
-			@media screen and (max-width : 480px){
-				width: 100%;
+			@media screen and (max-width : 580px) {
+				button.defaultBtn {
+					width: 100%;
+				} 
 			}
-		}  
-	}
-	
-	/*Modal Site Login*/
-	#v65-siteLoginForm {
-		width: 212px;
-		margin: 0 20px 0 0;
-		float: left;
+		}
+		
+		/*Modal Site Login*/
+		#v65-siteLoginForm { 
+			width: 212px; 
+			margin: 0 20px 0 0; 
+			float: left;  
+		}
+		
+		#v65-siteLoginRightContent { 
+			float: left; 
+			width: 212px; 
+		}
+		
+	#v65-modalAgeVerification { 
+		border: 1px solid #666; 
+		background-color: #ffffff; 
+		position: relative; 
+		left: 50%; 
+		top: 20%; 
+		margin: 0 0 0 -237px; 
+		width: 474px; 
+		z-index: 103; 
 	}
 
-	#v65-siteLoginRightContent {
-		float: left;
-		width:212px; 
-	}
-
 	
-#v65-modalAgeVerification {
-	border: 1px solid #666;
-	background-color: #fff;
-	position: relative; 
-	left: 50%; 
-	top: 20%;
-	margin: 0 0 0 -237px;
-	width: 474px;
-	z-index: 103; 
-}
-	
-/*   ===================================================================================================                                                                
-     29. Form Builder
+/*  ===================================================================================================                                                                
+	28. Form Builder
 ======================================================================================================== */	
 
 /* This wrapper provides: Outline, position, margin, padding, alignment to a form built using the formbuilder */
@@ -4884,7 +4743,7 @@ fieldset#v65-fieldset-choices .v65-clubChoices {
 	width: 250px;
 	margin: 0 0 1em;
 
-	@media screen and (max-width : 480px){
+	@media screen and (max-width : 580px) {
 			width: 100%;
 		} 
 
@@ -4894,7 +4753,7 @@ fieldset#v65-fieldset-choices .v65-clubChoices {
 		margin: 0 0 12px 0; 
 		border: 1px solid #ccc;
 
-		@media screen and (max-width : 480px){
+		@media screen and (max-width : 580px) {
 			padding:0;
 		} 
 
@@ -4915,7 +4774,6 @@ fieldset#v65-fieldset-choices .v65-clubChoices {
 			}
 
 			input[type=text], input[type=password] { 
-				padding: 0;
 				margin: 0;
 				width: 150px; 
 			}
@@ -4924,11 +4782,7 @@ fieldset#v65-fieldset-choices .v65-clubChoices {
 				font-family: Tahoma, Geneva, sans-serif;
 				line-height: 1.5;
 				width: 155px;
-				font-size: 1em;
-
-				@media screen and (max-width : 480px){
-					width: 99%;
-				}  
+				font-size: 1em; 
 			}
 		}
 	} /*Margin + Block are there for checkout area.*/
@@ -4955,13 +4809,8 @@ fieldset#v65-fieldset-choices .v65-clubChoices {
 	
 	input{
 		&[type=text], &[type=password] {
-			padding: 0;
 			margin: 0;
 			width: 220px;
-
-			@media screen and (max-width : 480px){
-				width: 99%;
-			} 
 		}
 	}	
 	
@@ -4970,10 +4819,6 @@ fieldset#v65-fieldset-choices .v65-clubChoices {
 		line-height: 1.5;
 		width: 225px;
 		font-size: 1em;
-
-		@media screen and (max-width : 480px){
-			width: 99%;
-		} 
 	}
 }
 
@@ -4984,13 +4829,13 @@ fieldset#v65-fieldset-choices .v65-clubChoices {
 }
 
 .v65-formRight	{
-	margin: 0 0 1em 0;
-	width:100%;
+	float: right;
+	margin: 0 0 1em 1em;
+	width: 250px;
 
-	@media screen and (min-width:500px){
-		float: right;
-		margin: 0 0 1em 1em;
-		width: 250px;
+	@media screen and (max-width:500px){
+		margin: 0 0 1em 0;
+		width:100%;
 	} 
 }
 
@@ -5004,16 +4849,20 @@ fieldset#v65-fieldset-choices .v65-clubChoices {
 }
 
 /* REQUIRED BUTTON STYLES: */
-button{
+button {
 	border: 0;
-	border-radius: 0.5em;
 	cursor: pointer;
-	height: 44px;
-	line-height: 44px;
-	min-width: 44px;
 	overflow: visible; /* removes extra side padding in IE */
 	padding: 0;
 	position: relative;
+
+	height: 2.5em;
+	line-height: 2.5em;
+
+	@media screen and (max-width : 580px){
+		height: 4em;
+		line-height: 4em;
+	} 
 
 	&::-moz-focus-inner { 
 		border: none;  /* overrides extra padding in Firefox */ 
@@ -5021,14 +4870,24 @@ button{
 
 	span{
 		display: block;
-		padding: 0 0.7em; /* 0 8px; */
+		padding: 0 0.7em; 
 		position: relative;
+		text-align: center;
 		white-space: nowrap;
+
+		height: 2.5em;
+		line-height: 2.5em;
+
+		@media screen and (max-width : 580px){
+			font-size: 1em;
+			height: 4em;
+			line-height: 4em;
+			text-align: center;
+		}
 	}
 
-	&.largeBtn, &.defaultBtn, &.modalBtn{
+	&.largeBtn, &.defaultBtn, &.modalBtn {
 		background-color: #369;
-		text-align: center;
 
 		span{
 			color: #fff;
@@ -5039,10 +4898,8 @@ button{
 		}
 	}
 
-	&.altLargeBtn, &.altBtn, &.altModalBtn{
+	&.altLargeBtn, &.altBtn, &.altModalBtn {
 		background-color: #919191;
-		font-size: 1em;
-		text-align: center;
 
 		span{
 			color: #fff;
@@ -5053,122 +4910,101 @@ button{
 		}
 	}
 
-	&.largeBtn, &.altLargeBtn{
-		font-size: 1.3em; /* 16px; */
-
-		@media screen and (min-width : 768px) {
-			height: 2em;
-			line-height: 2em;
-		}
+	&.largeBtn, &.altLargeBtn {
+		font-size: 1.3333333333333333em;
 	}
 
-	&.defaultBtn, &.altBtn{
-		font-size: 1em; /* 12px; */
-
-		@media screen and (min-width : 768px) {
-			height: 2em;
-			line-height: 2em;
-		}
+	&.defaultBtn, &.altBtn {
 	}
 	
-	&.modalBtn, &.altModalBtn{
-		font-size: 0.833em; /* 10px; */
-		
-		@media screen and (min-width : 768px) {
-			height: 1.7em;
-			line-height: 1.7em;
-		}
+	&.modalBtn, &.altModalBtn {
+		font-size: 0.8em;
+		height: 2em;
+		line-height: 2em;
+
+		@media screen and (max-width : 580px){
+			font-size: 1.1em;
+			height: 4em;
+			line-height: 4em;
+		} 
 	}
 
 }
 
 a {
-	&.largeLinkBtn, &.linkBtn, &.modalLinkBtn, &.linkAltBtn, &.modalLinkAltBtn{
+	&.largeLinkBtn, &.linkBtn, &.modalLinkBtn, &.linkAltBtn, &.modalLinkAltBtn {
 		border: 0;
-		border-radius: 0.5em;
 		cursor: pointer;
 		display: inline-block;
-		height: 44px;
-		line-height: 44px;
-		min-width: 44px;
 		padding: 0;
 		position: relative;
 
-		@media screen and (max-width : 480px){
-			width:99%;
-		}
+		height: 2.5em;
+		line-height: 2.5em;
+
+		@media screen and (max-width : 580px){
+			font-size: 1em;
+			height: 4em;
+			line-height: 4em;
+			text-align: center;
+		} 
 
 		span{
 			display: block;
 			padding: 0 0.7em; /* 0 8px; */
 			position: relative;
+			border-radius: 0.385em;
 			white-space: nowrap;
 		}
 	}
 
-	&.largeLinkBtn, &.linkBtn, &.modalLinkBtn{
+	&.largeLinkBtn, &.linkBtn, &.modalLinkBtn {
 		background-color: #369;
-		text-align: center;
 
-		span{
+		span {
 			color: #fff;
 		}
 
-		&:hover{
+		&:hover {
 			background-color: #69c;
 			text-decoration: none;
 		}
 	}
 
-	&.linkAltBtn, &.modalLinkAltBtn{
+	&.linkAltBtn, &.modalLinkAltBtn {
 		background-color: #919191;
-		font-size: 1em;
-		text-align: center;
 
-		span{
+		span{ 
 			color: #fff;
 		}
 
-		&:hover{
+		&:hover {
 			background-color: #acacac;
 			text-decoration: none;
 		}
 	}
 
-	&.largeLinkBtn{
-		font-size: 1.3em; /* 16px; */
-
-		@media screen and (min-width : 768px) {
-			height: 2em;
-			line-height: 2em;
-		}
-	}
-
-	&.linkBtn, &.linkAltBtn{
-		font-size: 1em; /* 12px; */
-
-		@media screen and (min-width : 768px) {
-			height: 2em;
-			line-height: 2em;
-		}
+	&.largeLinkBtn {
+		font-size: 1.3333333333333333em;
 	}
 	
-	&.modalLinkBtn, &.modalLinkAltBtn{
-		@media screen and (max-width : 480px){
-			margin-bottom:10px;
-		}
-		@media screen and (min-width : 768px) {
-			font-size: 0.833em; /* 10px; */
-			height: 1.7em;
-			line-height: 1.7em;
-		}
+	&.modalLinkBtn, &.modalLinkAltBtn {
+		font-size: 0.8em;
+		height: 2em;
+		line-height: 2em;
+
+		@media screen and (max-width : 580px){
+			font-size: 1em;
+			height: 4em;
+			line-height: 4em;
+		} 
 	}
 
 }
 
 	
-/*   ===================================================================================================                                                                
-     30. Misc
+/*  ===================================================================================================                                                                
+	29. Misc
 ======================================================================================================== */	
 
 .firstItem { 
@@ -5181,7 +5017,7 @@ a {
 	padding-right: 0; 
 }
 
-.v65-last	{ 
+.v65-last { 
 	margin-right: 0;
 	padding-right: 0;
 	border-right: 0; 

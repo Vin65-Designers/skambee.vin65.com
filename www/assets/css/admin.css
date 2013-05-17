@@ -26,13 +26,13 @@ hr { color: #666; background-color: #666; height: 1px; border: 0; }
 /* Standard V65 Styles - don't remove */
 
 /* Images */
-img.v65-featureRight { border: 1px solid #ccc; float: right; padding: 3px; margin: 0 0 1em 1em; }
-img.v65-right { float: right; padding: 0; margin: 0 0 1em 1em; }
+img.v65-featureRight { border: 1px solid #ccc; float: right; padding: 3px; margin: 0 0 1em 1em; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } 
+img.v65-right { float: right; padding: 0; margin: 0 0 1em 1em; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;  }
 
-img.v65-featureLeft { border: 1px solid #ccc; float: left; padding: 3px; margin: 0 1em 1em 0; }
-img.v65-left { float: left; padding: 0; margin: 0 1em 1em 0; }
+img.v65-featureLeft { border: 1px solid #ccc; float: left; padding: 3px; margin: 0 1em 1em 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;  }
+img.v65-left { float: left; padding: 0; margin: 0 1em 1em 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;  }
 
-img.v65-border { border: 1px solid #ccc; padding: 3px; }
+img.v65-border { border: 1px solid #ccc; padding: 3px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;  }
 
 /*Pull Quotes*/
 .v65-quoteRight { width: 33%; border: 1px solid #ccc; background-color: #eee; color: #555; font: italic 1.17em/1.5em Georgia, "Times New Roman", Times, serif; float: right; padding: 0.65em; margin: 0 0 1em 1em; }
@@ -45,3 +45,12 @@ img.v65-border { border: 1px solid #ccc; padding: 3px; }
 	.small a 	{ font-weight: bold; }
 .smaller 			{ font-size: 0.834em; }
 	.smaller a 	{ font-weight: bold; }
+
+/* Structure */
+
+.colWrapper { border: 1px dotted #666; width: 100%; }
+.colWrapper:before,.colWrapper:after { content:""; display:table; }
+.colWrapper:after { clear:both; }
+
+.col2 { border: 1px dotted #ccc; float: left; margin-right: 2%; width: 47%; }
+.col2 img { max-width: 100% !important; height: auto !important;}

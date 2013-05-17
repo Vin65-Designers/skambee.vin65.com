@@ -10,7 +10,7 @@
 
 	<cf_vin65GlobalAssets>
 
-	<cf_css files="/assets/nivo/nivo-slider.css,/assets/css/screen.css">
+	<cf_css files="/assets/nivo/nivo-slider.css,/assets/css/screen.min.css">
 
 
 </head>

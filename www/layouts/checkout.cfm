@@ -15,8 +15,6 @@
 
 	<cf_css files="/assets/css/screen.min.css">
 
-	<cf_rssFeed>
-
 </head>
 <body>
 
@@ -37,41 +35,13 @@
 		<a href="/" accesskey="h" class="logo"><img src="/assets/images/logo.png"  alt="<cf_websiteName>"></a>
 	</header>
 
-	<nav>
-		<a href="##footerNav" class="footerMenuLink">&##9776;</a>
-		<cf_layoutHeaderNav depth="2">
-	</nav>
-
 	<article class="pageContent">
 
 		<div class="wrapper v65-group">
 
-			<section class="blogContent">
+			<article class="pageWideText">
 				<cf_mainContent>
-			</section>
-
-			<aside class="blogRightWrapper">
-
-				<div class="blogFilterLeft">
-					<h5>Recent Posts</h5>
-					<cf_blogRecentPosts maxrows="10">
-
-					<h5>Blog Categories</h5>
-					<cf_blogCategories>
-
-				</div>
-
-				<div class="blogFilterRight">
-
-					<h5>Our Writers</h5>
-					<cf_blogAuthors>
-
-					<h5>Blog Archives</h5>
-					<cf_blogArchives>
-
-				</div>
-
-			</aside>
+			</article>
 
 		</div>
 
@@ -82,24 +52,15 @@
 		
 		<div class="wrapper">
 			
-			<div class="footerSocial v65-group">
-				<div class="subscribe">
-					<span class="intro">Sign up for our mailing list</span>
-					<cf_subscribe contactType="Newsletter">
-				</div>
-				<a href="http://www.facebook.com"><img src="/assets/images/ico-facebook.png" valign="middle"></a>
-				<a href="http://www.twitter.com"><img src="/assets/images/ico-twitter.png" valign="middle"></a>
+			<div class="footerSocial footerSocialCheckout v65-group">
 				<span class="copyright"><cf_copyright></span>
 			</div>
 
-			<div class="footerNavWrapper v65-group">
-				<div class="footerNav"><cf_layoutFooterNav></div>
+			<div class="footerNavWrapper footerNavWrapperCheckout v65-group">
 				<cf_pods location="Footer Pod" type="description">
-				<a name="footerNav"></a>
-				<div class="megaNav v65-group"><cf_layoutHeaderNav depth="2"></div>		
 			</div>
 
-			<p class="accolade"><cf_vin65Accolade></p>
+			<p class="accolade accoladeCheckout"><cf_vin65Accolade></p>
 
 		</div>
 

@@ -1,5 +1,4 @@
-<cfoutput> 
-<!DOCTYPE html>
+<cfoutput> <!DOCTYPE html>
 <html>
 <head>
 
@@ -7,63 +6,107 @@
 
 	<cf_metaTags>
 
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
 	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
 
 	<cf_vin65GlobalAssets>
 
-	<cf_js files="/assets/js/scripts.js,/assets/nivo/jquery.nivo.slider.pack.js">
 	<cf_css files="/assets/css/screen.min.css">
 
 </head>
 <body>
 
-	<!--user-tools-->
-	<div id="user-tools">
-		<cf_modalCart>
-		<cf_login>
-	</div>
-	<!--/user-tools-->
+	<section class="userToolsWrapper">
 
-		<!--header-->
-	<div class="header">
+		<div class="wrapper v65-group">
 
-		<!--logo-->
+			<div id="user-tools">
+				<cf_modalCart>
+				<cf_login>
+			</div>
+
+		</div>
+
+	</section>
+
+	<header>
 		<a href="/" accesskey="h" class="logo"><img src="/assets/images/logo.png"  alt="<cf_websiteName>"></a>
-		<!--/logo-->
+	</header>
 
-		<!--mainMenu-->
-		<div class="mainMenu">
-			<cf_layoutHeaderNav depth="2">
-		</div>
-		<!--/mainMenu-->
+	<nav>
+		<cf_layoutHeaderNav depth="2">
+	</nav>
 
-	</div>
-	<!--/header-->
+	<section class="homepageContent">
 
-	<!--homepageContent-->
-	<div class="homepageContent v65-group">
+		<article class="wrapper v65-group">
 
-		<div id="slider"></div>
+			<div class="homepageImage">
+				<cf_pods location="Homepage Image" type="image">
+			</div>
 
-		<div class="homepageText">
-			<cf_mainContent>
-		</div>
+			<div class="homepageText">
+				<cf_mainContent>
+			</div>
 
-	</div>
+		</article>
+
+	</section>
 	<!--/homepageContent-->
 
-	<!--footer-->
-	<div class="footer">
-		<cf_layoutFooterNav>
-		<p><cf_copyright></p>
-		<p class="accolade"><cf_vin65Accolade></p>
-	</div>
-	<!--/footer-->
+	<section class="homepageContentItems">
 
+		<div class="wrapper v65-group">
+			
+			<article class="homepageProducts">
+				<cf_product_group code="HomepageProductGroup">
+			</article>
 
-<cf_vin65GlobalFooterAssets>
+			<article class="homepageEvents">
+				<cf_eventUpcoming eventCount="4" calendar="Events">
+			</article>
+
+			<article class="homepageBottomContent">
+				<cf_pods location="Homepage Bottom Right" type="title,description">
+			</article>
+
+		</div>
+
+	</section>
+	<!--/homepageContentItems-->
+
+	<footer>
+		
+		<div class="wrapper">
+			
+			<div class="footerSocial v65-group">
+				<div class="subscribe">
+					<span class="intro">Sign up for our mailing list</span>
+					<cf_subscribe contactType="Newsletter">
+				</div>
+				<a href="http://www.facebook.com"><img src="/assets/images/ico-facebook.png" valign="middle"></a>
+				<a href="http://www.twitter.com"><img src="/assets/images/ico-twitter.png" valign="middle"></a>
+				<span class="copyright"><cf_copyright></span>
+			</div>
+
+			<div class="footerNavWrapper v65-group">
+				<div class="footerNav"><cf_layoutFooterNav></div>
+				<cf_pods location="Footer Pod" type="description">
+				<a name="footerNav"></a>
+				<div class="megaNav v65-group"><cf_layoutHeaderNav depth="2"></div>		
+			</div>
+
+			<p class="accolade"><cf_vin65Accolade></p>
+
+		</div>
+
+	</footer>
+
+	<cf_js files="/assets/js/scripts.js,/assets/nivo/jquery.nivo.slider.pack.js">
+
+	<cf_vin65GlobalFooterAssets>
 
 </body>
-</html>
- </cfoutput>
+</html> </cfoutput>
