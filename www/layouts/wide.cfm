@@ -14,6 +14,12 @@
 	<cf_vin65GlobalAssets>
 
 	<cf_css files="/assets/css/screen.min.css">
+	
+	<!--[if lt IE 9]>
+		<script src="/assets/js/html5shiv.js"></script>
+		<script src="/assets/js/html5shiv-printshiv.js"></script>
+		<script src="/assets/js/respond.min.js"></script>
+	<![endif]-->
 
 </head>
 <body>
@@ -36,13 +42,16 @@
 	</header>
 
 	<nav>
-		<a href="##footerNav" class="footerMenuLink">&##9776;</a>
 		<cf_layoutHeaderNav depth="2">
 	</nav>
 
 	<article class="pageContent">
 
 		<div class="wrapper v65-group">
+
+			<div class="backtotop">	
+				<a href="##"><i class="icon-up-bold"></i>TOP</a>
+			</div>
 
 			<article class="pageWideText">
 				<cf_mainContent>
@@ -62,9 +71,10 @@
 					<span class="intro">Sign up for our mailing list</span>
 					<cf_subscribe contactType="Newsletter">
 				</div>
-				<a href="http://www.facebook.com"><img src="/assets/images/ico-facebook.png" valign="middle"></a>
-				<a href="http://www.twitter.com"><img src="/assets/images/ico-twitter.png" valign="middle"></a>
+				<a href="http://www.facebook.com"><i class="icon-facebook-squared"></i></a>
+				<a href="http://www.twitter.com"><i class="icon-twitter"></i></a>
 				<span class="copyright"><cf_copyright></span>
+				<span class="callUs"><a href="tel:1-800-888-8888"><i class="icon-phone-1"></i>Call Us 1-800-888-8888</a></span>
 			</div>
 
 			<div class="footerNavWrapper v65-group">

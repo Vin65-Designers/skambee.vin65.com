@@ -14,6 +14,12 @@
 	<cf_vin65GlobalAssets>
 
 	<cf_css files="/assets/css/screen.min.css">
+	
+	<!--[if lt IE 9]>
+		<script src="/assets/js/html5shiv.js"></script>
+		<script src="/assets/js/html5shiv-printshiv.js"></script>
+		<script src="/assets/js/respond.min.js"></script>
+	<![endif]-->
 
 </head>
 <body>
@@ -39,6 +45,10 @@
 
 		<div class="wrapper v65-group">
 
+			<div class="backtotop">	
+				<a href="##"><i class="icon-up-bold"></i>TOP</a>
+			</div>
+
 			<article class="pageWideText">
 				<cf_mainContent>
 			</article>
@@ -54,6 +64,7 @@
 			
 			<div class="footerSocial footerSocialCheckout v65-group">
 				<span class="copyright"><cf_copyright></span>
+				<span class="callUs"><a href="tel:1-800-888-8888"><i class="icon-phone-1"></i>Call Us 1-800-888-8888</a></span>
 			</div>
 
 			<div class="footerNavWrapper footerNavWrapperCheckout v65-group">
