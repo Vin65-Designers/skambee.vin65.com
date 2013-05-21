@@ -31,76 +31,74 @@
 //   ===================================================================================================
 //	 Default Theme
 //   ===================================================================================================
-//$backgroundColor: #000; // Website Background Color
-//$linkColor: #a6783e;
+$backgroundColor: #000; // Website Background Color
+$linkColor: #a6783e;
 
-//$fontColor: #111; // General Font Color
-//$fontFamily: sans-serif; // Default Font Family
+$fontColor: #111; // General Font Color
+$fontFamily: sans-serif; // Default Font Family
 
 // Default Heading Font Family 
-//$headingFontFamily: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+$headingFontFamily: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+$headerbackgroundColor: #303030; // Website Header Background Color
 
-//$headingColor: #976933; // Default Heading Font Color
-//$headingAltColor: #000; // Default Heading Font Color
+$headingColor: #976933; // Default Heading Font Color
+$headingAltColor: #000; // Default Heading Font Color
 
-//$userToolsBackgroundColor: #000; //Background Color for usertools
-//$userToolsColor: #fff; //Font Color for usertools
-//$userToolsLinkColor: #ccc; //Font Color for usertools
-//$userToolsHoverColor: #fff; //Font Color for usertools
+$userToolsBackgroundColor: #000; //Background Color for usertools
+$userToolsColor: #fff; //Font Color for usertools
+$userToolsLinkColor: #ccc; //Font Color for usertools
+$userToolsHoverColor: #fff; //Font Color for usertools
 
-//$navColor: #fff; //Font Color for main navigation
-//$navColorHover: #000; //Font Color for main navigation
-//$navBackgroundColorOne: #2a2924; //Color for top of gradient
-//$navBackgroundColorTwo: #000; //Color for bottom of gradient
-//$navBackgroundColorHoverOne: #c2984d; //Color for top of gradient
-//$navBackgroundColorHoverTwo: #865d2d; //Color for bottom of gradient
+$navColor: #fff; //Font Color for main navigation
+$navColorHover: #fff; //Font Color for main navigation
+$navBackgroundColor: #2a2924; //Color for nav background
+$navBackgroundColorHover: #c2984d; //Color for link color
 
-//$subNavColor: #000; //Font Color for sub navigation
-//$subNavColorHover: #a6783e; //Font Color for sub navigation
+$subNavColor: #000; //Font Color for sub navigation
+$subNavColorHover: #a6783e; //Font Color for sub navigation
 
-//$buttonColor: #a6783e; // Default Color for Buttons
-//$buttonFontColor: #fff; // Default Color for Button Font
+$buttonColor: #a6783e; // Default Color for Buttons
+$buttonFontColor: #fff; // Default Color for Button Font
 
-//$altButtonColor: lighten($buttonColor, 20%); // Alt Color for Buttons
-//$altButtonFontColor: #fff; // Alt Color for Buttons Font
+$altButtonColor: lighten($buttonColor, 20%); // Alt Color for Buttons
+$altButtonFontColor: #fff; // Alt Color for Buttons Font
 
-//$buttonFontFamily: sans-serif; // Default Font Family for Buttons
+$buttonFontFamily: sans-serif; // Default Font Family for Buttons
 
-//$homepageContentColor: #fff; // Homepage content background color
+$homepageContentColor: #fff; // Homepage content background color
 
-//$contentBackgroundColor: #fff; //Content background color
+$contentBackgroundColor: #fff; //Content background color
 
-//$footerBackground: #000; //Footer Background Color
-//$footerColor: #666; //Footer Color
-//$footerLink: #ccc; // Footer Link
-//$footerLinkHover: #fff; // Footer Link Hover
+$footerBackground: #000; //Footer Background Color
+$footerColor: #666; //Footer Color
+$footerLink: #ccc; // Footer Link
+$footerLinkHover: #fff; // Footer Link Hover
 
 //   ===================================================================================================
 //	 Red Theme
 //   ===================================================================================================
 //$backgroundColor: #000; // Website Background Color
-//$linkColor: #993333;
+//$linkColor: #bd902f;
 
 //$fontColor: #111; // General Font Color
 //$fontFamily: sans-serif; // Default Font Family
 
 // Default Heading Font Family 
 //$headingFontFamily: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+//$headerbackgroundColor: #303030; // Website Header Background Color
 
-//$headingColor: #993333; // Default Heading Font Color
+//$headingColor: #bd902f; // Default Heading Font Color
 //$headingAltColor: #000; // Default Heading Font Color
 
-//$userToolsBackgroundColor: #000; //Background Color for usertools
+//$userToolsBackgroundColor: #3e1c1c; //Background Color for usertools
 //$userToolsColor: #fff; //Font Color for usertools
 //$userToolsLinkColor: #ccc; //Font Color for usertools
 //$userToolsHoverColor: #fff; //Font Color for usertools
 
 //$navColor: #fff; //Font Color for main navigation
 //$navColorHover: #fff; //Font Color for main navigation
-//$navBackgroundColorOne: #2a2924; //Color for top of gradient
-//$navBackgroundColorTwo: #000; //Color for bottom of gradient
-//$navBackgroundColorHoverOne: #b25252; //Color for top of gradient
-//$navBackgroundColorHoverTwo: #993333; //Color for bottom of gradient
+//$navBackgroundColor: #993333; //Color for nav background
+//$navBackgroundColorHover: #b25252; //Color for link color
 
 //$subNavColor: #000; //Font Color for sub navigation
 //$subNavColorHover: #993333; //Font Color for sub navigation
@@ -125,65 +123,48 @@
 //   ===================================================================================================
 //	 Green Theme
 //   ===================================================================================================
-$backgroundColor: #000; // Website Background Color
-$linkColor: #51642d;
+//$backgroundColor: #000; // Website Background Color
+//$linkColor: #6c781c;
 
-$fontColor: #111; // General Font Color
-$fontFamily: sans-serif; // Default Font Family
+//$fontColor: #111; // General Font Color
+//$fontFamily: sans-serif; // Default Font Family
 
 // Default Heading Font Family 
-$headingFontFamily: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+//$headingFontFamily: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+//$headerbackgroundColor: #303030; // Website Header Background Color
 
-$headingColor: #51642d; // Default Heading Font Color
-$headingAltColor: #000; // Default Heading Font Color
+//$headingColor: #6c781c; // Default Heading Font Color
+//$headingAltColor: #000; // Default Heading Font Color
 
-$userToolsBackgroundColor: #000; //Background Color for usertools
-$userToolsColor: #fff; //Font Color for usertools
-$userToolsLinkColor: #ccc; //Font Color for usertools
-$userToolsHoverColor: #fff; //Font Color for usertools
+//$userToolsBackgroundColor: #3a3e1c; //Background Color for usertools
+//$userToolsColor: #fff; //Font Color for usertools
+//$userToolsLinkColor: #ccc; //Font Color for usertools
+//$userToolsHoverColor: #fff; //Font Color for usertools
 
-$navColor: #fff; //Font Color for main navigation
-$navColorHover: #fff; //Font Color for main navigation
-$navBackgroundColorOne: #2a2924; //Color for top of gradient
-$navBackgroundColorTwo: #000000; //Color for bottom of gradient
-$navBackgroundColorHoverOne: #56652c; //Color for top of gradient
-$navBackgroundColorHoverTwo: #39451d; //Color for bottom of gradient
+//$navColor: #fff; //Font Color for main navigation
+//$navColorHover: #fff; //Font Color for main navigation
+//$navBackgroundColor: #56652c; //Color for nav background
+//$navBackgroundColorHover: #56652c; //Color for link color
 
-@mixin ieGradient {
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56652c', endColorstr='#39451d',GradientType=0 ); /* IE6-9 */
-}
+//$subNavColor: #000; //Font Color for sub navigation
+//$subNavColorHover: #51642d; //Font Color for sub navigation
 
-$subNavColor: #000; //Font Color for sub navigation
-$subNavColorHover: #51642d; //Font Color for sub navigation
+//$buttonColor: #51642d; // Default Color for Buttons
+//$buttonFontColor: #fff; // Default Color for Button Font
 
-$buttonColor: #51642d; // Default Color for Buttons
-$buttonFontColor: #fff; // Default Color for Button Font
+//$altButtonColor: lighten($buttonColor, 20%); // Alt Color for Buttons
+//$altButtonFontColor: #fff; // Alt Color for Buttons Font
 
-$altButtonColor: lighten($buttonColor, 20%); // Alt Color for Buttons
-$altButtonFontColor: #fff; // Alt Color for Buttons Font
+//$buttonFontFamily: sans-serif; // Default Font Family for Buttons
 
-$buttonFontFamily: sans-serif; // Default Font Family for Buttons
+//$homepageContentColor: #fff; // Homepage content background color
 
-$homepageContentColor: #fff; // Homepage content background color
+//$contentBackgroundColor: #fff; //Content background color
 
-$contentBackgroundColor: #fff; //Content background color
-
-$footerBackground: #000; //Footer Background Color
-$footerColor: #666; //Footer Color
-$footerLink: #ccc; // Footer Link
-$footerLinkHover: #fff; // Footer Link Hover
-
-@mixin gradient {
-	background: $navBackgroundColorOne; /* Old browsers */
-	background: -moz-linear-gradient(top, $navBackgroundColorOne 0%, $navBackgroundColorTwo 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$navBackgroundColorOne), color-stop(100%,$navBackgroundColorTwo)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, $navBackgroundColorOne 0%,$navBackgroundColorTwo 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, $navBackgroundColorOne 0%,$navBackgroundColorTwo 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, $navBackgroundColorOne 0%,$navBackgroundColorTwo 100%); /* IE10+ */
-	background: linear-gradient(to bottom, $navBackgroundColorOne 0%,$navBackgroundColorTwo 100%); /* W3C */
-	@include ieGradient;
-}
-
+//$footerBackground: #000; //Footer Background Color
+//$footerColor: #666; //Footer Color
+//$footerLink: #ccc; // Footer Link
+//$footerLinkHover: #fff; // Footer Link Hover
 
 
 /*   ===================================================================================================
@@ -359,12 +340,14 @@ hr {
 
 }
 
+
+
 /*   ===================================================================================================
      3. Header
 ======================================================================================================== */
 
 header {
-	background: url("../images/homepage-feature.jpg") center top no-repeat $backgroundColor;
+	background: url("../images/homepage-feature.jpg") center top no-repeat $headerbackgroundColor;
 	height: 465px;
 	padding-top: 35px;
 	position: relative;
@@ -383,7 +366,7 @@ header {
 }
 
 .pageHeader {
-	background: url("../images/page-feature.jpg") center top no-repeat $backgroundColor;
+	background: url("../images/page-feature.jpg") center top no-repeat $headerbackgroundColor;
 	height: 185px;
 	padding-top: 15px;
 
@@ -404,11 +387,10 @@ header {
 
 /* ----- a. Main Menu ----- */
 nav {
+	background: url(../images/nav-gradient.png) repeat-x bottom $navBackgroundColor;
 	height: 5em;
 	position: relative;
 	z-index: 101;
-
-	@include gradient;
 
 	@media screen and (max-width : 580px) {
 		height: auto;
@@ -449,8 +431,7 @@ nav {
 			&:hover{
 				color: $navColorHover;
 				text-decoration: none;
-
-				@include gradient;
+				background: url(../images/nav-gradient.png) repeat-x $navBackgroundColorHover;
 			}
 
 			@media screen and (max-width : 680px) {
@@ -467,13 +448,12 @@ nav {
 		.hover{
 			color: $navColorHover;
 			text-decoration: none;
-
-			@include gradient;
+			background: url(../images/nav-gradient.png) repeat-x $navBackgroundColorHover;
 		}
 
 		// Drop Down
 		&:hover ul{
-			background: $navBackgroundColorOne;
+			background: url(../images/nav-gradient.png) repeat-x $navBackgroundColor;
 			display: block;
 
 			@media screen and (max-width : 580px) {
@@ -497,8 +477,8 @@ nav {
 			text-align: left;
 			width: 230px;
 
-			a{
-				background: $navBackgroundColorHoverTwo;
+			a {
+				background: $navBackgroundColor;
 				color: $navColor;
 				display: block;
 				float: none;
@@ -510,7 +490,7 @@ nav {
 				width: 150px;
 
 				&:hover{
-					background: lighten($navBackgroundColorOne, 5%);
+					background: lighten($navBackgroundColor, 10%);
 					color: $navColor;
 				}
 			}
@@ -518,10 +498,9 @@ nav {
 	}
 
 	.v65-pageAParent {
+		background: url(../images/nav-gradient.png) repeat-x $navBackgroundColorHover;
 		color: $navColorHover;
 		text-decoration: none;
-
-		@include gradient;	
 	}
 
 	.v65-home {
@@ -531,10 +510,9 @@ nav {
 	}
 
 	.v65-selected {
+		background: url(../images/nav-gradient.png) repeat-x $navBackgroundColorHover;
 		color: $navColorHover;
 		text-decoration: none;
-
-		@include gradient;	
 	}
 }
 
