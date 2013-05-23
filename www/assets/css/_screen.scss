@@ -347,9 +347,8 @@ hr {
 ======================================================================================================== */
 
 header {
-	background: url("../images/homepage-feature.jpg") center top no-repeat $headerbackgroundColor;
+	background: $headerbackgroundColor;
 	height: 465px;
-	padding-top: 35px;
 	position: relative;
 	text-align: center;
 	width: 100%;
@@ -357,26 +356,62 @@ header {
 
 	@media screen and (max-width : 580px) {
 		height: 180px;
-		padding-top: 10px;
-
-		img { 
-			max-height: 90%; 
-		}
 	}
+
+	.homepageBanner {
+		left: 0;
+		height: 100%;
+		top: 0;
+		position: absolute;
+		width: 100%;
+	}
+
+	.logo { 
+		position: relative;
+
+		img {
+			padding-top: 35px;
+
+			@media screen and (max-width : 580px) {
+				padding-top: 10px;
+				max-height: 90%; 
+			}
+
+		}
+
+	}
+	
 }
 
 .pageHeader {
-	background: url("../images/page-feature.jpg") center top no-repeat $headerbackgroundColor;
+	background: $headerbackgroundColor;
 	height: 185px;
-	padding-top: 15px;
 
 	@media screen and (max-width : 580px) {
 		height: 100px;
-		padding-top: 10px;
+	}
 
-		img { 
-			max-height: 90%; 
+	.pageBanner {
+		left: 0;
+		height: 100%;
+		top: 0;
+		position: absolute;
+		width: 100%;
+	}
+
+	.logo { 
+		position: relative;
+
+		img {
+			padding-top: 15px;
+
+			@media screen and (max-width : 580px) {
+				padding-top: 10px;
+				max-height: 90%; 
+			}
+
 		}
+
 	}
 
 }
@@ -577,7 +612,7 @@ nav {
 	}
 
 	li{
-		line-height: 2em;
+		line-height: 3em;
 
 		@media screen and (max-width : 580px) {
 			border-bottom: 1px solid $subNavColor;
@@ -668,7 +703,7 @@ nav {
 		margin: 0 1% 0 2%;
 		width: 30%;
 
-		@media screen and (max-width : 580px) {
+		@media screen and (max-width : 680px) {
 			float: none;
 			margin: 0 0 2em 0;
 			width: 100%;
@@ -788,26 +823,66 @@ nav {
 }
 
 .colWrapper {
+	margin-bottom: 2em;
 	width: 100%;
 }
 
 	.colWrapper:before,.colWrapper:after { content:""; display:table; }
 	.colWrapper:after { clear:both; }
 
-	.col2 {
-		float: left;
-		margin-right: 5%;
-		width: 45%;
 
-		@media screen and (max-width : 520px) {
+	.col2 { 
+		float: left;
+		margin-left: 6%;
+		width: 47%;
+	}
+
+	.col2:first-child { 
+		float: left;
+		margin-left: 0%;
+		width: 47%;
+	}
+
+	.col3 { 
+		float: left;
+		margin-left: 5%;
+		width: 30%;
+	}
+
+	.col3:first-child { 
+		float: left;
+		margin-left: 0%;
+		width: 30%;
+	}
+
+	@media screen and (max-width: 580px) {
+
+		.col2 { 
 			float: none;
-			margin: 0 0 2em 0;
+			margin-left: 0;
+			margin-bottom: 1.5em;
+			width: 100%;
+		}
+
+		.col2:first-child { 
+			float: none;
+			width: 100%;
+		}
+
+		.col3 { 
+			float: none;
+			margin-left: 0;
+			margin-bottom: 1.5em;
+			width: 100%;
+		}
+
+		.col3:first-child { 
+			float: none;
 			width: 100%;
 		}
 
 	}
 	
-
 
 /*   ===================================================================================================
      6. Blog Template
@@ -817,6 +892,11 @@ nav {
 	float: left;
 	padding: 20px 4% 0 0;
 	width: 56%;
+
+	@media screen and (max-width : 600px) {
+		padding: 20px 4% 0 0;
+		width: 66%;
+	}
 
 	@media screen and (max-width : 580px) {
 		float: none;
@@ -843,6 +923,13 @@ nav {
 		margin: 0 0 0 10px;
 	}
 
+	@media screen and (max-width : 600px) {
+		float: left;
+		margin: 0 0 2em 0;
+		padding: 0;
+		width: 30%;
+	}
+
 	@media screen and (max-width : 580px) {
 		float: none;
 		margin: 0 0 2em 0;
@@ -856,11 +943,35 @@ nav {
 		float: left;
 		padding-right: 4%;
 		width: 48%;
+
+		@media screen and (max-width : 600px) {
+			float: none;
+			margin: 0 0 2em 0;
+			width: 100%;
+		}
+
+		@media screen and (max-width : 580px) {
+			float: left;
+			padding-right: 4%;
+			width: 48%;
+		}
+
 	}
 
 	.blogFilterRight {
 		float: left;
 		width: 48%;
+
+		@media screen and (max-width : 600px) {
+			float: none;
+			margin: 0 0 2em 0;
+			width: 100%;
+		}
+
+		@media screen and (max-width : 580px) {
+			float: left;
+			width: 48%;
+		}
 	}
 
 /*   ===================================================================================================

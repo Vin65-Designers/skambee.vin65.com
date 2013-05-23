@@ -530,41 +530,40 @@
 	.v65-blogFooter {
 		font-size: 0.85em;
 		height: 1.8em;
+		line-height: 1.8em;
 		margin: 0 0 1.5em;
 		clear: both;
 	}
 
-	.v65-blogFooterDate{
-		float: left;
-		padding-right: 1em;
-		@media screen and (max-width : 580px){
-			height: 22px;
-			font-size: 1.3em;
+		.v65-blogFooterDate{
+			float: left;
+			margin-right: 10px;
+			@media screen and (max-width : 580px){
+				height: 22px;
+				font-size: 1.3em;
+			}
 		}
-	}
 
-	.v65-blogFooterLink{
-		float: left;
-		padding-right: 1em;
-
-		@media screen and (max-width : 580px){
-			display: none;
+		.v65-blogFooterLink{
+			float: left;
+			margin-right: 10px;
+			@media screen and (max-width : 580px){
+				display: none;
+			}
 		}
-	}
 
-	.v65-blogFooterComments{ 
-		float: left; 
-		padding-right: 1em;
-
-		@media screen and (max-width : 580px){
-			height: 22px;
-			font-size: 1.3em;
+		.v65-blogFooterComments{ 
+			float: left;
+			margin-right: 10px;
+			@media screen and (max-width : 580px){
+				height: 22px;
+				font-size: 1.3em;
+			}
+		}	
+		
+		.v65-blogFooterShareThis {
+			float: left;
 		}
-	}	
-	
-	.v65-blogFooterShareThis {
-		float: left;
-	}
 
 
 /*  ===================================================================================================                                                                
@@ -1142,7 +1141,7 @@
 	#v65-businessLocatorSelectByCity { 
 		width: 33%;
 
-		@media screen and (max-width : 680px) {
+		@media screen and (max-width : 580px) {
 			width: 100%;
 		}
 
@@ -1156,7 +1155,7 @@
 		overflow: hidden; 
 		width: 33%;
 
-		@media screen and (max-width : 680px) {
+		@media screen and (max-width : 580px) {
 			width: 100%;
 		}
 
@@ -1171,7 +1170,7 @@
 		padding: 0;
 
 
-		@media screen and (max-width : 680px) {
+		@media screen and (max-width : 580px) {
 			margin: 0;
 		}
 
@@ -1204,7 +1203,7 @@
 		background-color:#eee;
 		border: 1px solid #ccc;
 		
-		@media screen and (max-width : 680px) {
+		@media screen and (max-width : 580px) {
 			position: relative;
 			width: 100%;
 		}
@@ -1803,6 +1802,7 @@
 	.v65-product-attributeLabel { 
 		font-weight: bold; 
 		display: block; 
+		margin-bottom: 1em; 
 	}
 	
 	.v65-product-attributeValue { 
@@ -1956,9 +1956,6 @@
 	}
 }
 		
-
-/* i. Product Tabs
--------------------------------------------------------------- */
 /* i. Product Tabs
 -------------------------------------------------------------- */
 .v65-productTabsWrapper {}
@@ -1998,18 +1995,19 @@
 				}
 			}
 
-			&.v65-product-tab-active {
-				
-				a {
-					color: #000;
-					background: #fff;
-					border-bottom:0;
-					font-weight: bold;
-					height:28px;
+		}
 
-					&:hover {
-						text-decoration: none;
-					}
+		.v65-product-tabs-active {
+				
+			a {
+				color: #000;
+				background: #fff;
+				border-bottom:0;
+				font-weight: bold;
+				height:28px;
+
+				&:hover {
+					text-decoration: none;
 				}
 			}
 		}
@@ -2108,7 +2106,7 @@
 	width: 48%;
 	margin: 0 4% 1.5em 0;
 
-	@media screen and (max-width : 580px){
+	@media screen and (max-width : 600px){
 		float: none;
 		margin: 0 0 2em 0;
 		width: 100%;
@@ -2123,7 +2121,7 @@
 	.v65-product-infoWrapper {}
 
 	.v65-addToCartCase {
-		@media screen and (max-width : 580px){
+		@media screen and (max-width : 600px){
 			display: none;
 		}
 	}
@@ -2646,44 +2644,27 @@
 } 
  
 .v65-quickView {
-	display: none;
-	position: absolute;
 	background: none repeat scroll 0 0 #fff;
 	border: 4px solid #666;
 	border-radius: 10px 10px 10px 10px;
 	box-shadow: 0 0 10px 3px #ccc;
 	display: none;
+	left: 50%;
+	margin: -250px 0 0 -380px;
 	padding: 16px;
-	margin:0;
+	position: fixed;
+	top: 50%;
+	width: 800px;
 	z-index: 1000;
-	top:6%;
-	left:2%;
-	width: 88%;
-	margin:0;
 
-	/*@media screen and (min-width:650px){
-		
-	}
-
-	@media screen and (min-width:700px){
+	@media screen and (max-width : 970px) {
+		left: 0;
+		margin-left: 5%;
 		width: 90%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
 	}
-
-	@media screen and (min-width:800px){
-		width: 92%;
-	}
-
-	@media screen and (min-width:880px){
-		position: fixed;
-		left: 50%;
-		top: 50%;
-		width: 800px;
-		margin: -250px 0 0 -420px;
-	}
-
-	@media screen and (min-width:1000px){
-		margin: -250px 0 0 -380px;
-	}*/
 
 
 	.v65-product-drilldownLink { 
@@ -2697,27 +2678,11 @@
 		margin-right: 15px;
 		width: 200px;
 
-		@media screen and (max-width:880px){
+		@media screen and (max-width : 880px){
 			width: 25%;
 			margin-right: 1%;
 		}
 
-		.v65-product-photos-photo { 
-			float: left; 
-			text-align: center; 
-			margin: 0 0 1.5em;
-			padding: 0 0 1.5em;
-			width: 50%;
-
-			@media screen and (max-width : 1023px) {
-				width: 33%;
-				padding:0;
-
-				img { 
-					max-width: 100%; 
-				}
-			} 
-		}
 	}
 
 		.v65-product-tab-active {
@@ -2822,62 +2787,25 @@
 	padding-bottom: 1em;
 
 	@media screen and (max-width : 835px) { 
-		padding:1.5em;
+		padding: 1.5em;
 
 	}
+
+	h1 {
+		float: right;
+		width: 62.5%;
 		
-	/*Product Left Photos*/
-	.v65-product-photo-wrapper{
-		float:left;
-		width:32.5%;
-		margin-right:5%;
-			
-		@media screen and (max-width : 835px) { 
-			width:30%; 
+		@media screen and (max-width : 680px) {
+			float: none; 
+			text-align: center;
+			width: 100%; 
 		}
-			
-		/*Product Left - Image*/
-		.v65-product-photo{ 
-			
-			img{
+	}
 
-			}
-		}
-
-		.v65-product-photos { 
-			margin: 0 0 1em; 
-			
-			@media screen and (max-width : 580px){
-				display:none;
-			}
-		
-			&:after { 
-				content: ".";
-				display: block;
-				height: 0;
-				clear: both;
-				visibility: hidden; 
-			}
-		}
-						
-		.v65-product-photos-photo { 
-			float: left; 
-			text-align: center; 
-			margin: 0 0 1.5em;
-			width: 33%;
-			padding: 0;
-
-			img { 
-				max-width: 100%; 
-			}
-
-			@media screen and (max-width : 768px) {
-				width: 50%;
-				padding: 0 0 1.5em;
-			} 
-
-		}
-
+	.v65-product-subtitle {
+		font-size: 0.75em;
+		margin-bottom: 0;
+		margin-top: 0.3em;
 	}
 
 	/*Product Left Column Specs*/
@@ -2886,7 +2814,7 @@
 		width: 32.5%;
 		margin-right: 5%;
 			
-		@media screen and (max-width : 835px) { 
+		@media screen and (max-width : 680px) { 
 			float: none; 
 			width: 100%; 
 		}
@@ -2897,7 +2825,7 @@
 
 		.v65-wine-specs{
 
-			@media screen and (max-width : 835px) { 
+			@media screen and (max-width : 680px) { 
 				border-bottom: 1px solid #CCC; 
 			}
 
@@ -2905,31 +2833,6 @@
 
 		.v65-wine-specs-title {
 			text-align: center;
-			
-			@media screen and (max-width : 835px) { 
-				text-align: left; 
-			}
-
-		}
-
-		.v65-product-attribute{
-			
-			.v65-product-attributeLabel { 
-				
-				@media screen and (max-width : 835px) { 
-					width: auto; 
-				}
-
-			}
-
-			.v65-product-attributeValue{ 
-				
-				@media screen and (max-width : 835px) { 
-					width: auto;
-				}
-
-			}	
-
 		}
 
 	}
@@ -2943,8 +2846,9 @@
 		float: right;
 		width: 62.5%;
 		
-		@media screen and (max-width : 835px) {
-			float: none; width:100%; 
+		@media screen and (max-width : 680px) {
+			float: none; 
+			width: 100%; 
 		}
 
 		.v65-product-shipDate {
@@ -2968,6 +2872,34 @@
 
 	}
 
+	.v65-productAddToCart-drilldownActivate {
+
+		@media screen and (max-width : 680px){
+			background: #fff;
+			border: 0;
+			opacity: 0.9;
+			margin: 0;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			z-index: 899;
+			width: 100%;
+
+			.v65-product-addToCart {
+				margin: 0;
+				padding: 0 0 0 1em;
+
+				.v65-addToCart {
+					border: 0;
+					margin: 0;
+				}
+			}
+		}
+		
+	}
+
+	
+
 	.v65-product-addToCart {
 			
 		.v65-addToCart{
@@ -2986,7 +2918,6 @@
 
 					@media screen and (max-width : 580px){
 						float:left;
-
 						width:100%;
 						margin-bottom:10px;
 					}
@@ -3046,6 +2977,31 @@
 
 		}
 
+	}
+
+}
+
+.v65-product-photos { 
+	margin: 0 0 1em; 
+
+	&:after { 
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden; 
+	}
+}
+				
+.v65-product-photos-photo { 
+	float: left; 
+	text-align: center; 
+	margin: 0 0 1.5em;
+	width: 33%;
+	padding: 0;
+
+	img { 
+		max-width: 100%; 
 	}
 
 }
@@ -3170,12 +3126,12 @@
 .v65-cartCheckOutButtons { 
 	float: right;
 
-	@media screen and (max-width : 620px) {
+	@media screen and (max-width : 580px) {
 		width: 100%;
 	}
 
 	a {
-		@media screen and (max-width : 620px){
+		@media screen and (max-width : 580px){
 			margin: 5px 0;
 			text-align: center;
 			width: 100%;
@@ -3330,6 +3286,7 @@
 		float: left; 
 		padding-top: 4px; 
 		height: 28px;
+		width: 300px;
 
 		img { 
 			margin-right: 5px; 

@@ -2,6 +2,11 @@
 
 <div class="v65-productWrapper v65-group">
 
+     <h1>
+          <v65:product:title></v65:product:title>
+          <v65:product:subtitle></v65:product:subtitle>
+     </h1>
+
      <div class="v65-product-leftCol">
 
           <v65:product:photo showPhoto="1"></v65:product:photo>
@@ -11,7 +16,6 @@
           <div class="v65-productDrilldown-specs">
 
                <v65:wine:specs></v65:wine:specs>
-
                <v65:product:media></v65:product:media>
 
          </div>
@@ -20,21 +24,14 @@
 
      <div class="v65-product-rightCol">
 
-          <h1><v65:product:title></v65:product:title></h1>
-
-          <v65:product:subtitle></v65:product:subtitle>
-
-          <v65:product:teaser></v65:product:teaser>
-
           <v65:product:shipDate></v65:product:shipDate>
 
-          <v65:product:actionMessage></v65:product:actionMessage>
-
-          <v65:product:inCompliantStateMessage></v65:product:inCompliantStateMessage>
-
-          <v65:product:availability></v65:product:availability>
-
-          <v65:product:addToCart></v65:product:addToCart>
+          <div class="v65-productAddToCart-drilldown">
+               <v65:product:actionMessage></v65:product:actionMessage>
+               <v65:product:inCompliantStateMessage></v65:product:inCompliantStateMessage>
+               <v65:product:availability></v65:product:availability>
+               <v65:product:addToCart></v65:product:addToCart>
+          </div>
 
           <v65:product:reviewStats></v65:product:reviewStats>
 
