@@ -45,8 +45,6 @@ $fontFamily: sans-serif; // Default Font Family
 
 // Default Heading Font Family 
 $headingFontFamily: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-$headerbackgroundColor: #303030; // Website Header Background Color
-
 $headingColor: #976933; // Default Heading Font Color
 $headingAltColor: #000; // Default Heading Font Color
 
@@ -54,6 +52,8 @@ $userToolsBackgroundColor: #000; //Background Color for usertools
 $userToolsColor: #fff; //Font Color for usertools
 $userToolsLinkColor: #ccc; //Font Color for usertools
 $userToolsHoverColor: #fff; //Font Color for usertools
+
+$featurebackgroundColor: #303030; // Feature Image Background Color
 
 $navColor: #fff; //Font Color for main navigation
 $navColorHover: #fff; //Font Color for main navigation
@@ -91,8 +91,6 @@ $footerLinkHover: #fff; // Footer Link Hover
 
 // Default Heading Font Family 
 //$headingFontFamily: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-//$headerbackgroundColor: #303030; // Website Header Background Color
-
 //$headingColor: #bd902f; // Default Heading Font Color
 //$headingAltColor: #000; // Default Heading Font Color
 
@@ -100,6 +98,8 @@ $footerLinkHover: #fff; // Footer Link Hover
 //$userToolsColor: #fff; //Font Color for usertools
 //$userToolsLinkColor: #ccc; //Font Color for usertools
 //$userToolsHoverColor: #fff; //Font Color for usertools
+
+//$featurebackgroundColor: #303030; // Website Header Background Color
 
 //$navColor: #fff; //Font Color for main navigation
 //$navColorHover: #fff; //Font Color for main navigation
@@ -137,8 +137,6 @@ $footerLinkHover: #fff; // Footer Link Hover
 
 // Default Heading Font Family 
 //$headingFontFamily: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-//$headerbackgroundColor: #303030; // Website Header Background Color
-
 //$headingColor: #6c781c; // Default Heading Font Color
 //$headingAltColor: #000; // Default Heading Font Color
 
@@ -146,6 +144,8 @@ $footerLinkHover: #fff; // Footer Link Hover
 //$userToolsColor: #fff; //Font Color for usertools
 //$userToolsLinkColor: #ccc; //Font Color for usertools
 //$userToolsHoverColor: #fff; //Font Color for usertools
+
+//$featurebackgroundColor: #303030; // Website Header Background Color
 
 //$navColor: #fff; //Font Color for main navigation
 //$navColorHover: #fff; //Font Color for main navigation
@@ -353,7 +353,7 @@ hr {
 ======================================================================================================== */
 
 header {
-	background: $headerbackgroundColor;
+	background: $featurebackgroundColor;
 	height: 465px;
 	position: relative;
 	text-align: center;
@@ -390,7 +390,7 @@ header {
 }
 
 .pageHeader {
-	background: $headerbackgroundColor;
+	background: $featurebackgroundColor;
 	height: 185px;
 
 	@media screen and (max-width : 580px) {
