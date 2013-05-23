@@ -4,7 +4,7 @@
 	
 	Theme Settings
 	
-	1. Typography - Copy into admin.css
+	1. Typography
 	2. User Tools
 	3. Header
 	4. Navigation
@@ -27,6 +27,12 @@
 //   Theme Settings
 // =====================================================================================================
 
+//   ===================================================================================================
+//	 Global Variables
+//   ===================================================================================================
+$backtoTopColor: #fff;
+$backtoTopBackground: #333;
+$backtoTopBorder: #ccc; 
 
 //   ===================================================================================================
 //	 Default Theme
@@ -307,9 +313,9 @@ hr {
 		z-index: 900;
 
 		a {
-			color: #fff;
-			background: #333;
-			border: 1px solid #ccc;
+			color: $backtoTopColor;
+			background: $backtoTopBackground;
+			border: 1px solid $backtoTopBorder;
 			border-radius: 50%;
 			display: block;
 			line-height: 5em;
