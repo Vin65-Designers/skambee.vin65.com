@@ -2,6 +2,11 @@
 
 <div class="v65-productWrapper v65-group">
 
+     <h1>
+          <cf_product_title>
+          <cf_product_subtitle>
+     </h1>
+
      <div class="v65-product-leftCol">
 
           <cf_product_photo showPhoto="1">
@@ -11,7 +16,6 @@
           <div class="v65-productDrilldown-specs">
 
                <cf_wine_specs>
-
                <cf_product_media>
 
          </div>
@@ -20,21 +24,14 @@
 
      <div class="v65-product-rightCol">
 
-          <h1><cf_product_title></h1>
-
-          <cf_product_subtitle>
-
-          <cf_product_teaser>
-
           <cf_product_shipDate>
 
-          <cf_product_actionMessage>
-
-          <cf_product_inCompliantStateMessage>
-
-          <cf_product_availability>
-
-          <cf_product_addToCart>
+          <div class="v65-productAddToCart-drilldown">
+               <cf_product_actionMessage>
+               <cf_product_inCompliantStateMessage>
+               <cf_product_availability>
+               <cf_product_addToCart>
+          </div>
 
           <cf_product_reviewStats>
 

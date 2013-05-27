@@ -3,9 +3,7 @@
 <head>
 
 	<meta charset="utf-8">
-
 	<cf_metaTags>
-
 	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
 	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon">
@@ -16,7 +14,6 @@
 	<cf_css files="/assets/css/screen.min.css">
 
 	<!--[if lt IE 9]>
-		<script src="/assets/js/html5shiv.js"></script>
 		<script src="/assets/js/html5shiv-printshiv.js"></script>
 		<script src="/assets/js/respond.min.js"></script>
 	<![endif]-->
@@ -40,6 +37,7 @@
 	</section>
 
 	<header class="pageHeader">
+		<cf_contentBlock group="Page Feature Image">
 		<a href="/" accesskey="h" class="logo"><img src="/assets/images/logo.png"  alt="<cf_websiteName>"></a>
 	</header>
 
