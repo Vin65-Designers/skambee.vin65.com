@@ -18,6 +18,11 @@
 
 	<img src="/assets/images/email/header.gif" alt="<cf_websiteName>" />
 	<cf_mainContent>
+
+	<p style="text-align: center;">
+		<span style="font-weight: bold;">Template 10</span><br>
+		111 North Street, Our City, CA (707) 888-9090
+	</p>
 	
 	<cf_vin65GlobalFooterAssets>
 

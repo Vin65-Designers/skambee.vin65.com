@@ -1,5 +1,4 @@
-<cfoutput> 
-<cf_stateProfile_complianceAdvisory>
+<cfoutput> <cf_stateProfile_complianceAdvisory>
 
 <div class="v65-productWrapper v65-group">
 
@@ -40,12 +39,14 @@
 
           <cf_product_description>
 
-          <div class="v65-productDrilldown-specs2">
+           <div class="v65-productDrilldown-specs2">
+
                <cf_wine_specs>
                <cf_product_media>
-          </div>
 
-          <cf_wine_profile>
+         </div>
+
+         <cf_wine_profile>
 
           <cf_product_reviews>
 
@@ -53,5 +54,4 @@
 
 </div>
 
-<cf_product_relatedProducts>
- </cfoutput>
+<cf_product_relatedProducts> </cfoutput>

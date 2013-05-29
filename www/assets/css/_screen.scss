@@ -658,6 +658,18 @@ nav {
 
 }
 
+.subMenuWidePage {
+	display: none;
+
+	@media screen and (max-width : 580px) {
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+}
+
 
 /*   ===================================================================================================
      5. Content
