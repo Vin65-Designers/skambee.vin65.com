@@ -44,3 +44,9 @@ parsed/
 ###
 
 settings.ini
+
+###
+# Sublime
+###
+
+sft-config.json
