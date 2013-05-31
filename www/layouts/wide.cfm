@@ -44,7 +44,7 @@
 		<cf_layoutHeaderNav depth="2">
 	</nav>
 
-	<article class="pageContent">
+	<div class="pageContent">
 
 		<div class="wrapper v65-group">
 
@@ -58,7 +58,7 @@
 
 		</div>
 
-	</article>
+	</div>
 	<!--/pageContent-->
 
 	<footer>

@@ -1,27 +1,4 @@
 ###
-# ECLIPSE IDE project files
-##
-.project
-.cache
-.cache/*
-.settings
-.settings/*
-.sass-cache
-.sass-cache/*
-
-###
-# Large Directories
-###
-videos/
-client/
-captcha/
-
-###
-# Dreamweaver
-###
-_notes/
-
-###
 # system SWAP, TMP and BACKUP files
 ###
 *~
@@ -29,24 +6,27 @@ _notes/
 *.bak
 
 ###
+# Windows
+###
+Thumbs.db
+
+###
 # Mac OS X directory preferences
 ###
 .DS_Store
-._*
-
-###
-# Fusebox
-###
-parsed/
+*._
 
 ###
 # System
 ###
-
-settings.ini
+_gsdata_
 
 ###
 # Sublime
 ###
-
 sftp-config.json
+
+###
+#   SCSS Files
+###
+.sass-cache/*

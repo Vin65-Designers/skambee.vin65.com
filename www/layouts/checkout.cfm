@@ -39,7 +39,7 @@
 		<a href="/" accesskey="h" class="logo"><img src="/assets/images/logo.png"  alt="<cf_websiteName>"></a>
 	</header>
 
-	<article class="pageContent">
+	<div class="pageContent">
 
 		<div class="wrapper v65-group">
 
@@ -53,7 +53,7 @@
 
 		</div>
 
-	</article>
+	</div>
 	<!--/pageContent-->
 
 	<footer>

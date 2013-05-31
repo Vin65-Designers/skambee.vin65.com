@@ -44,7 +44,7 @@
 		<cf_layoutHeaderNav depth="2">
 	</nav>
 
-	<article class="pageContent">
+	<div class="pageContent">
 
 		<div class="wrapper v65-group">
 
@@ -56,9 +56,14 @@
 				<cf_mainContent>
 			</article>
 
+			<section class="subMenu subMenuWidePage">
+				<a name="footerNav"></a>
+				<cf_layoutSubMenu>
+			</section>
+
 		</div>
 
-	</article>
+	</div>
 	<!--/pageContent-->
 
 	<footer>
