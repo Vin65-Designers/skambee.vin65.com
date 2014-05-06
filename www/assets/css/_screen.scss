@@ -1136,14 +1136,20 @@ footer {
 		color: $footerLink;
 	}
 
+	.icon-facebook-squared, .icon-twitter, .icon-pinterest,
+	.icon-gplus, .icon-vimeo, .icon-youtube {
+		font-size: 1.3em;
+		line-height: 1.3em;
+		height: 1.3em;
+	}
+
 	@media screen and (max-width : 580px) {
-			
-		.icon-facebook-squared, .icon-twitter {
+		.icon-facebook-squared, .icon-twitter, .icon-pinterest,
+		.icon-gplus, .icon-vimeo, .icon-youtube {
 			font-size: 2em;
 			line-height: 2em;
 			height: 2em;
 		}
-			
 	}
 
 	.callUs {
