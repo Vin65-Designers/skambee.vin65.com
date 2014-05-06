@@ -69,7 +69,7 @@
 			</article>
 
 			<article class="homepageEvents">
-				<cf_eventUpcoming eventCount="4" calendar="Events">
+				<cf_eventUpcoming eventCount="4" calendar="Our Events">
 			</article>
 
 			<article class="homepageBottomContent">

@@ -56,11 +56,6 @@
 				<cf_mainContent>
 			</article>
 
-			<section class="subMenu subMenuWidePage">
-				<a name="footerNav"></a>
-				<cf_layoutSubMenu>
-			</section>
-
 		</div>
 
 	</div>

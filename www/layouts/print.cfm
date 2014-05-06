@@ -20,7 +20,7 @@
 	<cf_mainContent>
 
 	<p style="text-align: center;">
-		<span style="font-weight: bold;">Template 10</span><br>
+		<strong><cf_websiteName></strong><br>
 		111 North Street, Our City, CA (707) 888-9090
 	</p>
 	

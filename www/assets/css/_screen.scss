@@ -14,8 +14,6 @@
 	5. Content
 		a. Homepage Styles
 		b. Page Styles
-		c. Calendar Styles
-		d. Column Styles
 	6. Blog Template
 	7. Print Template
 	8. Buttons
@@ -440,7 +438,6 @@ nav {
 	}
 
 	ul {
-		height: 5em;
 		list-style: none;
 		margin: 0 auto;
 		padding: 0;
@@ -570,7 +567,7 @@ nav {
 		font-size: 1em;
 		height: 4em;
 		line-height: 4em;
-		padding: 0 10px;
+		padding: 0 15px;
 		position: absolute;
 		right: 0;
 		z-index: 100;
@@ -654,18 +651,6 @@ nav {
 	.v65-leftSelected{
 		color: $subNavColorHover;
 		font-weight: bold;
-	}
-
-}
-
-.subMenuWidePage {
-	display: none;
-
-	@media screen and (max-width : 580px) {
-		display: block;
-		width: 100%;
-		margin: 0;
-		padding: 0;
 	}
 
 }
@@ -842,28 +827,6 @@ nav {
 
 }
 
-/* ----- c. Calendar Styles ----- */
-@media screen and (max-width : 580px) {
-	
-	#v65-CalendarTable .tastingroomEvent a {
-		background-color: #ff9900;
-		color: #ff9900;
-	}
-
-	#v65-CalendarTable .clubmemberEvent a {
-		background-color: #339933;
-		color: #339933;
-	}
-
-	#v65-CalendarTable .vineyardEvent a {
-		background-color: #336699;
-		color: #336699;
-	}
-
-}
-
-
-/* ----- d. Column Styles ----- */
 .colWrapper {
 	margin-bottom: 2em;
 	width: 100%;
@@ -1248,7 +1211,6 @@ footer {
 			letter-spacing: 1px;
 			margin-left: 1em;
 			padding: 0 10px;
-			text-transform: uppercase;
 		}
 
 		.intro {
