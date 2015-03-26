@@ -429,7 +429,6 @@ header {
 /* ----- a. Main Menu ----- */
 nav {
 	background: url(../images/nav-gradient.png) repeat-x bottom $navBackgroundColor;
-	height: 5em;
 	position: relative;
 	z-index: 101;
 
@@ -850,6 +849,17 @@ nav {
 		width: 47%;
 	}
 
+	.col22 {
+		float: left;
+		margin-left: 6%;
+		width: 29%;
+	}
+
+	.col22:first-child {
+		margin-left: 0;
+		width: 65%;
+	}
+
 	.col3 { 
 		float: left;
 		margin-left: 5%;
@@ -860,6 +870,27 @@ nav {
 		float: left;
 		margin-left: 0%;
 		width: 30%;
+	}
+
+	.col4 {
+		float: left;
+		margin-left: 3%;
+		width: 22.7%;
+	}
+
+	.col4:first-child {
+		margin-left: 0;
+	}
+
+	@media screen and (max-width: 850px) {
+		.col4 {
+			margin: 0 2% 3em;
+			width: 46%
+		}
+
+		.col4:first-child {
+			margin-left: 2%;
+		}
 	}
 
 	@media screen and (max-width: 580px) {
@@ -876,6 +907,13 @@ nav {
 			width: 100%;
 		}
 
+		.col22,
+		.col22:first-child {
+			float: none;
+			margin: 0 0 2em;
+			width: 100%;
+		}
+
 		.col3 { 
 			float: none;
 			margin-left: 0;
@@ -885,6 +923,13 @@ nav {
 
 		.col3:first-child { 
 			float: none;
+			width: 100%;
+		}
+
+		.col4,
+		.col4:first-child {
+			float: none;
+			margin: 0 0 2em;
 			width: 100%;
 		}
 
@@ -1136,18 +1181,23 @@ footer {
 
 	a {
 		color: $footerLink;
+
+		&:hover, &:focus, &:active {
+			text-decoration: none;
+		}
 	}
 
-	.icon-facebook-squared, .icon-twitter, .icon-pinterest,
-	.icon-gplus, .icon-vimeo, .icon-youtube {
-		font-size: 1.3em;
+	.icon-facebook, .icon-twitter, .icon-pinterest,
+	.icon-gplus, .icon-vimeo, .icon-youtube, .icon-yelp, .icon-instagram {
+		font-size: 2em;
 		line-height: 1.3em;
+		padding: 0 3px;
 		height: 1.3em;
 	}
 
 	@media screen and (max-width : 580px) {
-		.icon-facebook-squared, .icon-twitter, .icon-pinterest,
-		.icon-gplus, .icon-vimeo, .icon-youtube {
+		.icon-facebook, .icon-twitter, .icon-pinterest,
+		.icon-gplus, .icon-vimeo, .icon-youtube, .icon-yelp, .icon-instagram {
 			font-size: 2em;
 			line-height: 2em;
 			height: 2em;
@@ -1353,7 +1403,6 @@ footer {
 			@media screen and (max-width : 970px) {
 				text-align: center;
 				border-bottom: 1px solid $footerColor;
-				height: 4em;
 				line-height: 4em;
 				margin-bottom: 2em;
 			}

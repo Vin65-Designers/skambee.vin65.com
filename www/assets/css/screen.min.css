@@ -312,173 +312,102 @@ a.nivo-nextNav {
 }
 
 @font-face {
-  font-family: 'fontello';
-  src: url("../fonts/fontello.eot?66280190");
-  src: url("../fonts/fontello.eot?66280190#iefix") format("embedded-opentype"), url("../fonts/fontello.woff?66280190") format("woff"), url("../fonts/fontello.ttf?66280190") format("truetype"), url("../fonts/fontello.svg?66280190#fontello") format("svg");
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?-4xo876");
+  src: url("../fonts/icomoon.eot?#iefix-4xo876") format("embedded-opentype"), url("../fonts/icomoon.woff?-4xo876") format("woff"), url("../fonts/icomoon.ttf?-4xo876") format("truetype"), url("../fonts/icomoon.svg?-4xo876#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'fontello';
-    src: url('../font/fontello.svg?66280190#fontello') format('svg');
-  }
-}
-*/
-[class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "fontello";
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
   font-style: normal;
   font-weight: normal;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
-  /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
-  /* Animation center compensation - magrins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search-1:before {
+  content: "\f002";
+}
+
+.icon-phone-1:before {
+  content: "\f095";
+}
+
+.icon-mail:before {
+  content: "\f0e0";
+}
+
+.icon-acrobat:before {
+  content: "\f1c1";
+}
+
+.icon-down-bold:before {
+  content: "\e60a";
+}
+
+.icon-up-bold:before {
+  content: "\e60b";
+}
+
+.icon-comments:before {
+  content: "\e60c";
+}
+
+.icon-clock:before {
+  content: "\e60e";
+}
+
+.icon-link:before {
+  content: "\e60d";
+}
+
+.icon-location:before {
+  content: "\e609";
+}
+
+.icon-menu:before {
+  content: "\e600";
+}
+
+.icon-yelp:before {
+  content: "\e608";
+}
+
+.icon-facebook:before {
+  content: "\e601";
+}
+
+.icon-gplus:before {
+  content: "\e602";
+}
+
+.icon-instagram:before {
+  content: "\e607";
+}
+
+.icon-pinterest:before {
+  content: "\e603";
+}
+
+.icon-twitter:before {
+  content: "\e604";
+}
+
+.icon-vimeo:before {
+  content: "\e605";
 }
 
 .icon-youtube:before {
-  content: '\55';
+  content: "\e606";
 }
 
-/* 'U' */
-.icon-acrobat:before {
-  content: '\e3';
-}
-
-/* 'ã' */
-.icon-home:before {
-  content: '\2302';
-}
-
-/* '⌂' */
-.icon-star:before {
-  content: '\2605';
-}
-
-/* '★' */
-.icon-star-empty:before {
-  content: '\2606';
-}
-
-/* '☆' */
-.icon-menu:before {
-  content: '\2630';
-}
-
-/* '☰' */
-.icon-heart-empty:before {
-  content: '\2661';
-}
-
-/* '♡' */
-.icon-heart:before {
-  content: '\2665';
-}
-
-/* '♥' */
-.icon-layout:before {
-  content: '\268f';
-}
-
-/* '⚏' */
-.icon-mail:before {
-  content: '\2709';
-}
-
-/* '✉' */
-.icon-up-bold:before {
-  content: '\e800';
-}
-
-/* '' */
-.icon-down-bold:before {
-  content: '\e801';
-}
-
-/* '' */
-.icon-location:before {
-  content: '\e724';
-}
-
-/* '' */
-.icon-basket:before {
-  content: '\e73d';
-}
-
-/* '' */
-.icon-vimeo:before {
-  content: '\f306';
-}
-
-/* '' */
-.icon-twitter:before {
-  content: '\f309';
-}
-
-/* '' */
-.icon-facebook-squared:before {
-  content: '\f30e';
-}
-
-/* '' */
-.icon-gplus:before {
-  content: '\f30f';
-}
-
-/* '' */
-.icon-pinterest:before {
-  content: '\f312';
-}
-
-/* '' */
-.icon-video:before {
-  content: '🎬';
-}
-
-/* '\1f3ac' */
-.icon-user:before {
-  content: '👤';
-}
-
-/* '\1f464' */
-.icon-monitor:before {
-  content: '💻';
-}
-
-/* '\1f4bb' */
-.icon-phone-1:before {
-  content: '📞';
-}
-
-/* '\1f4de' */
-.icon-arrows-ccw:before {
-  content: '\e802';
-}
-
-/* '' */
-.icon-search-1:before {
-  content: '🔍';
-}
-
-/* '\1f50d' */
 /* CSS Document */
 /* ====================================================================================================
 	Table of Content
@@ -746,7 +675,6 @@ header .logo img {
 /* ----- a. Main Menu ----- */
 nav {
   background: url(../images/nav-gradient.png) repeat-x bottom #2a2924;
-  height: 5em;
   position: relative;
   z-index: 101;
 }
@@ -1138,6 +1066,17 @@ nav .v65-selected {
   width: 47%;
 }
 
+.col22 {
+  float: left;
+  margin-left: 6%;
+  width: 29%;
+}
+
+.col22:first-child {
+  margin-left: 0;
+  width: 65%;
+}
+
 .col3 {
   float: left;
   margin-left: 5%;
@@ -1150,6 +1089,26 @@ nav .v65-selected {
   width: 30%;
 }
 
+.col4 {
+  float: left;
+  margin-left: 3%;
+  width: 22.7%;
+}
+
+.col4:first-child {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 850px) {
+  .col4 {
+    margin: 0 2% 3em;
+    width: 46%;
+  }
+
+  .col4:first-child {
+    margin-left: 2%;
+  }
+}
 @media screen and (max-width: 580px) {
   .col2 {
     float: none;
@@ -1163,6 +1122,13 @@ nav .v65-selected {
     width: 100%;
   }
 
+  .col22,
+  .col22:first-child {
+    float: none;
+    margin: 0 0 2em;
+    width: 100%;
+  }
+
   .col3 {
     float: none;
     margin-left: 0;
@@ -1172,6 +1138,13 @@ nav .v65-selected {
 
   .col3:first-child {
     float: none;
+    width: 100%;
+  }
+
+  .col4,
+  .col4:first-child {
+    float: none;
+    margin: 0 0 2em;
     width: 100%;
   }
 }
@@ -1401,15 +1374,19 @@ footer {
 .footerSocial a {
   color: #cccccc;
 }
-.footerSocial .icon-facebook-squared, .footerSocial .icon-twitter, .footerSocial .icon-pinterest,
-.footerSocial .icon-gplus, .footerSocial .icon-vimeo, .footerSocial .icon-youtube {
-  font-size: 1.3em;
+.footerSocial a:hover, .footerSocial a:focus, .footerSocial a:active {
+  text-decoration: none;
+}
+.footerSocial .icon-facebook, .footerSocial .icon-twitter, .footerSocial .icon-pinterest,
+.footerSocial .icon-gplus, .footerSocial .icon-vimeo, .footerSocial .icon-youtube, .footerSocial .icon-yelp, .footerSocial .icon-instagram {
+  font-size: 2em;
   line-height: 1.3em;
+  padding: 0 3px;
   height: 1.3em;
 }
 @media screen and (max-width: 580px) {
-  .footerSocial .icon-facebook-squared, .footerSocial .icon-twitter, .footerSocial .icon-pinterest,
-  .footerSocial .icon-gplus, .footerSocial .icon-vimeo, .footerSocial .icon-youtube {
+  .footerSocial .icon-facebook, .footerSocial .icon-twitter, .footerSocial .icon-pinterest,
+  .footerSocial .icon-gplus, .footerSocial .icon-vimeo, .footerSocial .icon-youtube, .footerSocial .icon-yelp, .footerSocial .icon-instagram {
     font-size: 2em;
     line-height: 2em;
     height: 2em;
@@ -1601,7 +1578,6 @@ footer {
   .footerNavWrapper .footerNav ul {
     text-align: center;
     border-bottom: 1px solid #666666;
-    height: 4em;
     line-height: 4em;
     margin-bottom: 2em;
   }
