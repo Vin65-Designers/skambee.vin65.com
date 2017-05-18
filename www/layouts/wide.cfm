@@ -22,16 +22,13 @@
 <body>
 
 	<section class="userToolsWrapper">
-
 		<div class="wrapper v65-group">
-
 			<div id="user-tools">
-				<cf_modalCart>
+				<cf_points>
 				<cf_login>
+				<cf_modalCart>
 			</div>
-
 		</div>
-
 	</section>
 
 	<header class="pageHeader">
@@ -70,10 +67,8 @@
 					<span class="intro">Sign up for our mailing list</span>
 					<cf_subscribe contactType="Newsletter">
 				</div>
-				<a href="http://www.facebook.com"><i class="icon-facebook-squared"></i></a>
-				<a href="http://www.twitter.com"><i class="icon-twitter"></i></a>
-				<span class="copyright"><cf_copyright></span>
-				<span class="callUs"><a href="tel:1-800-888-8888"><i class="icon-phone-1"></i>Call Us 1-800-888-8888</a></span>
+				<cf_customFile file="/v65html/_social.html">
+				 
 			</div>
 
 			<div class="footerNavWrapper v65-group">
@@ -83,7 +78,9 @@
 				<div class="megaNav v65-group"><cf_layoutHeaderNav depth="2"></div>		
 			</div>
 
-			<p class="accolade"><cf_vin65Accolade></p>
+			<p class="accolade">
+				<span class="copyright"><cf_copyright></span><br/>
+				<cf_vin65Accolade></p>
 
 		</div>
 

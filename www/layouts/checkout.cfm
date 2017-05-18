@@ -22,16 +22,13 @@
 <body>
 
 	<section class="userToolsWrapper">
-
 		<div class="wrapper v65-group">
-
 			<div id="user-tools">
-				<cf_modalCart>
+				<cf_points>
 				<cf_login>
+				<cf_modalCart>
 			</div>
-
 		</div>
-
 	</section>
 
 	<header class="pageHeader">
@@ -61,15 +58,16 @@
 		<div class="wrapper">
 			
 			<div class="footerSocial footerSocialCheckout v65-group">
-				<span class="copyright"><cf_copyright></span>
-				<span class="callUs"><a href="tel:1-800-888-8888"><i class="icon-phone-1"></i>Call Us 1-800-888-8888</a></span>
+				 
 			</div>
 
 			<div class="footerNavWrapper footerNavWrapperCheckout v65-group">
 				<cf_pods location="Footer Pod" type="description">
 			</div>
 
-			<p class="accolade accoladeCheckout"><cf_vin65Accolade></p>
+			<p class="accolade accoladeCheckout">
+				<span class="copyright"><cf_copyright></span><br/>
+				<cf_vin65Accolade></p>
 
 		</div>
 
