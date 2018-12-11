@@ -1,4 +1,3 @@
-@charset "utf-8";
 /* normalize.css v2.0.1 | MIT License | git.io/normalize */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block;
@@ -177,7 +176,7 @@ table {
   width: 100%;
   height: auto;
   overflow: hidden;
-  background: white url(../nivo/loading.gif) no-repeat 50% 50%;
+  background: #fff url(../nivo/loading.gif) no-repeat 50% 50%;
 }
 
 .nivoSlider img {
@@ -318,7 +317,6 @@ a.nivo-nextNav {
   font-weight: normal;
   font-style: normal;
 }
-
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon';
   speak: none;
@@ -440,13 +438,13 @@ html {
 }
 
 body {
-  background-color: black;
-  color: #111111;
+  background-color: #000;
+  color: #111;
   font-family: sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #976933;
+  color: #947024;
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-style: italic;
   font-weight: normal;
@@ -493,7 +491,7 @@ h6 {
   font-size: 2em;
   line-height: 1;
   margin-bottom: 0.5em;
-  color: #976933;
+  color: #947024;
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-style: italic;
   font-weight: normal;
@@ -503,7 +501,7 @@ h6 {
   font-size: 1.5em;
   line-height: 1;
   margin-bottom: 1em;
-  color: #976933;
+  color: #947024;
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-weight: normal;
 }
@@ -523,7 +521,7 @@ dd, dt, li {
 }
 
 a {
-  color: #a6783e;
+  color: #947024;
   text-decoration: none;
 }
 a:hover, a:focus, a:active {
@@ -541,13 +539,13 @@ form {
 }
 
 legend {
-  color: #111111;
+  color: #111;
 }
 
 hr {
-  background-color: #111111;
+  background-color: #111;
   border: 0;
-  color: #111111;
+  color: #111;
   height: 1px;
 }
 
@@ -574,9 +572,9 @@ hr {
     z-index: 900;
   }
   .backtotop a {
-    color: white;
-    background: #333333;
-    border: 1px solid #cccccc;
+    color: #fff;
+    background: #333;
+    border: 1px solid #ccc;
     border-radius: 50%;
     display: block;
     line-height: 5em;
@@ -591,7 +589,7 @@ hr {
      2. User Tools
 ======================================================================================================== */
 .userToolsWrapper {
-  background: black;
+  background: #000;
   height: 3em;
   position: relative;
   width: 100%;
@@ -703,7 +701,7 @@ nav li {
   position: relative;
 }
 nav li a {
-  color: white;
+  color: #fff;
   display: inline-block;
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-size: 1.333333333333333333em;
@@ -715,7 +713,7 @@ nav li a {
   text-decoration: none;
 }
 nav li a:hover {
-  color: white;
+  color: #fff;
   text-decoration: none;
   background: url(../images/nav-gradient.png) repeat-x #c2984d;
 }
@@ -732,7 +730,7 @@ nav li a:hover {
   }
 }
 nav li .hover {
-  color: white;
+  color: #fff;
   text-decoration: none;
   background: url(../images/nav-gradient.png) repeat-x #c2984d;
 }
@@ -761,7 +759,7 @@ nav li li {
 }
 nav li li a {
   background: #2a2924;
-  color: white;
+  color: #fff;
   display: block;
   float: none;
   font-size: 1.16666666667em;
@@ -773,11 +771,11 @@ nav li li a {
 }
 nav li li a:hover {
   background: #45443c;
-  color: white;
+  color: #fff;
 }
 nav .v65-pageAParent {
   background: url(../images/nav-gradient.png) repeat-x #c2984d;
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 @media screen and (max-width: 835px) {
@@ -787,7 +785,7 @@ nav .v65-pageAParent {
 }
 nav .v65-selected {
   background: url(../images/nav-gradient.png) repeat-x #c2984d;
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -798,7 +796,7 @@ nav .v65-selected {
 @media screen and (max-width: 580px) {
   .footerMenuLink {
     bottom: 0;
-    color: white;
+    color: #fff;
     display: block;
     font-size: 1em;
     height: 4em;
@@ -827,7 +825,7 @@ nav .v65-selected {
   }
 }
 .subMenu h4 {
-  color: black;
+  color: #000;
   font-style: normal;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -838,8 +836,8 @@ nav .v65-selected {
   }
 }
 .subMenu ul {
-  border-top: 1px solid #a6783e;
-  border-right: 1px solid #a6783e;
+  border-top: 1px solid #947024;
+  border-right: 1px solid #947024;
   list-style: none;
   margin: 0 0 1em;
   padding: 1em 0 8em 0;
@@ -855,14 +853,14 @@ nav .v65-selected {
 }
 @media screen and (max-width: 580px) {
   .subMenu li {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #000;
     height: 4em;
     line-height: 4em;
     text-align: center;
   }
 }
 .subMenu li a {
-  color: black;
+  color: #000;
 }
 @media screen and (max-width: 580px) {
   .subMenu li a {
@@ -870,7 +868,7 @@ nav .v65-selected {
   }
 }
 .subMenu li a:hover {
-  color: #a6783e;
+  color: #906834;
   text-decoration: none;
 }
 .subMenu li ul {
@@ -879,10 +877,10 @@ nav .v65-selected {
   margin: 0 0 0 1em;
 }
 .subMenu .v65-pageAParent {
-  color: #a6783e;
+  color: #906834;
 }
 .subMenu .v65-leftSelected {
-  color: #a6783e;
+  color: #906834;
   font-weight: bold;
 }
 
@@ -917,7 +915,7 @@ nav .v65-selected {
 }
 
 .homepageText {
-  color: white;
+  color: #fff;
   float: left;
   width: 67%;
 }
@@ -930,7 +928,7 @@ nav .v65-selected {
 }
 
 .homepageContentItems {
-  background: white;
+  background: #fff;
   padding: 40px 0;
 }
 .homepageContentItems article {
@@ -946,9 +944,9 @@ nav .v65-selected {
   }
 }
 .homepageContentItems article .v65-productGroup-title, .homepageContentItems article .v65-event-upcoming-title, .homepageContentItems article .v65-podTitle {
-  border-top: 1px solid #e5cdb1;
-  border-bottom: 1px solid #e5cdb1;
-  color: black;
+  border-top: 1px solid #e7cf9d;
+  border-bottom: 1px solid #e7cf9d;
+  color: #000;
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-size: 1.166666666667em;
   font-style: normal;
@@ -959,7 +957,7 @@ nav .v65-selected {
   text-transform: uppercase;
 }
 .homepageContentItems .v65-event-upcoming-event {
-  border-bottom: 1px solid #e5cdb1;
+  border-bottom: 1px solid #e7cf9d;
   margin-bottom: 1.5em;
   padding-bottom: 1.5em;
   text-align: left;
@@ -1007,7 +1005,7 @@ nav .v65-selected {
 
 /* ----- b. Page Styles ----- */
 .pageContent {
-  background: white;
+  background: #fff;
   padding: 40px 0;
 }
 @media screen and (max-width: 970px) {
@@ -1240,6 +1238,10 @@ nav .v65-selected {
   }
 }
 
+.v65-blogPostDate a {
+  font-weight: bold;
+}
+
 /*   ===================================================================================================
      7. Print Template
 ======================================================================================================== */
@@ -1269,51 +1271,51 @@ nav .v65-selected {
      8. Buttons
 ======================================================================================================== */
 button.defaultBtn, button.modalBtn, button.largeBtn {
-  background: #a6783e;
+  background: #947024;
   border-radius: 0.385em;
   font-family: sans-serif;
 }
 button.defaultBtn span, button.modalBtn span, button.largeBtn span {
-  background: #a6783e;
-  color: white;
+  background: #947024;
+  color: #fff;
   border-radius: 0.385em;
 }
 button.defaultBtn:hover, button.modalBtn:hover, button.largeBtn:hover {
-  background: #c09257;
+  background: #bd8f2e;
 }
 button.altBtn, button.altModalBtn, button.altLargeBtn {
-  background: #ceaa7c;
-  color: white;
+  background: #77736f;
+  color: #fff;
   font-family: sans-serif;
 }
 button.altBtn span, button.altModalBtn span, button.altLargeBtn span {
-  background: #ceaa7c;
-  color: white;
+  background: #77736f;
+  color: #fff;
   border-radius: 0.385em;
 }
 button.altBtn:hover, button.altModalBtn:hover, button.altLargeBtn:hover {
-  background: #dcc2a1;
+  background: #908d89;
 }
 button.altBtn:hover span, button.altModalBtn:hover span, button.altLargeBtn:hover span {
-  background: #dcc2a1;
+  background: #908d89;
 }
 
 a.linkBtn, a.modalLinkBtn, a.largeLinkBtn, a.fullWidthBtn {
-  background: #a6783e;
+  background: #947024;
   border-radius: 0.385em;
   font-family: sans-serif;
 }
 a.linkBtn span, a.modalLinkBtn span, a.largeLinkBtn span, a.fullWidthBtn span {
-  background: #a6783e;
-  color: white;
+  background: #947024;
+  color: #fff;
   border-radius: 0.385em;
 }
 a.linkBtn:hover, a.modalLinkBtn:hover, a.largeLinkBtn:hover, a.fullWidthBtn:hover {
-  background: #c09257;
+  background: #bd8f2e;
   text-decoration: none;
 }
 a.linkBtn:hover span, a.modalLinkBtn:hover span, a.largeLinkBtn:hover span, a.fullWidthBtn:hover span {
-  background: #c09257;
+  background: #bd8f2e;
 }
 a.fullWidthBtn {
   display: block;
@@ -1323,20 +1325,20 @@ a.fullWidthBtn {
   width: 100%;
 }
 a.linkAltBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
-  background: #ceaa7c;
+  background: #77736f;
   border-radius: 0.385em;
   font-family: sans-serif;
 }
 a.linkAltBtn span, a.modalLinkAltBtn span, a.modalLinkAltBtn span {
-  background: #ceaa7c;
+  background: #77736f;
   border-radius: 0.385em;
-  color: white;
+  color: #fff;
 }
 a.linkAltBtn:hover, a.modalLinkAltBtn:hover, a.modalLinkAltBtn:hover {
-  background: #dcc2a1;
+  background: #908d89;
 }
 a.linkAltBtn:hover span, a.modalLinkAltBtn:hover span, a.modalLinkAltBtn:hover span {
-  background: #dcc2a1;
+  background: #908d89;
 }
 a.modalLinkBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
   min-width: auto;
@@ -1344,18 +1346,18 @@ a.modalLinkBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
 
 .v65-quickView-close a {
   border-radius: 0.385em;
-  background: #dcc2a1;
+  background: #908d89;
 }
 .v65-quickView-close a:hover {
-  background: #dcc2a1;
+  background: #908d89;
 }
 
 /*   ===================================================================================================
      9. Footer
 ======================================================================================================== */
 footer {
-  background: black;
-  color: #666666;
+  background: #000;
+  color: #777;
   padding: 20px 0;
   width: 100%;
 }
@@ -1366,13 +1368,13 @@ footer {
 }
 
 .footerSocial {
-  border-bottom: 1px solid #666666;
+  border-bottom: 1px solid #777;
   height: 5em;
   line-height: 5em;
   margin-bottom: 2em;
 }
 .footerSocial a {
-  color: #cccccc;
+  color: #ccc;
 }
 .footerSocial a:hover, .footerSocial a:focus, .footerSocial a:active {
   text-decoration: none;
@@ -1413,7 +1415,7 @@ footer {
   }
 }
 .footerSocial .subscribe {
-  color: #cccccc;
+  color: #ccc;
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-style: italic;
   float: right;
@@ -1449,9 +1451,9 @@ footer {
 }
 .footerSocial .subscribe input {
   width: 150px !important;
-  background: #666666;
+  background: #777;
   border: 0;
-  color: #cccccc;
+  color: #ccc;
   font-family: sans-serif;
   letter-spacing: 1px;
   margin-left: 1em;
@@ -1484,7 +1486,7 @@ footer {
   margin-bottom: 2em;
 }
 .footerNavWrapper .v65-podDescription {
-  border-right: 1px solid #666666;
+  border-right: 1px solid #777;
   float: left;
   margin-right: 2%;
   padding-right: 2%;
@@ -1538,7 +1540,7 @@ footer {
   width: 18%;
 }
 .footerNavWrapper .megaNav li a {
-  color: #cccccc;
+  color: #ccc;
   display: block;
   margin-bottom: 0.6em;
 }
@@ -1553,7 +1555,7 @@ footer {
   width: 100%;
 }
 .footerNavWrapper .megaNav li li a {
-  color: #666666;
+  color: #777;
 }
 .footerNavWrapper .megaNav .v65-home {
   display: none;
@@ -1564,7 +1566,7 @@ footer {
   }
 }
 .footerNavWrapper .footerNav {
-  border-left: 1px solid #666666;
+  border-left: 1px solid #777;
   float: right;
   margin-left: 2%;
   padding-left: 2%;
@@ -1577,7 +1579,7 @@ footer {
 @media screen and (max-width: 970px) {
   .footerNavWrapper .footerNav ul {
     text-align: center;
-    border-bottom: 1px solid #666666;
+    border-bottom: 1px solid #777;
     line-height: 4em;
     margin-bottom: 2em;
   }
@@ -1611,7 +1613,7 @@ footer {
   }
 }
 .footerNavWrapper .footerNav a {
-  color: #666666;
+  color: #777;
 }
 @media screen and (max-width: 520px) {
   .footerNavWrapper .footerNav a {
@@ -1635,12 +1637,12 @@ footer {
   text-align: center;
 }
 .accolade a {
-  color: #666666;
+  color: #777;
 }
 
 /* ----- Checkout footer items ----- */
 .footerSocialCheckout {
-  border-bottom: 0 solid #666666;
+  border-bottom: 0 solid #777;
   margin: 0;
 }
 .footerSocialCheckout .copyright {
@@ -1651,7 +1653,7 @@ footer {
   margin: 0;
 }
 .footerNavWrapperCheckout .v65-podDescription {
-  border-right: 0 solid #666666;
+  border-right: 0 solid #777;
 }
 
 .accoladeCheckout {
@@ -1663,15 +1665,15 @@ footer {
 ======================================================================================================== */
 /* ----- a. User Tools ----- */
 #user-tools {
-  color: white;
+  color: #fff;
   position: relative;
   width: auto;
 }
 #user-tools a {
-  color: #cccccc;
+  color: #ccc;
 }
 #user-tools a:hover {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -1730,7 +1732,7 @@ footer {
 }
 
 .homepageProductGroup .v65-productGroup-title {
-  color: #976933;
+  color: #947024;
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-size: 2em;
   line-height: 1.2;

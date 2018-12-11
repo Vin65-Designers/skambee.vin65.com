@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 
 	<meta charset="utf-8">
@@ -23,7 +23,7 @@
 </head>
 <body>
 
-	<section class="userToolsWrapper">
+	<section aria-label="User tools and cart section" class="userToolsWrapper">
 		<div class="wrapper v65-group">
 			<div id="user-tools">
 				<v65:points></v65:points>
@@ -38,16 +38,16 @@
 		<a href="/" accesskey="h" class="logo"><img src="../assets/images/logo.png"  alt="<v65:websiteName></v65:websiteName>"></a>
 	</header>
 
-	<nav>
+	<nav aria-label="Main header navigation">
 		<v65:layoutHeaderNav depth="2"></v65:layoutHeaderNav>
 	</nav>
 
-	<section class="homepageContent">
+	<section aria-label="Main homepage content section" class="homepageContent">
 
-		<article class="wrapper v65-group">
+		<article aria-label="Main homepage content" class="wrapper v65-group">
 
 			<div class="homepageImage">
-				<v65:pods location="Homepage Image" type="image"></v65:pods>
+				<v65:pods location="Homepage Image"></v65:pods>
 			</div>
 
 			<div class="homepageText">
@@ -59,19 +59,19 @@
 	</section>
 	<!--/homepageContent-->
 
-	<section class="homepageContentItems">
+	<section aria-label="Homepage content widgets and articles" class="homepageContentItems">
 
 		<div class="wrapper v65-group">
 			
-			<article class="homepageProducts">
+			<article aria-label="Homepage Featured Products" class="homepageProducts">
 				<v65:product:group code="HomepageProductGroup"></v65:product:group>
 			</article>
 
-			<article class="homepageEvents">
+			<article aria-label="Homepage Events" class="homepageEvents">
 				<v65:eventUpcoming eventCount="4" calendar="Our Events"></v65:eventUpcoming>
 			</article>
 
-			<article class="homepageBottomContent">
+			<article aria-label="Homepage bottom content" class="homepageBottomContent">
 				<v65:pods location="Homepage Bottom Right" type="title,description"></v65:pods>
 			</article>
 

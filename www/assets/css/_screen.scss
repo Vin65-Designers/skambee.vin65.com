@@ -38,14 +38,14 @@ $backtoTopBorder: #ccc;
 //	 Default Theme
 //   ===================================================================================================
 $backgroundColor: #000; // Website Background Color
-$linkColor: #a6783e;
+$linkColor: #947024;
 
 $fontColor: #111; // General Font Color
 $fontFamily: sans-serif; // Default Font Family
 
 // Default Heading Font Family 
 $headingFontFamily: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-$headingColor: #976933; // Default Heading Font Color
+$headingColor: #947024; // Default Heading Font Color
 $headingAltColor: #000; // Default Heading Font Color
 
 $userToolsBackgroundColor: #000; //Background Color for usertools
@@ -61,12 +61,12 @@ $navBackgroundColor: #2a2924; //Color for nav background
 $navBackgroundColorHover: #c2984d; //Color for link color
 
 $subNavColor: #000; //Font Color for sub navigation
-$subNavColorHover: #a6783e; //Font Color for sub navigation
+$subNavColorHover: #906834; //Font Color for sub navigation
 
-$buttonColor: #a6783e; // Default Color for Buttons
+$buttonColor: #947024; // Default Color for Buttons
 $buttonFontColor: #fff; // Default Color for Button Font
 
-$altButtonColor: lighten($buttonColor, 20%); // Alt Color for Buttons
+$altButtonColor: #77736f; // Alt Color for Buttons
 $altButtonFontColor: #fff; // Alt Color for Buttons Font
 
 $buttonFontFamily: sans-serif; // Default Font Family for Buttons
@@ -76,101 +76,101 @@ $homepageContentColor: #fff; // Homepage content background color
 $contentBackgroundColor: #fff; //Content background color
 
 $footerBackground: #000; //Footer Background Color
-$footerColor: #666; //Footer Color
+$footerColor: #777; //Footer Color
 $footerLink: #ccc; // Footer Link
 $footerLinkHover: #fff; // Footer Link Hover
 
 //   ===================================================================================================
 //	 Red Theme
 //   ===================================================================================================
-//$backgroundColor: #000; // Website Background Color
-//$linkColor: #bd902f;
+// $backgroundColor: #000; // Website Background Color
+// $linkColor: #947024;
 
-//$fontColor: #111; // General Font Color
-//$fontFamily: sans-serif; // Default Font Family
+// $fontColor: #111; // General Font Color
+// $fontFamily: sans-serif; // Default Font Family
 
-// Default Heading Font Family 
-//$headingFontFamily: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-//$headingColor: #bd902f; // Default Heading Font Color
-//$headingAltColor: #000; // Default Heading Font Color
+// // Default Heading Font Family 
+// $headingFontFamily: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+// $headingColor: #947024; // Default Heading Font Color
+// $headingAltColor: #000; // Default Heading Font Color
 
-//$userToolsBackgroundColor: #3e1c1c; //Background Color for usertools
-//$userToolsColor: #fff; //Font Color for usertools
-//$userToolsLinkColor: #ccc; //Font Color for usertools
-//$userToolsHoverColor: #fff; //Font Color for usertools
+// $userToolsBackgroundColor: #3e1c1c; //Background Color for usertools
+// $userToolsColor: #fff; //Font Color for usertools
+// $userToolsLinkColor: #ccc; //Font Color for usertools
+// $userToolsHoverColor: #fff; //Font Color for usertools
 
-//$featurebackgroundColor: #303030; // Website Header Background Color
+// $featurebackgroundColor: #303030; // Website Header Background Color
 
-//$navColor: #fff; //Font Color for main navigation
-//$navColorHover: #fff; //Font Color for main navigation
-//$navBackgroundColor: #993333; //Color for nav background
-//$navBackgroundColorHover: #b25252; //Color for link color
+// $navColor: #fff; //Font Color for main navigation
+// $navColorHover: #fff; //Font Color for main navigation
+// $navBackgroundColor: #993333; //Color for nav background
+// $navBackgroundColorHover: #b25252; //Color for link color
 
-//$subNavColor: #000; //Font Color for sub navigation
-//$subNavColorHover: #993333; //Font Color for sub navigation
+// $subNavColor: #000; //Font Color for sub navigation
+// $subNavColorHover: #993333; //Font Color for sub navigation
 
-//$buttonColor: #993333; // Default Color for Buttons
-//$buttonFontColor: #fff; // Default Color for Button Font
+// $buttonColor: #993333; // Default Color for Buttons
+// $buttonFontColor: #fff; // Default Color for Button Font
 
-//$altButtonColor: lighten($buttonColor, 20%); // Alt Color for Buttons
-//$altButtonFontColor: #fff; // Alt Color for Buttons Font
+// $altButtonColor: #77736f; // Alt Color for Buttons
+// $altButtonFontColor: #fff; // Alt Color for Buttons Font
 
-//$buttonFontFamily: sans-serif; // Default Font Family for Buttons
+// $buttonFontFamily: sans-serif; // Default Font Family for Buttons
 
-//$homepageContentColor: #fff; // Homepage content background color
+// $homepageContentColor: #fff; // Homepage content background color
 
-//$contentBackgroundColor: #fff; //Content background color
+// $contentBackgroundColor: #fff; //Content background color
 
-//$footerBackground: #000; //Footer Background Color
-//$footerColor: #666; //Footer Color
-//$footerLink: #ccc; // Footer Link
-//$footerLinkHover: #fff; // Footer Link Hover
+// $footerBackground: #000; //Footer Background Color
+// $footerColor: #777; //Footer Color
+// $footerLink: #ccc; // Footer Link
+// $footerLinkHover: #fff; // Footer Link Hover
 
 //   ===================================================================================================
 //	 Green Theme
 //   ===================================================================================================
-//$backgroundColor: #000; // Website Background Color
-//$linkColor: #6c781c;
+// $backgroundColor: #000; // Website Background Color
+// $linkColor: #717d1d;
 
-//$fontColor: #111; // General Font Color
-//$fontFamily: sans-serif; // Default Font Family
+// $fontColor: #111; // General Font Color
+// $fontFamily: sans-serif; // Default Font Family
 
-// Default Heading Font Family 
-//$headingFontFamily: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-//$headingColor: #6c781c; // Default Heading Font Color
-//$headingAltColor: #000; // Default Heading Font Color
+// // Default Heading Font Family 
+// $headingFontFamily: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+// $headingColor: #717d1d; // Default Heading Font Color
+// $headingAltColor: #000; // Default Heading Font Color
 
-//$userToolsBackgroundColor: #3a3e1c; //Background Color for usertools
-//$userToolsColor: #fff; //Font Color for usertools
-//$userToolsLinkColor: #ccc; //Font Color for usertools
-//$userToolsHoverColor: #fff; //Font Color for usertools
+// $userToolsBackgroundColor: #3a3e1c; //Background Color for usertools
+// $userToolsColor: #fff; //Font Color for usertools
+// $userToolsLinkColor: #ccc; //Font Color for usertools
+// $userToolsHoverColor: #fff; //Font Color for usertools
 
-//$featurebackgroundColor: #303030; // Website Header Background Color
+// $featurebackgroundColor: #303030; // Website Header Background Color
 
-//$navColor: #fff; //Font Color for main navigation
-//$navColorHover: #fff; //Font Color for main navigation
-//$navBackgroundColor: #56652c; //Color for nav background
-//$navBackgroundColorHover: #56652c; //Color for link color
+// $navColor: #fff; //Font Color for main navigation
+// $navColorHover: #fff; //Font Color for main navigation
+// $navBackgroundColor: #56652c; //Color for nav background
+// $navBackgroundColorHover: #56652c; //Color for link color
 
-//$subNavColor: #000; //Font Color for sub navigation
-//$subNavColorHover: #51642d; //Font Color for sub navigation
+// $subNavColor: #000; //Font Color for sub navigation
+// $subNavColorHover: #51642d; //Font Color for sub navigation
 
-//$buttonColor: #51642d; // Default Color for Buttons
-//$buttonFontColor: #fff; // Default Color for Button Font
+// $buttonColor: #51642d; // Default Color for Buttons
+// $buttonFontColor: #fff; // Default Color for Button Font
 
-//$altButtonColor: lighten($buttonColor, 20%); // Alt Color for Buttons
-//$altButtonFontColor: #fff; // Alt Color for Buttons Font
+// $altButtonColor: #77736f; // Alt Color for Buttons
+// $altButtonFontColor: #fff; // Alt Color for Buttons Font
 
-//$buttonFontFamily: sans-serif; // Default Font Family for Buttons
+// $buttonFontFamily: sans-serif; // Default Font Family for Buttons
 
-//$homepageContentColor: #fff; // Homepage content background color
+// $homepageContentColor: #fff; // Homepage content background color
 
-//$contentBackgroundColor: #fff; //Content background color
+// $contentBackgroundColor: #fff; //Content background color
 
-//$footerBackground: #000; //Footer Background Color
-//$footerColor: #666; //Footer Color
-//$footerLink: #ccc; // Footer Link
-//$footerLinkHover: #fff; // Footer Link Hover
+// $footerBackground: #000; //Footer Background Color
+// $footerColor: #777; //Footer Color
+// $footerLink: #ccc; // Footer Link
+// $footerLinkHover: #fff; // Footer Link Hover
 
 
 /*   ===================================================================================================
@@ -1023,6 +1023,11 @@ nav {
 		@media screen and (max-width : 580px) {
 			float: left;
 			width: 48%;
+		}
+	}
+	.v65-blogPostDate {
+		a {
+			font-weight: bold;
 		}
 	}
 
