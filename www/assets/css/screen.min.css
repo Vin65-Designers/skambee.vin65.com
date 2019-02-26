@@ -26,10 +26,6 @@ body {
   margin: 0;
 }
 
-a:focus {
-  outline: thin dotted;
-}
-
 a:active, a:hover {
   outline: 0;
 }
@@ -602,6 +598,13 @@ hr {
   }
 }
 
+/* ==========================================================================
+   Focus styles for accessibility
+   ========================================================================== */
+  *:focus {
+    outline: 3px solid orange;
+  }
+
 /*   ===================================================================================================
      3. Header
 ======================================================================================================== */
@@ -625,14 +628,22 @@ header .homepageBanner {
   position: absolute;
   width: 100%;
 }
-header .logo {
+
+
+.v65-logo{
+  width: auto !important;
+  top: 35px;
+}
+
+
+header .v65-logo {
   position: relative;
 }
-header .logo img {
+header .v65-logo img {
   padding-top: 35px;
 }
 @media screen and (max-width: 580px) {
-  header .logo img {
+  header .v65-logo img {
     padding-top: 10px;
     max-height: 90%;
   }
@@ -654,14 +665,24 @@ header .logo img {
   position: absolute;
   width: 100%;
 }
-.pageHeader .logo {
+.pageHeader .v65-logo {
   position: relative;
 }
-.pageHeader .logo img {
+.pageHeader .v65-logo img {
   padding-top: 15px;
 }
 @media screen and (max-width: 580px) {
-  .pageHeader .logo img {
+
+  .v65-logo{
+    top:0;
+    margin: 0 !important;
+  }
+
+  .pageHeader .v65-logo{
+    height:90%;
+  }
+
+  .pageHeader .v65-logo img {
     padding-top: 10px;
     max-height: 90%;
   }
@@ -715,7 +736,7 @@ nav li a {
 nav li a:hover {
   color: #fff;
   text-decoration: none;
-  background: url(../images/nav-gradient.png) repeat-x #c2984d;
+  background: url(../images/nav-gradient.png) repeat-x #8e6112;
 }
 @media screen and (max-width: 680px) {
   nav li a {
@@ -732,7 +753,7 @@ nav li a:hover {
 nav li .hover {
   color: #fff;
   text-decoration: none;
-  background: url(../images/nav-gradient.png) repeat-x #c2984d;
+  background: url(../images/nav-gradient.png) repeat-x #8e6112;
 }
 nav li:hover ul {
   background: url(../images/nav-gradient.png) repeat-x #2a2924;
@@ -774,7 +795,7 @@ nav li li a:hover {
   color: #fff;
 }
 nav .v65-pageAParent {
-  background: url(../images/nav-gradient.png) repeat-x #c2984d;
+  background: url(../images/nav-gradient.png) repeat-x #8e6112;
   color: #fff;
   text-decoration: none;
 }
@@ -784,7 +805,7 @@ nav .v65-pageAParent {
   }
 }
 nav .v65-selected {
-  background: url(../images/nav-gradient.png) repeat-x #c2984d;
+  background: url(../images/nav-gradient.png) repeat-x #8e6112;
   color: #fff;
   text-decoration: none;
 }
@@ -1379,13 +1400,17 @@ footer {
 .footerSocial a:hover, .footerSocial a:focus, .footerSocial a:active {
   text-decoration: none;
 }
-.footerSocial .icon-facebook, .footerSocial .icon-twitter, .footerSocial .icon-pinterest,
-.footerSocial .icon-gplus, .footerSocial .icon-vimeo, .footerSocial .icon-youtube, .footerSocial .icon-yelp, .footerSocial .icon-instagram {
-  font-size: 2em;
+.v65-socialMediaLinks a{
+  font-size: 2em !important;
   line-height: 1.3em;
   padding: 0 3px;
   height: 1.3em;
 }
+
+.v65-socialMediaLinks li{
+  margin:0!important;
+}
+
 @media screen and (max-width: 580px) {
   .footerSocial .icon-facebook, .footerSocial .icon-twitter, .footerSocial .icon-pinterest,
   .footerSocial .icon-gplus, .footerSocial .icon-vimeo, .footerSocial .icon-youtube, .footerSocial .icon-yelp, .footerSocial .icon-instagram {
@@ -1631,6 +1656,10 @@ footer {
     padding-left: 0;
     width: 100%;
   }
+}
+
+.footer-info{
+  text-align:center;
 }
 
 .accolade {
