@@ -13,17 +13,15 @@
 	<cf_vin65GlobalAssets>
 
 	<cf_css files="/assets/css/screen.min.css">
-
+	
 	<!--[if lt IE 9]>
 		<script src="/assets/js/html5shiv-printshiv.js"></script>
 		<script src="/assets/js/respond.min.js"></script>
 	<![endif]-->
 
-	<cf_rssFeed>
-
 </head>
 <body>
-	
+
 	<section aria-label="User tools and cart section" class="userToolsWrapper">
 		<div class="wrapper v65-group">
 			<div id="user-tools">
@@ -34,8 +32,8 @@
 		</div>
 	</section>
 
-	<header class="pageHeader">
-		<cf_contentBlock group="Page Feature Image">
+	<header>
+		<cf_contentBlock group="Homepage Feature Image">
 		<cf_logo>
 	</header>
 
@@ -44,46 +42,45 @@
 	</nav>
 	
 	<main>
-		<section aria-label="Page content container" class="pageContent">
+		<section aria-label="Main homepage content section" class="homepageContent">
 
-			<div class="wrapper v65-group">
+			<article aria-label="Main homepage content" class="wrapper v65-group">
 
-				<div class="backtotop">	
-					<a href="##"><span class="icon-up-bold"></span>TOP</a>
+				<div class="homepageImage">
+					<cf_pods location="Homepage Image">
 				</div>
 
-				<section aria-label="Main content" class="blogContent">
+				<div class="homepageText">
 					<cf_mainContent>
-				</section>
+				</div>
 
-				<aside class="blogRightWrapper">
+			</article>
 
-					<div class="blogFilterLeft">
-						<h5>Recent Posts</h5>
-						<cf_blogRecentPosts maxrows="10">
+		</section>
+		<!--/homepageContent-->
 
-						<h5>Blog Categories</h5>
-						<cf_blogCategories>
+		<section aria-label="Homepage content widgets and articles" class="homepageContentItems">
 
-					</div>
+			<div class="wrapper v65-group">
+				
+				<article aria-label="Homepage Featured Products" class="homepageProducts">
+					<cf_product_group code="HomepageProductGroup">
+				</article>
 
-					<div class="blogFilterRight">
+				<article aria-label="Homepage Events" class="homepageEvents">
+					<cf_eventUpcoming eventCount="4" calendar="Our Events">
+				</article>
 
-						<h5>Our Writers</h5>
-						<cf_blogAuthors>
-
-						<h5>Blog Archives</h5>
-						<cf_blogArchives>
-
-					</div>
-
-				</aside>
+				<article aria-label="Homepage bottom content" class="homepageBottomContent">
+					<cf_pods location="Homepage Bottom Right" type="title,description">
+				</article>
 
 			</div>
 
 		</section>
 	</main>
-	<!--/pageContent-->
+	<!--/homepageContentItems-->
+
 	<footer>
 		
 		<div class="wrapper">
@@ -93,17 +90,17 @@
 					<span class="intro">Sign up for our mailing list</span>
 					<cf_subscribe contactType="Newsletter">
 				</div>
+
 				<cf_socialMediaLinks>
-				
 				 
 			</div>
 
 			<div class="footerNavWrapper v65-group">
 				<div class="footerNav"><cf_layoutFooterNav></div>
 				<cf_pods location="Footer Pod" type="description">
+				<a name="footerNav"></a>
 				<div class="megaNav v65-group"><cf_layoutHeaderNav depth="2"></div>		
 			</div>
-
 			<p class="footer-info"><cf_footerInfo></p>
 			<p class="accolade">
 				<span class="copyright"><cf_copyright></span><br/>

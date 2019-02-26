@@ -1,6 +1,6 @@
 <cfoutput> 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 
 	<meta charset="utf-8">
@@ -22,7 +22,7 @@
 </head>
 <body>
 
-	<section class="userToolsWrapper">
+	<section aria-label="User tools and cart section" class="userToolsWrapper">
 		<div class="wrapper v65-group">
 			<div id="user-tools">
 				<cf_points>
@@ -34,35 +34,37 @@
 
 	<header class="pageHeader">
 		<cf_contentBlock group="Page Feature Image">
-		<a href="/" accesskey="h" class="logo"><img src="/assets/images/logo.png"  alt="<cf_websiteName>"></a>
+		<cf_logo>
 	</header>
 
-	<nav>
-		<a href="##footerNav" class="footerMenuLink"><i class="icon-menu"></i></a>
+	<nav aria-label="Main header navigation">
+		<a href="##footerNav" class="footerMenuLink"><span class="icon-menu"></span></a>
 		<cf_layoutHeaderNav depth="2">
 	</nav>
+	
+	<main>
+		<article aria-label="Page content container"class="pageContent">
 
-	<article class="pageContent">
+			<div class="wrapper v65-group">
 
-		<div class="wrapper v65-group">
+				<div class="backtotop">	
+					<a href="##"><span class="icon-up-bold"></span>TOP</a>
+				</div>
 
-			<div class="backtotop">	
-				<a href="##"><i class="icon-up-bold"></i>TOP</a>
+				<article aria-label="Page content" class="pageText">
+					<cf_mainContent>
+				</article>
+
+				<section aria-label="Sub menu navigation" class="subMenu">
+					<a name="footerNav"></a>
+					<h4><cf_leftNavSectionTitle></h4>
+					<cf_layoutLeftNav>
+				</section>
+
 			</div>
 
-			<article class="pageText">
-				<cf_mainContent>
-			</article>
-
-			<section class="subMenu">
-				<a name="footerNav"></a>
-				<h4><cf_leftNavSectionTitle></h4>
-				<cf_layoutLeftNav>
-			</section>
-
-		</div>
-
-	</article>
+		</article>
+	</main>
 	<!--/pageContent-->
 
 	<footer>
@@ -74,7 +76,7 @@
 					<span class="intro">Sign up for our mailing list</span>
 					<cf_subscribe contactType="Newsletter">
 				</div>
-				<cf_customFile file="/v65html/_social.html">
+				<cf_socialMediaLinks>
 				 
 			</div>
 
@@ -83,7 +85,8 @@
 				<cf_pods location="Footer Pod" type="description">
 				<div class="megaNav v65-group"><cf_layoutHeaderNav depth="2"></div>		
 			</div>
-
+			
+			<p class="footer-info"><cf_footerInfo></p>
 			<p class="accolade">
 				<span class="copyright"><cf_copyright></span><br/>
 				<cf_vin65Accolade></p>

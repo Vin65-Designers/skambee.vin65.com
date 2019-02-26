@@ -1,6 +1,6 @@
 <cfoutput> 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 
 	<meta charset="utf-8">
@@ -22,7 +22,7 @@
 </head>
 <body>
 
-	<section class="userToolsWrapper">
+	<section aria-label="User tools and cart section" class="userToolsWrapper">
 		<div class="wrapper v65-group">
 			<div id="user-tools">
 				<cf_points>
@@ -34,24 +34,26 @@
 
 	<header class="pageHeader">
 		<cf_contentBlock group="Page Feature Image">
-		<a href="/" accesskey="h" class="logo"><img src="/assets/images/logo.png"  alt="<cf_websiteName>"></a>
+		<cf_logo>
 	</header>
 
-	<div class="pageContent">
+	<main>
+		<div class="pageContent">
 
-		<div class="wrapper v65-group">
+			<div class="wrapper v65-group">
 
-			<div class="backtotop">	
-				<a href="##"><i class="icon-up-bold"></i>TOP</a>
+				<div class="backtotop">	
+					<a href="##"><span class="icon-up-bold"></span>TOP</a>
+				</div>
+
+				<article class="pageWideText">
+					<cf_mainContent>
+				</article>
+
 			</div>
 
-			<article class="pageWideText">
-				<cf_mainContent>
-			</article>
-
 		</div>
-
-	</div>
+	</main>
 	<!--/pageContent-->
 
 	<footer>
@@ -66,6 +68,7 @@
 				<cf_pods location="Footer Pod" type="description">
 			</div>
 
+			<p class="footer-info"><cf_footerInfo></p>
 			<p class="accolade accoladeCheckout">
 				<span class="copyright"><cf_copyright></span><br/>
 				<cf_vin65Accolade></p>

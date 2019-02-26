@@ -1,6 +1,6 @@
 <cfoutput> 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 
 	<meta charset="utf-8">
@@ -22,7 +22,7 @@
 </head>
 <body>
 
-	<section class="userToolsWrapper">
+	<section aria-label="User tools and cart section" class="userToolsWrapper">
 		<div class="wrapper v65-group">
 			<div id="user-tools">
 				<cf_points>
@@ -34,49 +34,51 @@
 
 	<header>
 		<cf_contentBlock group="Homepage Feature Image">
-		<a href="/" accesskey="h" class="logo"><img src="/assets/images/logo.png"  alt="<cf_websiteName>"></a>
+		<cf_logo>
 	</header>
 
-	<nav>
+	<nav aria-label="Main header navigation">
 		<cf_layoutHeaderNav depth="2">
 	</nav>
 
-	<section class="homepageContent">
+	<main>
+		<section aria-label="Main homepage content section" class="homepageContent">
 
-		<article class="wrapper v65-group">
+			<article aria-label="Main homepage content" class="wrapper v65-group">
 
-			<div class="homepageImage">
-				<cf_pods location="Homepage Image" type="image">
+				<div class="homepageImage">
+					<cf_pods location="Homepage Image">
+				</div>
+
+				<div class="homepageText">
+					<cf_mainContent>
+				</div>
+
+			</article>
+
+		</section>
+		<!--/homepageContent-->
+
+		<section aria-label="Homepage content widgets and articles" class="homepageContentItems">
+
+			<div class="wrapper v65-group">
+				
+				<article aria-label="Homepage Featured Products" class="homepageProducts">
+					<cf_product_group code="HomepageProductGroup">
+				</article>
+
+				<article aria-label="Homepage Events" class="homepageEvents">
+					<cf_eventUpcoming eventCount="4" calendar="Our Events">
+				</article>
+
+				<article aria-label="Homepage bottom content" class="homepageBottomContent">
+					<cf_pods location="Homepage Bottom Right" type="title,description">
+				</article>
+
 			</div>
 
-			<div class="homepageText">
-				<cf_mainContent>
-			</div>
-
-		</article>
-
-	</section>
-	<!--/homepageContent-->
-
-	<section class="homepageContentItems">
-
-		<div class="wrapper v65-group">
-			
-			<article class="homepageProducts">
-				<cf_product_group code="HomepageProductGroup">
-			</article>
-
-			<article class="homepageEvents">
-				<cf_eventUpcoming eventCount="4" calendar="Our Events">
-			</article>
-
-			<article class="homepageBottomContent">
-				<cf_pods location="Homepage Bottom Right" type="title,description">
-			</article>
-
-		</div>
-
-	</section>
+		</section>
+	</main>
 	<!--/homepageContentItems-->
 
 	<footer>
@@ -89,7 +91,7 @@
 					<cf_subscribe contactType="Newsletter">
 				</div>
 
-				<cf_customFile file="/v65html/_social.html">
+				<cf_socialMediaLinks>
 				 
 			</div>
 
@@ -100,6 +102,7 @@
 				<div class="megaNav v65-group"><cf_layoutHeaderNav depth="2"></div>		
 			</div>
 
+			<p class="footer-info"><cf_footerInfo></p>
 			<p class="accolade">
 				<span class="copyright"><cf_copyright></span><br/>
 				<cf_vin65Accolade></p>

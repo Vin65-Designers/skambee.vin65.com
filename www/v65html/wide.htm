@@ -35,7 +35,7 @@
 
 	<header class="pageHeader">
 		<v65:contentBlock group="Page Feature Image"></v65:contentBlock>
-		<a href="/" accesskey="h" class="logo"><img src="../assets/images/logo.png"  alt="<v65:websiteName></v65:websiteName>"></a>
+		<v65:logo></v65:logo>
 	</header>
 
 	<nav aria-label="Main header navigation">
@@ -69,7 +69,8 @@
 					<span class="intro">Sign up for our mailing list</span>
 					<v65:subscribe contactType="Newsletter"></v65:subscribe>
 				</div>
-				<v65:customFile file="/v65html/_social.html"></v65:customFile>
+				
+				<v65:socialMediaLinks></v65:socialMediaLinks>
 				 
 			</div>
 
@@ -80,6 +81,7 @@
 				<div class="megaNav v65-group"><v65:layoutHeaderNav depth="2"></v65:layoutHeaderNav></div>		
 			</div>
 
+			<p class="footer-info"><v65:footerInfo></v65:footerInfo></p>
 			<p class="accolade">
 				<span class="copyright"><v65:copyright></v65:copyright></span><br/>
 				<v65:vin65Accolade></v65:vin65Accolade></p>
