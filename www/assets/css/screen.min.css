@@ -1226,6 +1226,11 @@ nav .v65-selected {
   padding-right: 4%;
   width: 48%;
 }
+
+.blogFilter h3 {
+  font-size: 1.125em;
+}
+
 @media screen and (max-width: 600px) {
   .blogFilterLeft {
     float: none;
