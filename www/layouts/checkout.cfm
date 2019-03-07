@@ -1,5 +1,4 @@
-<cfoutput> 
-<!DOCTYPE html>
+<cfoutput> <!DOCTYPE html>
 <html lang="en">
 <head>
 
@@ -24,6 +23,7 @@
 
 	<section aria-label="User tools and cart section" class="userToolsWrapper">
 		<div class="wrapper v65-group">
+				<cf_skipToContent targetID="mainContent">
 			<div id="user-tools">
 				<cf_points>
 				<cf_login>
@@ -38,7 +38,7 @@
 	</header>
 
 	<main>
-		<div class="pageContent">
+		<div class="pageContent" id="mainContent">
 
 			<div class="wrapper v65-group">
 
@@ -53,8 +53,8 @@
 			</div>
 
 		</div>
+		<!--/pageContent-->
 	</main>
-	<!--/pageContent-->
 
 	<footer>
 		
@@ -82,5 +82,4 @@
 	<cf_vin65GlobalFooterAssets>
 
 </body>
-</html>
- </cfoutput>
+</html> </cfoutput>

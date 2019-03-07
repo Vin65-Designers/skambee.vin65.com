@@ -26,7 +26,7 @@
 	<section aria-label="User tools and cart section" class="userToolsWrapper">
 
 		<div class="wrapper v65-group">
-
+			<v65:skipToContent targetID="mainContent"></v65:skipToContent>
 			<div id="user-tools">
 				<v65:modalCart></v65:modalCart>
 				<v65:login></v65:login>
@@ -45,29 +45,31 @@
 		<a href="#footerNav" class="footerMenuLink"><span class="icon-menu"></span></a>
 		<v65:layoutHeaderNav depth="2"></v65:layoutHeaderNav>
 	</nav>
+	
+	<main>
+		<div class="pageContent" id="mainContent">
 
-	<div class="pageContent">
+			<div class="wrapper v65-group">
 
-		<div class="wrapper v65-group">
+				<div class="backtotop">	
+					<a href="#"><span class="icon-up-bold"></span>TOP</a>
+				</div>
 
-			<div class="backtotop">	
-				<a href="#"><span class="icon-up-bold"></span>TOP</a>
+				<article aria-label="Main content" class="pageWideText">
+					<v65:mainContent></v65:mainContent>
+				</article>
+
+				<section aria-label="Sub menu navigation" class="subMenu subMenuWidePage">
+					<a name="footerNav"></a>
+					<v65:layoutSubMenu></v65:layoutSubMenu>
+				</section>
+
 			</div>
 
-			<article aria-label="Main content" class="pageWideText">
-				<v65:mainContent></v65:mainContent>
-			</article>
-
-			<section aria-label="Sub menu navigation" class="subMenu subMenuWidePage">
-				<a name="footerNav"></a>
-				<v65:layoutSubMenu></v65:layoutSubMenu>
-			</section>
-
 		</div>
-
-	</div>
-	<!--/pageContent-->
-
+		<!--/pageContent-->
+	</main>
+	
 	<footer>
 		
 		<div class="wrapper">

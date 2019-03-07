@@ -25,6 +25,7 @@
 
 	<section aria-label="User tools and cart section" class="userToolsWrapper">
 		<div class="wrapper v65-group">
+			<v65:skipToContent targetID="mainContent"></v65:skipToContent>
 			<div id="user-tools">
 				<v65:points></v65:points>
 				<v65:login></v65:login>
@@ -42,44 +43,46 @@
 		<v65:layoutHeaderNav depth="2"></v65:layoutHeaderNav>
 	</nav>
 
-	<section aria-label="Main homepage content section" class="homepageContent">
+	<main>
+		<section aria-label="Main homepage content section" id="mainContent" class="homepageContent">
 
-		<article aria-label="Main homepage content" class="wrapper v65-group">
+			<article aria-label="Main homepage content" class="wrapper v65-group">
 
-			<div class="homepageImage">
-				<v65:pods location="Homepage Image"></v65:pods>
+				<div class="homepageImage">
+					<v65:pods location="Homepage Image"></v65:pods>
+				</div>
+
+				<div class="homepageText">
+					<v65:mainContent></v65:mainContent>
+				</div>
+
+			</article>
+
+		</section>
+		<!--/homepageContent-->
+	
+		<section aria-label="Homepage content widgets and articles" class="homepageContentItems">
+
+			<div class="wrapper v65-group">
+				
+				<article aria-label="Homepage Featured Products" class="homepageProducts">
+					<v65:product:group code="HomepageProductGroup"></v65:product:group>
+				</article>
+
+				<article aria-label="Homepage Events" class="homepageEvents">
+					<v65:eventUpcoming eventCount="4" calendar="Our Events"></v65:eventUpcoming>
+				</article>
+
+				<article aria-label="Homepage bottom content" class="homepageBottomContent">
+					<v65:pods location="Homepage Bottom Right" type="title,description"></v65:pods>
+				</article>
+
 			</div>
 
-			<div class="homepageText">
-				<v65:mainContent></v65:mainContent>
-			</div>
-
-		</article>
-
-	</section>
-	<!--/homepageContent-->
-
-	<section aria-label="Homepage content widgets and articles" class="homepageContentItems">
-
-		<div class="wrapper v65-group">
-			
-			<article aria-label="Homepage Featured Products" class="homepageProducts">
-				<v65:product:group code="HomepageProductGroup"></v65:product:group>
-			</article>
-
-			<article aria-label="Homepage Events" class="homepageEvents">
-				<v65:eventUpcoming eventCount="4" calendar="Our Events"></v65:eventUpcoming>
-			</article>
-
-			<article aria-label="Homepage bottom content" class="homepageBottomContent">
-				<v65:pods location="Homepage Bottom Right" type="title,description"></v65:pods>
-			</article>
-
-		</div>
-
-	</section>
-	<!--/homepageContentItems-->
-
+		</section>
+		<!--/homepageContentItems-->
+	</main>
+		
 	<footer>
 		
 		<div class="wrapper">

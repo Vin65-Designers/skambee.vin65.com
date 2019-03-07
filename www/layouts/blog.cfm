@@ -1,5 +1,4 @@
-<cfoutput> 
-<!DOCTYPE html>
+<cfoutput> <!DOCTYPE html>
 <html lang="en">
 <head>
 
@@ -23,9 +22,10 @@
 
 </head>
 <body>
-	
+
 	<section aria-label="User tools and cart section" class="userToolsWrapper">
 		<div class="wrapper v65-group">
+			<cf_skipToContent targetID="mainContent">
 			<div id="user-tools">
 				<cf_points>
 				<cf_login>
@@ -42,9 +42,9 @@
 	<nav aria-label="Main header navigation">
 		<cf_layoutHeaderNav depth="2">
 	</nav>
-	
+
 	<main>
-		<section aria-label="Page content container" class="pageContent">
+		<section aria-label="Page content container" id="mainContent" class="pageContent">
 
 			<div class="wrapper v65-group">
 
@@ -58,21 +58,21 @@
 
 				<aside class="blogRightWrapper">
 
-					<div class="blogFilterLeft">
-						<h5>Recent Posts</h5>
+					<div class="blogFilter blogFilterLeft">
+						<h3>Recent Posts</h3>
 						<cf_blogRecentPosts maxrows="10">
 
-						<h5>Blog Categories</h5>
+						<h3>Blog Categories</h3>
 						<cf_blogCategories>
 
 					</div>
 
-					<div class="blogFilterRight">
+					<div class="blogFilter blogFilterRight">
 
-						<h5>Our Writers</h5>
+						<h3>Our Writers</h3>
 						<cf_blogAuthors>
 
-						<h5>Blog Archives</h5>
+						<h3>Blog Archives</h3>
 						<cf_blogArchives>
 
 					</div>
@@ -82,8 +82,9 @@
 			</div>
 
 		</section>
+		<!--/pageContent-->
 	</main>
-	<!--/pageContent-->
+
 	<footer>
 		
 		<div class="wrapper">
@@ -118,5 +119,4 @@
 	<cf_vin65GlobalFooterAssets>
 
 </body>
-</html>
- </cfoutput>
+</html> </cfoutput>

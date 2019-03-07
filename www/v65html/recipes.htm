@@ -25,6 +25,7 @@
 
 	<section aria-label="User tools and cart section" class="userToolsWrapper">
 		<div class="wrapper v65-group">
+			<v65:skipToContent targetID="mainContent"></v65:skipToContent>
 			<div id="user-tools">
 				<v65:points></v65:points>
 				<v65:login></v65:login>
@@ -42,23 +43,25 @@
 		<v65:layoutHeaderNav depth="2"></v65:layoutHeaderNav>
 	</nav>
 
-	<div class="pageContent">
+	<main>
+		<div class="pageContent" id="mainContent">
 
-		<div class="wrapper v65-group">
+			<div class="wrapper v65-group">
 
-			<article aria-label="Main Content" class="pageText">
-				<v65:mainContent></v65:mainContent>
-			</article>
+				<article aria-label="Main Content" class="pageText">
+					<v65:mainContent></v65:mainContent>
+				</article>
 
-			<section aria-label="Sub menu navigation" class="subMenu">
-				<h4><v65:leftNavSectionTitle></v65:leftNavSectionTitle></h4>
-				<v65:recipeCategories></v65:recipeCategories>
-			</section>
+				<section aria-label="Sub menu navigation" class="subMenu">
+					<h4><v65:leftNavSectionTitle></v65:leftNavSectionTitle></h4>
+					<v65:recipeCategories></v65:recipeCategories>
+				</section>
+
+			</div>
 
 		</div>
-
-	</div>
-	<!--/pageContent-->
+		<!--/pageContent-->
+	</main>
 
 	<footer>
 		

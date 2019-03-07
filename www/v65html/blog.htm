@@ -27,6 +27,7 @@
 
 	<section aria-label="User tools and cart section" class="userToolsWrapper">
 		<div class="wrapper v65-group">
+			<v65:skipToContent targetID="mainContent"></v65:skipToContent>
 			<div id="user-tools">
 				<v65:points></v65:points>
 				<v65:login></v65:login>
@@ -44,45 +45,47 @@
 		<v65:layoutHeaderNav depth="2"></v65:layoutHeaderNav>
 	</nav>
 
-	<section aria-label="Page content container" class="pageContent">
+	<main>
+		<section aria-label="Page content container" id="mainContent" class="pageContent">
 
-		<div class="wrapper v65-group">
+			<div class="wrapper v65-group">
 
-			<div class="backtotop">	
-				<a href="#"><span class="icon-up-bold"></span>TOP</a>
+				<div class="backtotop">	
+					<a href="#"><span class="icon-up-bold"></span>TOP</a>
+				</div>
+
+				<section aria-label="Main content" class="blogContent">
+					<v65:mainContent></v65:mainContent>
+				</section>
+
+				<aside class="blogRightWrapper">
+
+					<div class="blogFilter blogFilterLeft">
+						<h3>Recent Posts</h3>
+						<v65:blogRecentPosts maxrows="10"></v65:blogRecentPosts>
+
+						<h3>Blog Categories</h3>
+						<v65:blogCategories></v65:blogCategories>
+
+					</div>
+
+					<div class="blogFilter blogFilterRight">
+
+						<h3>Our Writers</h3>
+						<v65:blogAuthors></v65:blogAuthors>
+
+						<h3>Blog Archives</h3>
+						<v65:blogArchives></v65:blogArchives>
+
+					</div>
+
+				</aside>
+
 			</div>
 
-			<section aria-label="Main content" class="blogContent">
-				<v65:mainContent></v65:mainContent>
-			</section>
-
-			<aside class="blogRightWrapper">
-
-				<div class="blogFilterLeft">
-					<h5>Recent Posts</h5>
-					<v65:blogRecentPosts maxrows="10"></v65:blogRecentPosts>
-
-					<h5>Blog Categories</h5>
-					<v65:blogCategories></v65:blogCategories>
-
-				</div>
-
-				<div class="blogFilterRight">
-
-					<h5>Our Writers</h5>
-					<v65:blogAuthors></v65:blogAuthors>
-
-					<h5>Blog Archives</h5>
-					<v65:blogArchives></v65:blogArchives>
-
-				</div>
-
-			</aside>
-
-		</div>
-
-	</section>
-	<!--/pageContent-->
+		</section>
+		<!--/pageContent-->
+	</main>
 
 	<footer>
 		

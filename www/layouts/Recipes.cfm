@@ -1,10 +1,11 @@
-<cfoutput> <!DOCTYPE html>
-<html>
+<cfoutput> 
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
+	
 	<meta charset="utf-8">
 	<cf_metaTags>
-	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
 
 	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
@@ -21,8 +22,9 @@
 </head>
 <body>
 
-	<section class="userToolsWrapper">
+	<section aria-label="User tools and cart section" class="userToolsWrapper">
 		<div class="wrapper v65-group">
+			<cf_skipToContent targetID="mainContent">
 			<div id="user-tools">
 				<cf_points>
 				<cf_login>
@@ -33,29 +35,31 @@
 
 	<header class="pageHeader">
 		<cf_contentBlock group="Recipe Drilldown Page Image">
-		<a href="/" accesskey="h" class="logo"><img src="/assets/images/logo.png"  alt="<cf_websiteName>"></a>
+		<cf_logo>
 	</header>
 
-	<nav>
+	<nav aria-label="Main header navigation">
 		<cf_layoutHeaderNav depth="2">
 	</nav>
 
-	<div class="pageContent">
+	<main>
+		<div class="pageContent" id="mainContent">
 
-		<div class="wrapper v65-group">
+			<div class="wrapper v65-group">
 
-			<article class="pageText">
-				<cf_mainContent>
-			</article>
+				<article aria-label="Main Content" class="pageText">
+					<cf_mainContent>
+				</article>
 
-			<section class="subMenu">
-				<h4><cf_leftNavSectionTitle></h4>
-				<cf_recipeCategories>
-			</section>
+				<section aria-label="Sub menu navigation" class="subMenu">
+					<h4><cf_leftNavSectionTitle></h4>
+					<cf_recipeCategories>
+				</section>
+
+			</div>
 
 		</div>
-
-	</div>
+	</main>
 	<!--/pageContent-->
 
 	<footer>
@@ -67,7 +71,7 @@
 					<span class="intro">Sign up for our mailing list</span>
 					<cf_subscribe contactType="Newsletter">
 				</div>
-				<cf_customFile file="/v65html/_social.html">
+				<cf_socialMediaLinks>
 				 
 			</div>
 
@@ -76,7 +80,7 @@
 				<cf_pods location="Footer Pod" type="description">
 				<div class="megaNav v65-group"><cf_layoutHeaderNav depth="2"></div>		
 			</div>
-
+			<p class="footer-info"><cf_footerInfo></p>
 			<p class="accolade">
 				<span class="copyright"><cf_copyright></span><br/>
 				<cf_vin65Accolade></p>
@@ -90,4 +94,5 @@
 	<cf_vin65GlobalFooterAssets>
 
 </body>
-</html> </cfoutput>
+</html>
+ </cfoutput>

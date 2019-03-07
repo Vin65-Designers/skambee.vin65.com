@@ -1,8 +1,7 @@
-<cfoutput> 
-<!DOCTYPE html>
+<cfoutput> <!DOCTYPE html>
 <html lang="en">
 <head>
-
+	
 	<meta charset="utf-8">
 	<cf_metaTags>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
@@ -23,13 +22,16 @@
 <body>
 
 	<section aria-label="User tools and cart section" class="userToolsWrapper">
+
 		<div class="wrapper v65-group">
+			<cf_skipToContent targetID="mainContent">
 			<div id="user-tools">
-				<cf_points>
-				<cf_login>
 				<cf_modalCart>
+				<cf_login>
 			</div>
+
 		</div>
+
 	</section>
 
 	<header class="pageHeader">
@@ -41,9 +43,9 @@
 		<a href="##footerNav" class="footerMenuLink"><span class="icon-menu"></span></a>
 		<cf_layoutHeaderNav depth="2">
 	</nav>
-
+	
 	<main>
-		<article aria-label="Page content container"class="pageContent">
+		<div class="pageContent" id="mainContent">
 
 			<div class="wrapper v65-group">
 
@@ -51,16 +53,21 @@
 					<a href="##"><span class="icon-up-bold"></span>TOP</a>
 				</div>
 
-				<article aria-label="Page content" class="pageWideText">
+				<article aria-label="Main content" class="pageWideText">
 					<cf_mainContent>
 				</article>
+
+				<section aria-label="Sub menu navigation" class="subMenu subMenuWidePage">
+					<a name="footerNav"></a>
+					<cf_layoutSubMenu>
+				</section>
 
 			</div>
 
 		</div>
+		<!--/pageContent-->
 	</main>
-	<!--/pageContent-->
-
+	
 	<footer>
 		
 		<div class="wrapper">
@@ -70,8 +77,8 @@
 					<span class="intro">Sign up for our mailing list</span>
 					<cf_subscribe contactType="Newsletter">
 				</div>
-				
-				<cf_socialMediaLinks>
+				<cf_contentBlock group="Social Icons">
+				<span class="copyright"><cf_copyright></span>
 				 
 			</div>
 
@@ -83,9 +90,7 @@
 			</div>
 
 			<p class="footer-info"><cf_footerInfo></p>
-			<p class="accolade">
-				<span class="copyright"><cf_copyright></span><br/>
-				<cf_vin65Accolade></p>
+			<p class="accolade"><cf_vin65Accolade></p>
 
 		</div>
 
@@ -96,5 +101,4 @@
 	<cf_vin65GlobalFooterAssets>
 
 </body>
-</html>
- </cfoutput>
+</html> </cfoutput>
